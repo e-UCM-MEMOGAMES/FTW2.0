@@ -17,6 +17,9 @@ public class CameraControl : MonoBehaviour
     public float offsetYmax = 15;
     public float vel;
 
+    private float zoom = 3.84f;
+    private float zoomAmount = 40f;
+
     // ==============================
     void Start()
     {
@@ -26,6 +29,18 @@ public class CameraControl : MonoBehaviour
         posYmin = -57;
 
         offset = target.transform.position - transform.position;
+    }
+
+    private void Update()
+    {
+        if (Input.mouseScrollDelta.y > 0)
+            zoom -= zoomAmount * Time.deltaTime;
+        if (Input.mouseScrollDelta.y < 0)
+            zoom += zoomAmount * Time.deltaTime;
+
+        zoom = Mathf.Clamp(zoom, 3f, 10f);
+        Camera.main.orthographicSize = zoom;
+        Debug.Log(Camera.main);
     }
 
     // ==========================

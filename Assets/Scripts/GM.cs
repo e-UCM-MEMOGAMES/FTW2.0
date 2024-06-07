@@ -97,6 +97,7 @@ public class GM : MonoBehaviour
     /// </summary>
     public GameObject ImageConsumo;
     bool finished = false;
+    bool first = true;
 
     IEnumerator fadeOut()
     {
@@ -212,7 +213,8 @@ public class GM : MonoBehaviour
                 Find(x, y, false);
                 Posicion pos = car.GetComponentInChildren<Car>().UltimaCasilla();
                 mapa[pos.y, pos.x] = 1;
-                num--;
+                if(!first)
+                    num--;
                 if (texto != null) texto.GetComponent<Text>().text = num.ToString();
                 contexto.SetActive(false);
                 metaO.GetComponent<MeshRenderer>().enabled = false;

@@ -66,7 +66,7 @@ public class Car : MonoBehaviour {
         totalEnergy = rt.sizeDelta.x;
         gm.OnMapClicked(null);
 
-        StartToMove();
+        showArrows();
 
     }
    
@@ -201,22 +201,7 @@ public class Car : MonoBehaviour {
     }
     // Update is called once per frame
     void Update () {
-		if (Input.GetKeyUp(KeyCode.D))
-        {
-            MoveToRight();
-        }
-        else if (Input.GetKeyUp(KeyCode.A))
-        {
-            MoveToLeft();
-        }
-        else if(Input.GetKeyUp(KeyCode.W))
-        {
-            MoveUp();
-        }
-        else if (Input.GetKeyUp(KeyCode.S))
-        {
-            MoveDown();
-        }
+
 	}
     public void SetPercentageOfEnergy(float newValue)
     {
