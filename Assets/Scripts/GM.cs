@@ -96,6 +96,7 @@ public class GM : MonoBehaviour
     /// Imagen con el consumo
     /// </summary>
     public GameObject ImageConsumo;
+    int num = 3;
     bool finished = false;
     bool first = true;
 
@@ -182,8 +183,6 @@ public class GM : MonoBehaviour
     /// </summary>
     public virtual void OnMapClicked(GameObject texto)
     {
-        int num = 100;
-        if (texto != null) num = int.Parse(texto.GetComponent<Text>().text);
         if (num > 0 && !finished)
         {
             paused = !paused;
@@ -191,7 +190,6 @@ public class GM : MonoBehaviour
             car.transform.Find("Posicion").gameObject.SetActive(paused);
             cameraPausa.gameObject.SetActive(paused);
             cameraPrincipal.gameObject.SetActive(!paused);
-           
 
             if (paused)
             {
@@ -200,6 +198,8 @@ public class GM : MonoBehaviour
                 x = Mathf.FloorToInt(car.gameObject.transform.position.x);
                 y = Mathf.FloorToInt(-car.gameObject.transform.position.y);
                 Posicion pos = car.GetComponentInChildren<Car>().UltimaCasilla();
+
+                if (texto != null) texto.GetComponent<Text>().text = (num - 1).ToString();
 
                 mapa[pos.y, pos.x] = 100000;
                 Find(x, y, true);
@@ -213,9 +213,11 @@ public class GM : MonoBehaviour
                 Find(x, y, false);
                 Posicion pos = car.GetComponentInChildren<Car>().UltimaCasilla();
                 mapa[pos.y, pos.x] = 1;
-                if(!first)
+                if (!first)
                     num--;
-                if (texto != null) texto.GetComponent<Text>().text = num.ToString();
+                else
+                    first = false;
+                
                 contexto.SetActive(false);
                 metaO.GetComponent<MeshRenderer>().enabled = false;
 

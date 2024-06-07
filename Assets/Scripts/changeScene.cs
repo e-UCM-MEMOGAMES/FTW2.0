@@ -18,6 +18,11 @@ public class changeScene : MonoBehaviour
 #endif
     }
 
+    public void Reset()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+    }
+
     IEnumerator LoadScene(string scene)
     {
         Tracker.T.Accessible.Accessed(scene, AccessibleTracker.Accessible.Screen);

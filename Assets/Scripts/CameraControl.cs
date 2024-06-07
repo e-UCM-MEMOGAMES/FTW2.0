@@ -40,7 +40,6 @@ public class CameraControl : MonoBehaviour
 
         zoom = Mathf.Clamp(zoom, 3f, 10f);
         Camera.main.orthographicSize = zoom;
-        Debug.Log(Camera.main);
     }
 
     // ==========================
