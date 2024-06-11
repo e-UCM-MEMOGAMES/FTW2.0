@@ -25,9 +25,9 @@ public class changeScene : MonoBehaviour
 
     IEnumerator LoadScene(string scene)
     {
-        Tracker.T.Accessible.Accessed(scene, AccessibleTracker.Accessible.Screen);
-        transicion.SetTrigger("end");
-        yield return new WaitForSeconds(1.5f);
+        //Tracker.T.Accessible.Accessed(scene, AccessibleTracker.Accessible.Screen);
+        transicion.Play("ExitScene");
+        yield return new WaitForSeconds(1.0f);
         SceneManager.LoadScene(scene);
     }
 
