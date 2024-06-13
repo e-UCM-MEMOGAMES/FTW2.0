@@ -40,7 +40,7 @@ public class Car : MonoBehaviour {
     /// <summary>
     /// Cantidad de consumo por segundo.
     /// </summary>
-    float consumo = 1f;
+    public float consumo = 8f;
 
     /// <summary>
     /// Total de lo consumido.
@@ -183,7 +183,7 @@ public class Car : MonoBehaviour {
 
             if (!pause)
             {
-                consumido += 8 * Time.deltaTime;
+                consumido += consumo * Time.deltaTime;
                 SetPercentageOfEnergy(consumido);
                 if (consumido >= 100)
                 {

@@ -23,7 +23,7 @@ public class GM : MonoBehaviour
     /// <summary>
     /// Controla si el juego está pausado o no.
     /// </summary>
-   protected bool paused = false;
+    protected bool paused = false;
 
     /// <summary>
     /// Controlan la posición X del player en el mapa.
@@ -147,11 +147,7 @@ public class GM : MonoBehaviour
         solver = new AStarSolver(ancho, alto);                                      //Se inicializa el solver.
         solver.ActualizaMapa(mapa);
         meta.x = Mathf.FloorToInt(metaO.transform.position.x); meta.y = Mathf.FloorToInt(-metaO.transform.position.y);
-
-       
-
     }
-  
 
     /// <summary>
     /// Este método se encarga de llamar al solver A* y recibe una lista con el camino óptimo desde la posición (x,y) hasta la meta.
