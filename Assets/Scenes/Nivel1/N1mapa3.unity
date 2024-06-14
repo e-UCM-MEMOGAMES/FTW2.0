@@ -23631,6 +23631,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cafeteria2
       objectReference: {fileID: 0}
+    - target: {fileID: 1770767649583952, guid: 739737581eddd6440b99427904a40294, type: 3}
+      propertyPath: m_Layer
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 4043515642032250, guid: 739737581eddd6440b99427904a40294, type: 3}
       propertyPath: m_LocalScale.x
       value: 36.000004

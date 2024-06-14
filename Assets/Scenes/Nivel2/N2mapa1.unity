@@ -8441,8 +8441,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: 
+      - m_Target: {fileID: 379053188}
+        m_TargetAssemblyTypeName: changeScene, Assembly-CSharp
         m_MethodName: Change
         m_Mode: 5
         m_Arguments:
@@ -11479,7 +11479,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dae39c6d79c453e428d44d44a226cc4f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  transicion: {fileID: 0}
+  transicion: {fileID: 1557885827}
 --- !u!4 &379053189
 Transform:
   m_ObjectHideFlags: 0
@@ -15301,7 +15301,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.061000004, y: 0.13000001}
   m_AnchorMax: {x: 0.93500006, y: 0.9133066}
-  m_AnchoredPosition: {x: 50.87, y: -178.58}
+  m_AnchoredPosition: {x: 50.869995, y: -178.58002}
   m_SizeDelta: {x: -428.89, y: -342.86}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &501630025
@@ -29885,7 +29885,7 @@ PrefabInstance:
         type: 3}
       propertyPath: info
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1031386627}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -31844,7 +31844,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 227.51, y: -88.743}
+  m_AnchoredPosition: {x: 227.51001, y: -88.74298}
   m_SizeDelta: {x: 374.21, y: 116.09}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1040381806
@@ -33106,8 +33106,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: 
+      - m_Target: {fileID: 1718811354}
+        m_TargetAssemblyTypeName: GM, Assembly-CSharp
         m_MethodName: OnMapClicked
         m_Mode: 2
         m_Arguments:
@@ -33287,7 +33287,7 @@ PrefabInstance:
         type: 3}
       propertyPath: combustible
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1040381804}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -34189,7 +34189,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -60.051, y: 0}
+  m_AnchoredPosition: {x: -60.050995, y: 0}
   m_SizeDelta: {x: -151.8, y: -38.23}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1106143281
@@ -35679,7 +35679,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.20732476, y: 0.44500002}
   m_AnchorMax: {x: 0.84210825, y: 0.767}
-  m_AnchoredPosition: {x: -2.22, y: -23.27}
+  m_AnchoredPosition: {x: -2.2200012, y: -23.270004}
   m_SizeDelta: {x: 162.42, y: 49.63}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1153549065
@@ -37338,6 +37338,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1233081402}
+  - component: {fileID: 1233081403}
   m_Layer: 0
   m_Name: CameraPausa
   m_TagString: Untagged
@@ -37362,6 +37363,14 @@ Transform:
   - {fileID: 1292558268}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!81 &1233081403
+AudioListener:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1233081401}
+  m_Enabled: 1
 --- !u!1 &1234794952
 GameObject:
   m_ObjectHideFlags: 0
@@ -38237,7 +38246,7 @@ Canvas:
   m_Enabled: 1
   serializedVersion: 3
   m_RenderMode: 2
-  m_Camera: {fileID: 0}
+  m_Camera: {fileID: 1407902923}
   m_PlaneDistance: 100
   m_PixelPerfect: 0
   m_ReceivesEvents: 1
@@ -38258,7 +38267,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1270761248}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 100}
+  m_LocalPosition: {x: 0, y: 0, z: -251.1969}
   m_LocalScale: {x: 0.013020834, y: 0.013020834, z: 0.013020834}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -38276,8 +38285,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 41, y: -20}
-  m_SizeDelta: {x: 1365.9429, y: 768}
+  m_AnchoredPosition: {x: 42.12, y: -20.06}
+  m_SizeDelta: {x: 1365.7872, y: 768}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1001 &1274547144
 PrefabInstance:
@@ -45398,7 +45407,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.061000004, y: 0.13000001}
   m_AnchorMax: {x: 0.93500006, y: 0.9133066}
-  m_AnchoredPosition: {x: 50.87, y: 43.9}
+  m_AnchoredPosition: {x: 50.869995, y: 43.899994}
   m_SizeDelta: {x: -428.89, y: -342.86}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1507113810
@@ -47227,7 +47236,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.40815738, y: 0.26379076}
   m_AnchorMax: {x: 0.5938426, y: 0.5715232}
-  m_AnchoredPosition: {x: -423.85, y: -17.72}
+  m_AnchoredPosition: {x: -423.84998, y: -17.719994}
   m_SizeDelta: {x: -102.91, y: -57.72}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1564116802
@@ -48060,7 +48069,7 @@ PrefabInstance:
         type: 3}
       propertyPath: info
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1031386627}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -50058,7 +50067,7 @@ PrefabInstance:
         type: 3}
       propertyPath: info
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1031386627}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -50292,7 +50301,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.061000004, y: 0.13000001}
   m_AnchorMax: {x: 0.93500006, y: 0.9133066}
-  m_AnchoredPosition: {x: 50.87, y: -66.73}
+  m_AnchoredPosition: {x: 50.869995, y: -66.73001}
   m_SizeDelta: {x: -428.89, y: -342.86}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1674981830
@@ -53547,7 +53556,7 @@ PrefabInstance:
         type: 3}
       propertyPath: info
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1031386627}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -55975,6 +55984,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Oficinas
       objectReference: {fileID: 0}
+    - target: {fileID: 1275399805010818, guid: 294f4088391299048bbb047295c053b6, type: 3}
+      propertyPath: m_Layer
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 4632398857789376, guid: 294f4088391299048bbb047295c053b6, type: 3}
       propertyPath: m_LocalScale.x
       value: 3.6
@@ -56030,6 +56043,16 @@ PrefabInstance:
     - target: {fileID: 4632398857789376, guid: 294f4088391299048bbb047295c053b6, type: 3}
       propertyPath: m_ConstrainProportionsScale
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 65979159680453358, guid: 294f4088391299048bbb047295c053b6,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114519378567846020, guid: 294f4088391299048bbb047295c053b6,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -57868,7 +57891,7 @@ PrefabInstance:
         type: 3}
       propertyPath: info
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1031386627}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -60586,10 +60609,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isoSprite: {fileID: 21300000, guid: f2ee33662d3e07d439aee6821787b732, type: 3}
   cenitSprite: {fileID: 21300000, guid: f3bf970d51b9a1a448fded342872eaec, type: 3}
-  cameraPauseIso: {fileID: 0}
-  cameraPauseCenit: {fileID: 0}
-  cameraGameIso: {fileID: 0}
-  cameraGameCenit: {fileID: 0}
+  cameraPauseIso: {fileID: 1428604705}
+  cameraPauseCenit: {fileID: 1292558270}
+  cameraGameIso: {fileID: 1051806243}
+  cameraGameCenit: {fileID: 1364802999}
   button: {fileID: 2017482677}
 --- !u!114 &2017482677
 MonoBehaviour:
@@ -61263,7 +61286,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.35843313, y: 0.208}
   m_AnchorMax: {x: 0.6374459, y: 0.41471502}
-  m_AnchoredPosition: {x: -557.2, y: 457.06}
+  m_AnchoredPosition: {x: -557.2001, y: 457.06}
   m_SizeDelta: {x: -179.01, y: -141.65}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2036341605
@@ -62168,7 +62191,7 @@ PrefabInstance:
         type: 3}
       propertyPath: info
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1031386627}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -63447,7 +63470,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.28115737, y: 0.70810467}
   m_AnchorMax: {x: 0.71900004, y: 0.81658155}
-  m_AnchoredPosition: {x: -10.12, y: 72.16}
+  m_AnchoredPosition: {x: -10.119995, y: 72.16}
   m_SizeDelta: {x: 125.28, y: 83.28}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2104427251
