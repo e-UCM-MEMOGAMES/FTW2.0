@@ -212,6 +212,7 @@ public class Car : MonoBehaviour {
         rt.localPosition = new Vector3(-x, y, z);
     }
     public int GetConsumoTotal() { return (int)consumido; }
+    public float GetCombustibleMax() { return totalEnergy; }
     public Posicion UltimaCasilla()
     {
         Posicion pos; pos.x = posX; pos.y = posY;

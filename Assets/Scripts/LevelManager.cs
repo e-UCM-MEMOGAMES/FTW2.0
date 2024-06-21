@@ -70,10 +70,10 @@ public class LevelManager : MonoBehaviour
                     ++numNivelesPasados;
                 }
 
-                /* Recorremos todas las estrellas conseguidas en ese mapa.
-                 * Empezamos por 1 ya que el primer hijo es el texto */
-                for (int j = 1; j <= m; ++j)
+                /* Recorremos todas las estrellas conseguidas en ese mapa. */
+                for (int j = 0; j < m; ++j)
                 {
+                    Debug.Log(j);
                     mapa.transform.GetChild(j).transform.GetChild(0).gameObject.SetActive(false);
                 }
                 ++numMapa;

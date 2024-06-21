@@ -112,9 +112,12 @@ public class GMTutorial : GM
                 y = Mathf.FloorToInt(-car.gameObject.transform.position.y);
                 Posicion pos = car.GetComponentInChildren<Car>().UltimaCasilla();
 
+                if (texto != null) texto.GetComponent<Text>().text = (num - 1).ToString();
+
                 mapa[pos.y, pos.x] = 100000;
                 Find(x, y, true);
-                //contexto.SetActive(true);
+                if (!first)
+                    contexto.SetActive(true);
 
             }
            else
@@ -124,9 +127,16 @@ public class GMTutorial : GM
                 Find(x, y, false);
                 Posicion pos = car.GetComponentInChildren<Car>().UltimaCasilla();
                 mapa[pos.y, pos.x] = 1;
-                num--;
-                if (texto != null) texto.GetComponent<Text>().text = num.ToString();
-                contexto.SetActive(false);
+                if (!first)
+                {
+                    contexto.SetActive(false);
+                    num--;
+                }
+                else
+                {
+                    contexto.SetActive(true);
+                    first = false;
+                }
                 metaO.GetComponent<MeshRenderer>().enabled = false;
 
             }

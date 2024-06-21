@@ -96,9 +96,10 @@ public class GM : MonoBehaviour
     /// Imagen con el consumo
     /// </summary>
     public GameObject ImageConsumo;
-    int num = 3;
-    bool finished = false;
-    bool first = true;
+    public int initNum = 3;
+    protected int num;
+    protected bool finished = false;
+    protected bool first = true;
 
     IEnumerator fadeOut()
     {
@@ -116,6 +117,7 @@ public class GM : MonoBehaviour
         StartCoroutine(fadeOut());
         consumoIdeal = -1;
         nivel = GameObject.Find("Nivel").gameObject;
+        num = initNum;
 
         //Se inicializan los atributos para el A*
         mapa = new int[alto, ancho];
@@ -235,13 +237,14 @@ public class GM : MonoBehaviour
         if (win) //Si se ha ganado se activa el panel de victoria y se dan las estrellas correspondientes según el consumo.
         {
             panelWin.gameObject.SetActive(true);
-            int consumo = car.GetComponent<Car>().GetConsumoTotal();
+            Car c = car.GetComponent<Car>();
+            int consumo = c.GetConsumoTotal();
+            float maxGasolina = c.GetCombustibleMax();
             int numEstr = 0;
            
-            if (consumo <= consumoIdeal) numEstr = 3;
-            else if (consumo <= consumoIdeal + 15) numEstr = 2;
-            else if (consumo <= consumoIdeal + 25) numEstr = 1;
-            else  numEstr = 0;
+            if (consumo <= consumoIdeal) numEstr++;
+            if (consumo <= maxGasolina) numEstr++;
+            if (num == initNum) numEstr++;
 
             /* Guardamos el número de estrellas que hemos conseguido si el número de estrellas 
              * es mayor al que teníamos anteriormente */
@@ -256,8 +259,8 @@ public class GM : MonoBehaviour
                 PlayerPrefs.SetInt(nivelMapa, numEstr);
             }
 
-            for (int i = 0; i < numEstr; i++)
-                panelWin.transform.GetChild(i).transform.GetChild(0).gameObject.SetActive(true);
+            //for (int i = 0; i < numEstr; i++)
+            //    panelWin.transform.GetChild(i).transform.GetChild(0).gameObject.SetActive(true);
         }
         else
         {
