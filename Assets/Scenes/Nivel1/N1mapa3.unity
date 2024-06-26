@@ -30562,6 +30562,7 @@ MonoBehaviour:
   contexto: {fileID: 124405582}
   manoMapa: {fileID: 1769675865}
   ImageConsumo: {fileID: 1953825745}
+  initNum: 3
 --- !u!4 &1354479153
 Transform:
   m_ObjectHideFlags: 0
@@ -40628,8 +40629,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: 
+      - m_Target: {fileID: 80670030}
+        m_TargetAssemblyTypeName: changeScene, Assembly-CSharp
         m_MethodName: Change
         m_Mode: 5
         m_Arguments:
@@ -40761,10 +40762,10 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: Change
-        m_Mode: 5
+      - m_Target: {fileID: 80670030}
+        m_TargetAssemblyTypeName: changeScene, Assembly-CSharp
+        m_MethodName: Reset
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -42442,10 +42443,10 @@ RectTransform:
   - {fileID: 1847552063}
   m_Father: {fileID: 442824810}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.7871909, y: 0.02067748}
-  m_AnchorMax: {x: 0.94123405, y: 0.10576239}
-  m_AnchoredPosition: {x: 45.4, y: 13.229}
-  m_SizeDelta: {x: 170.25212, y: -36.89538}
+  m_AnchorMin: {x: 0.82000005, y: 0.03586651}
+  m_AnchorMax: {x: 0.9746802, y: 0.12610254}
+  m_AnchoredPosition: {x: -0.41693115, y: -0.7092285}
+  m_SizeDelta: {x: 170.18669, y: -40.816124}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1951148293
 MonoBehaviour:
@@ -42491,8 +42492,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: 
+      - m_Target: {fileID: 80670030}
+        m_TargetAssemblyTypeName: changeScene, Assembly-CSharp
         m_MethodName: Change
         m_Mode: 5
         m_Arguments:
@@ -42500,7 +42501,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: N1mapa2
+          m_StringArgument: N2mapa1
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1951148294

@@ -2207,6 +2207,7 @@ MonoBehaviour:
   contexto: {fileID: 1303386446}
   manoMapa: {fileID: 1236451725}
   ImageConsumo: {fileID: 658713253}
+  initNum: 3
 --- !u!4 &64026997
 Transform:
   m_ObjectHideFlags: 0
@@ -7864,9 +7865,9 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 948608190}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: Change
-        m_Mode: 5
+        m_TargetAssemblyTypeName: changeScene, Assembly-CSharp
+        m_MethodName: Reset
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -30023,10 +30024,10 @@ RectTransform:
   - {fileID: 663918988}
   m_Father: {fileID: 1749515740}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.7871909, y: 0.02067748}
-  m_AnchorMax: {x: 0.94123405, y: 0.10576239}
-  m_AnchoredPosition: {x: 45.4, y: 13.229}
-  m_SizeDelta: {x: 170.25212, y: -36.89538}
+  m_AnchorMin: {x: 0.82100004, y: 0.034}
+  m_AnchorMax: {x: 0.97221714, y: 0.12643358}
+  m_AnchoredPosition: {x: 0.39215088, y: -1.1033325}
+  m_SizeDelta: {x: 173.88428, y: -40.804916}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1286513188
 MonoBehaviour:
