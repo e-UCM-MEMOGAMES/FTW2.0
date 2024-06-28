@@ -1,5 +1,5 @@
 ﻿using UnityEngine;
-using RAGE.Analytics;
+//using RAGE.Analytics;
 using System.Collections;
 
 /// <summary>
@@ -135,7 +135,7 @@ public class Coche : MonoBehaviour
                 player.gameObject.transform.Rotate(new Vector3(0, 0, -90));
                 dir = (dir + 1) % 4;
                 ++derecha;
-                Tracker.T.setVar("Derecha", derecha);
+                //Tracker.T.setVar("Derecha", derecha);
             }
             else if (s == "Izquierda")
             {
@@ -144,12 +144,12 @@ public class Coche : MonoBehaviour
                 dir = (dir - 1);
                 if (dir < 0) dir = 3;
                 ++izquierda;
-                Tracker.T.setVar("Izquierda", izquierda);
+                //Tracker.T.setVar("Izquierda", izquierda);
             }
             else
             {
                 ++recto;
-                Tracker.T.setVar("Recto", recto);
+                //Tracker.T.setVar("Recto", recto);
             }
             Arranca();
         }

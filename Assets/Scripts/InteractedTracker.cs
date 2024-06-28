@@ -1,6 +1,9 @@
-﻿using RAGE.Analytics;
+﻿//using RAGE.Analytics;
+using System;
+using System.Threading.Tasks;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using Xasu;
 
 public class InteractedTracker : MonoBehaviour
 {
@@ -19,7 +22,7 @@ public class InteractedTracker : MonoBehaviour
             int i = result.Length;
             if (i == 0)
             {
-                Tracker.T.setVar("empty", 1);
+                //Tracker.T.setVar("empty", 1);
             }
             else
             {
@@ -27,8 +30,8 @@ public class InteractedTracker : MonoBehaviour
                 {
                     i--;
                     string objName = result[i].name;
-                    if (objName != null)
-                        Tracker.T.setVar(objName, 1);
+                    if (objName != null) { }
+                        //Tracker.T.setVar(objName, 1);
                 }
             }
 
@@ -36,7 +39,20 @@ public class InteractedTracker : MonoBehaviour
             Scene scene = SceneManager.GetActiveScene();
             string name = scene.name;
 
-            Tracker.T.GameObject.Interacted(name);
+            Xasu.HighLevel.GameObjectTracker.Instance.Interacted(name);
+            //Tracker.T.GameObject.Interacted(name);
         }
+    }
+
+    private async Task CloseTracker()
+    {
+        var progress = new Progress<float>();
+        progress.ProgressChanged += (_, p) =>
+        {
+            Debug.Log("Finalization progress: " + p);
+        };
+        await XasuTracker.Instance.Finalize(progress);
+        Debug.Log("Tracker finalized");
+        Application.Quit();
     }
 }

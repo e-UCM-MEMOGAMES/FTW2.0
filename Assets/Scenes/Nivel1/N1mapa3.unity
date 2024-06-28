@@ -5830,6 +5830,7 @@ RectTransform:
   - {fileID: 1489982995}
   - {fileID: 1683524940}
   - {fileID: 442824810}
+  - {fileID: 959698900}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -13160,7 +13161,7 @@ MonoBehaviour:
       m_Calls: []
   m_Sprite: {fileID: 21300000, guid: d2bb31c3ede3d29489402ed74a9bffae, type: 3}
   m_Type: 0
-  m_PreserveAspect: 0
+  m_PreserveAspect: 1
   m_FillCenter: 1
   m_FillMethod: 4
   m_FillAmount: 1
@@ -13500,6 +13501,7 @@ MonoBehaviour:
   offsetXmin: 6
   offsetYmax: 5
   vel: 3
+  resetCamButton: {fileID: 959698899}
 --- !u!4 &576195010
 Transform:
   m_ObjectHideFlags: 0
@@ -16424,10 +16426,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 566025550}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.47200003, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 3.0869, y: 0.00010109}
-  m_SizeDelta: {x: 728.91, y: 478.64}
+  m_AnchorMin: {x: 0.7331286, y: 0}
+  m_AnchorMax: {x: 1, y: 0.5}
+  m_AnchoredPosition: {x: -0.06930542, y: 0.08917999}
+  m_SizeDelta: {x: 135.91446, y: 167.68834}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &702670801
 MonoBehaviour:
@@ -22291,6 +22293,150 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 959194974}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &959698899
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 959698900}
+  - component: {fileID: 959698903}
+  - component: {fileID: 959698902}
+  - component: {fileID: 959698901}
+  m_Layer: 5
+  m_Name: Button
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &959698900
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 959698899}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 26971.924}
+  m_LocalScale: {x: 0.999936, y: 0.999936, z: 0.999936}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 218827942}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.91024935, y: 0.43187723}
+  m_AnchorMax: {x: 0.99248636, y: 0.5731073}
+  m_AnchoredPosition: {x: 0.3444214, y: -2.028862}
+  m_SizeDelta: {x: 2.9529724, y: 6.48732}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &959698901
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 959698899}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 959698902}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 576195009}
+        m_TargetAssemblyTypeName: CameraControl, Assembly-CSharp
+        m_MethodName: ResetCamera
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 811597199}
+        m_TargetAssemblyTypeName: ChangePerspective, Assembly-CSharp
+        m_MethodName: ResetCamera
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &959698902
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 959698899}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: e31907b97ae900e4ca2ba1b2e7bd4768, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 1
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &959698903
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 959698899}
+  m_CullTransparentMesh: 1
 --- !u!1001 &969452687
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -23247,6 +23393,7 @@ MonoBehaviour:
   offsetXmin: 4
   offsetYmax: 20
   vel: 0
+  resetCamButton: {fileID: 0}
 --- !u!81 &999767753
 AudioListener:
   m_ObjectHideFlags: 0
@@ -42072,6 +42219,7 @@ MonoBehaviour:
   offsetXmin: 6
   offsetYmax: 5
   vel: 0
+  resetCamButton: {fileID: 0}
 --- !u!81 &1942859163
 AudioListener:
   m_ObjectHideFlags: 0
@@ -45104,6 +45252,7 @@ MonoBehaviour:
   offsetXmin: 4
   offsetYmax: 20
   vel: 0
+  resetCamButton: {fileID: 0}
 --- !u!81 &2074752444
 AudioListener:
   m_ObjectHideFlags: 0

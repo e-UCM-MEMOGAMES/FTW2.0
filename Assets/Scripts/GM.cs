@@ -1,9 +1,10 @@
 ﻿using AStar;
-using RAGE.Analytics;
+//using RAGE.Analytics;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using System.Collections;
+using Xasu.HighLevel;
 
 /// <summary>
 /// Script Game Manager. Se encarga de centralizar operaciones como llamar al canvas, poner el juego en pausa, controlar el estado de la partida...
@@ -248,9 +249,10 @@ public class GM : MonoBehaviour
 
             /* Guardamos el número de estrellas que hemos conseguido si el número de estrellas 
              * es mayor al que teníamos anteriormente */
-            Tracker.T.setVar("Estrellas " + nivelMapa, numEstr);
+            //Tracker.T.setVar("Estrellas " + nivelMapa, numEstr);
 
-            Tracker.T.Completable.Completed(nivelMapa, CompletableTracker.Completable.Level, true);
+            Xasu.HighLevel.CompletableTracker.Instance.Completed(nivelMapa, Xasu.HighLevel.CompletableTracker.CompletableType.Level);
+            //Tracker.T.Completable.Completed(nivelMapa, CompletableTracker.Completable.Level, true);
 
             int estrellasActuales = PlayerPrefs.HasKey(nivelMapa) ? PlayerPrefs.GetInt(nivelMapa) : 0;
 
@@ -265,7 +267,8 @@ public class GM : MonoBehaviour
         else
         {
             panelGameOver.gameObject.SetActive(true);
-            Tracker.T.Completable.Completed(nivelMapa, CompletableTracker.Completable.Level, false);
+            Xasu.HighLevel.CompletableTracker.Instance.Completed(nivelMapa, Xasu.HighLevel.CompletableTracker.CompletableType.Level);
+            //Tracker.T.Completable.Completed(nivelMapa, CompletableTracker.Completable.Level, false);
         }
     }
 

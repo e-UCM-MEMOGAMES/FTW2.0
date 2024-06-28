@@ -15,6 +15,12 @@ public class ChangePerspective : MonoBehaviour {
         Change_Perspective();
 	}
 
+    public void ResetCamera()
+    {
+        if (!iso)
+            Change_Perspective();
+    }
+
     public void Change_Perspective() {
         iso = !iso;
         cameraPauseCenit.gameObject.SetActive(!iso);
@@ -23,6 +29,5 @@ public class ChangePerspective : MonoBehaviour {
         cameraGameIso.gameObject.SetActive(iso);
         if (!iso) button.GetComponent<Image>().sprite = isoSprite;
         else button.GetComponent<Image>().sprite = cenitSprite;
-        
     }
 }

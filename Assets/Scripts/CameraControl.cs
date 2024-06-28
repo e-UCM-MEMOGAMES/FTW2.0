@@ -16,8 +16,11 @@ public class CameraControl : MonoBehaviour
     public float offsetXmin = 6;
     public float offsetYmax = 15;
     public float vel;
+    public GameObject resetCamButton;
 
     Vector3 touchStart;
+    Vector3 initTransform;
+    float initZoom;
     //private float zoom = 3.84f;
     //private float zoomAmount = 40f;
 
@@ -28,6 +31,9 @@ public class CameraControl : MonoBehaviour
         posXmin = 0 + offsetXmin;
         posYmax = 50;// 0 - offsetYmax;
         posYmin = -57;
+        initTransform = Camera.main.transform.position;
+        initZoom = Camera.main.orthographicSize;
+        resetCamButton.SetActive(false);
 
         offset = target.transform.position - transform.position;
     }
@@ -55,18 +61,11 @@ public class CameraControl : MonoBehaviour
         }
         else if (Input.GetMouseButton(0))
         {
+            resetCamButton.SetActive(true);
             Vector3 direction = touchStart - Camera.main.ScreenToWorldPoint(Input.mousePosition);
             Camera.main.transform.position += direction;
         }
         zoom(Input.GetAxis("Mouse ScrollWheel"));
-
-        //if (Input.mouseScrollDelta.y > 0)
-        //    zoom -= zoomAmount * Time.deltaTime;
-        //if (Input.mouseScrollDelta.y < 0)
-        //    zoom += zoomAmount * Time.deltaTime;
-
-        //zoom = Mathf.Clamp(zoom, 3f, 10f);
-        //Camera.main.orthographicSize = zoom;
     }
 
     void zoom(float increment)
@@ -93,5 +92,12 @@ public class CameraControl : MonoBehaviour
         Vector3.Lerp(orig, destino, 1 / 20f);
         Vector3 despl = Vector3.Lerp(orig, destino, Time.deltaTime*vel);
         transform.position = despl;
+    }
+
+    public void ResetCamera()
+    {
+        Camera.main.transform.position = initTransform;
+        Camera.main.orthographicSize = initZoom;
+        resetCamButton.SetActive(false);
     }
 }
