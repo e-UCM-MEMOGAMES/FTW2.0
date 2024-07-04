@@ -25,7 +25,7 @@ public class changeScene : MonoBehaviour
 
     IEnumerator LoadScene(string scene)
     {
-        Xasu.HighLevel.AccessibleTracker.Instance.Accessed(scene, Xasu.HighLevel.AccessibleTracker.AccessibleType.Screen);
+        //Xasu.HighLevel.AccessibleTracker.Instance.Accessed(scene, Xasu.HighLevel.AccessibleTracker.AccessibleType.Screen);
         //Tracker.T.Accessible.Accessed(scene, AccessibleTracker.Accessible.Screen);
         if(!transicion.gameObject.activeInHierarchy)
             transicion.gameObject.SetActive(true);

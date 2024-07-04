@@ -1,0 +1,941 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b11a58205ec3474ca216360e9fa74a8, type: 3}
+  m_Name: EnEs strings Shared Data
+  m_EditorClassIdentifier: 
+  m_TableCollectionName: EnEs strings
+  m_TableCollectionNameGuidString: 3c277c871fda2e14ea7cb69eab1eb04c
+  m_Entries:
+  - m_Id: 1191103885312
+    m_Key: LevelGeneralSelector/Canvas/Niveles/1/Text
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1220417875968
+    m_Key: LevelGeneralSelector/Canvas/Niveles/2/Text
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1237564190720
+    m_Key: LevelGeneralSelector/Canvas/Niveles/3/Text
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1394930282496
+    m_Key: Level1Selector/Canvas/Text
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1421660581888
+    m_Key: Level1Selector/Canvas/Volver/Text (TMP) (2)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1733632913408
+    m_Key: Level2Selector/Canvas/Volver/Text (TMP) (2)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1792588050432
+    m_Key: Level2Selector/Canvas/Text
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1998268329984
+    m_Key: Level3Selector/Canvas/Volver/Text (TMP) (2)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2060880900096
+    m_Key: Level3Selector/Canvas/Text
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2207668957184
+    m_Key: Tutorial/Canvas/PanelWin/Panel (1)/Panel/Puntuacion
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2248425009152
+    m_Key: Tutorial/Canvas/PanelGameOver/Volver (1)/Reintentar
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2377315971072
+    m_Key: Tutorial/Canvas/PanelGameOver/Text
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2442747113472
+    m_Key: Tutorial/Canvas/PanelWin/Siguiente/Text
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2472044326912
+    m_Key: Tutorial/Canvas/PanelWin/Reintentar/Text
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2549534093312
+    m_Key: Tutorial/Canvas/PanelWin/Text
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2585038876672
+    m_Key: Tutorial/Canvas/Recordatorio/Text
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2619348283392
+    m_Key: Tutorial/Canvas/InfoObjeto/Text
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2667964461056
+    m_Key: Tutorial/Canvas/Tutorial5 (1)/Text
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2936525746176
+    m_Key: Tutorial/Canvas/Tutorial5/Text
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3099042443264
+    m_Key: Tutorial/Canvas/Tutorial4/Text
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3190365024256
+    m_Key: Tutorial/Canvas/Tutorial3 (1)/Text
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3293125472256
+    m_Key: Tutorial/Canvas/Tutorial3/Text
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3439280189440
+    m_Key: Tutorial/Canvas/Tutorial2 (1)/Text
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3508679143424
+    m_Key: Tutorial/Canvas/Tutorial2/Text
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3632025235456
+    m_Key: Tutorial/Canvas/Tutorial1 (1)/Text
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3787541639168
+    m_Key: Tutorial/Canvas/Tutorial1/Text
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3990483038208
+    m_Key: Tutorial/Canvas/Tutorial2 (1)/Text (1)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4018354188288
+    m_Key: Tutorial/Canvas/Tutorial2/Text (1)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4048767086592
+    m_Key: Tutorial/Canvas/Tutorial1 (1)/Text (1)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4069080100864
+    m_Key: Tutorial/Canvas/Tutorial1/Text (1)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4089321811968
+    m_Key: Tutorial/Canvas/PanelGameOver/Volver/Text (1)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 378826388598784
+    m_Key: Tutorial/Canvas/PanelWin/Panel (1)/Panel/Descripcion 1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 378990167781376
+    m_Key: Tutorial/Canvas/PanelWin/Panel (1)/Panel/Descripcion 2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 379021444706304
+    m_Key: Tutorial/Canvas/PanelWin/Panel (1)/Panel/Descripcion 3
+    m_Metadata:
+      m_Items: []
+  - m_Id: 379289351680000
+    m_Key: N1mapa1/Canvas/PanelWin/Panel (1)/Panel/Descripcion 1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 379305139040256
+    m_Key: N1mapa2/Canvas/PanelWin/Panel (1)/Panel/Descripcion 1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 379317923278848
+    m_Key: N1mapa3/Canvas/PanelWin/Panel (1)/Panel/Descripcion 1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 379335803596800
+    m_Key: N2mapa1/Canvas/PanelWin/Panel (1)/Panel/Descripcion 1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 379378975567872
+    m_Key: N2mapa3/Canvas/PanelWin/Panel (1)/Panel/Descripcion 1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 379400421044224
+    m_Key: N2mapa2/Canvas/PanelWin/Panel (1)/Panel/Descripcion 1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 379484810440704
+    m_Key: N3mapa1/Canvas/PanelWin/Panel (1)/Panel/Descripcion 1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 379501747040256
+    m_Key: N3mapa2/Canvas/PanelWin/Panel (1)/Panel/Descripcion 1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 379517593120768
+    m_Key: N3mapa3/Canvas/PanelWin/Panel (1)/Panel/Descripcion 1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 379591693889536
+    m_Key: N1mapa1/Canvas/PanelWin/Panel (1)/Panel/Descripcion 2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 379604461350912
+    m_Key: N1mapa2/Canvas/PanelWin/Panel (1)/Panel/Descripcion 2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 379619921555456
+    m_Key: N1mapa3/Canvas/PanelWin/Panel (1)/Panel/Descripcion 2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 379641211842560
+    m_Key: N2mapa1/Canvas/PanelWin/Panel (1)/Panel/Descripcion 2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 379669628252160
+    m_Key: N2mapa3/Canvas/PanelWin/Panel (1)/Panel/Descripcion 2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 379688938827776
+    m_Key: N3mapa1/Canvas/PanelWin/Panel (1)/Panel/Descripcion 2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 379702838751232
+    m_Key: N3mapa2/Canvas/PanelWin/Panel (1)/Panel/Descripcion 2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 379713714581504
+    m_Key: N3mapa3/Canvas/PanelWin/Panel (1)/Panel/Descripcion 2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 379783025455104
+    m_Key: N1mapa1/Canvas/PanelWin/Panel (1)/Panel/Descripcion 3
+    m_Metadata:
+      m_Items: []
+  - m_Id: 379795667087360
+    m_Key: N1mapa2/Canvas/PanelWin/Panel (1)/Panel/Descripcion 3
+    m_Metadata:
+      m_Items: []
+  - m_Id: 379813035700224
+    m_Key: N1mapa3/Canvas/PanelWin/Panel (1)/Panel/Descripcion 3
+    m_Metadata:
+      m_Items: []
+  - m_Id: 379832832815104
+    m_Key: N2mapa1/Canvas/PanelWin/Panel (1)/Panel/Descripcion 3
+    m_Metadata:
+      m_Items: []
+  - m_Id: 379846896316416
+    m_Key: N2mapa2/Canvas/PanelWin/Panel (1)/Panel/Descripcion 3
+    m_Metadata:
+      m_Items: []
+  - m_Id: 379859659583488
+    m_Key: N2mapa3/Canvas/PanelWin/Panel (1)/Panel/Descripcion 3
+    m_Metadata:
+      m_Items: []
+  - m_Id: 379889825017856
+    m_Key: N3mapa1/Canvas/PanelWin/Panel (1)/Panel/Descripcion 3
+    m_Metadata:
+      m_Items: []
+  - m_Id: 379902630227968
+    m_Key: N3mapa2/Canvas/PanelWin/Panel (1)/Panel/Descripcion 3
+    m_Metadata:
+      m_Items: []
+  - m_Id: 379916710506496
+    m_Key: N3mapa3/Canvas/PanelWin/Panel (1)/Panel/Descripcion 3
+    m_Metadata:
+      m_Items: []
+  - m_Id: 380346798632960
+    m_Key: N1mapa1/Canvas/PanelWin/Panel (1)/Panel/Puntuacion
+    m_Metadata:
+      m_Items: []
+  - m_Id: 380360874717184
+    m_Key: N1mapa1/Canvas/PanelGameOver/Volver (1)/Reintentar
+    m_Metadata:
+      m_Items: []
+  - m_Id: 380423084634112
+    m_Key: N1mapa1/Canvas/Tutorial1/Text
+    m_Metadata:
+      m_Items: []
+  - m_Id: 380569763639296
+    m_Key: N1mapa1/Canvas/InfoObjeto/Text
+    m_Metadata:
+      m_Items: []
+  - m_Id: 380620560855040
+    m_Key: N1mapa1/Canvas/PanelWin/Text
+    m_Metadata:
+      m_Items: []
+  - m_Id: 381017769832448
+    m_Key: N1mapa1/Canvas/PanelWin/Volver/Text
+    m_Metadata:
+      m_Items: []
+  - m_Id: 381051387179008
+    m_Key: N1mapa1/Canvas/PanelWin/Reintentar/Text
+    m_Metadata:
+      m_Items: []
+  - m_Id: 381066935463936
+    m_Key: N1mapa1/Canvas/PanelWin/Siguiente/Text
+    m_Metadata:
+      m_Items: []
+  - m_Id: 381098979946496
+    m_Key: N1mapa1/Canvas/PanelGameOver/Text
+    m_Metadata:
+      m_Items: []
+  - m_Id: 381155322032128
+    m_Key: N1mapa1/Canvas/PanelGameOver/Volver/Text (1)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 381194614272000
+    m_Key: N1mapa2/Canvas/PanelWin/Panel (1)/Panel/Puntuacion
+    m_Metadata:
+      m_Items: []
+  - m_Id: 381341813370880
+    m_Key: N1mapa2/Canvas/PanelGameOver/Volver (1)/Reintentar
+    m_Metadata:
+      m_Items: []
+  - m_Id: 381468602986496
+    m_Key: N1mapa2/Canvas/Tutorial1/Text
+    m_Metadata:
+      m_Items: []
+  - m_Id: 381516229308416
+    m_Key: N1mapa2/Canvas/InfoObjeto/Text
+    m_Metadata:
+      m_Items: []
+  - m_Id: 381534608748544
+    m_Key: N1mapa2/Canvas/PanelWin/Text
+    m_Metadata:
+      m_Items: []
+  - m_Id: 381580641234944
+    m_Key: N1mapa2/Canvas/PanelWin/Volver/Text
+    m_Metadata:
+      m_Items: []
+  - m_Id: 381594805399552
+    m_Key: N1mapa2/Canvas/PanelWin/Reintentar/Text
+    m_Metadata:
+      m_Items: []
+  - m_Id: 381608130703360
+    m_Key: N1mapa2/Canvas/PanelWin/Siguiente/Text
+    m_Metadata:
+      m_Items: []
+  - m_Id: 381624622706688
+    m_Key: N1mapa2/Canvas/PanelGameOver/Volver/Text (1)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 381811445395456
+    m_Key: N1mapa3/Canvas/PanelWin/Panel (1)/Panel/Puntuacion
+    m_Metadata:
+      m_Items: []
+  - m_Id: 381822874873856
+    m_Key: N1mapa3/Canvas/PanelGameOver/Volver (1)/Reintentar
+    m_Metadata:
+      m_Items: []
+  - m_Id: 381894484226048
+    m_Key: N1mapa3/Canvas/Tutorial1/Text
+    m_Metadata:
+      m_Items: []
+  - m_Id: 382261963976704
+    m_Key: N1mapa3/Canvas/InfoObjeto/Text
+    m_Metadata:
+      m_Items: []
+  - m_Id: 382284319617024
+    m_Key: N1mapa3/Canvas/PanelGameOver/Text
+    m_Metadata:
+      m_Items: []
+  - m_Id: 382334328303616
+    m_Key: N1mapa3/Canvas/PanelWin/Text
+    m_Metadata:
+      m_Items: []
+  - m_Id: 382385213599744
+    m_Key: N1mapa3/Canvas/PanelWin/Volver/Text
+    m_Metadata:
+      m_Items: []
+  - m_Id: 382400648638464
+    m_Key: N1mapa3/Canvas/PanelWin/Reintentar/Text
+    m_Metadata:
+      m_Items: []
+  - m_Id: 382413957165056
+    m_Key: N1mapa3/Canvas/PanelWin/Siguiente/Text
+    m_Metadata:
+      m_Items: []
+  - m_Id: 382431124451328
+    m_Key: N1mapa3/Canvas/PanelGameOver/Volver/Text (1)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 382484970926080
+    m_Key: N2mapa1/Canvas/PanelWin/Panel (1)/Panel/Puntuacion
+    m_Metadata:
+      m_Items: []
+  - m_Id: 382499135090688
+    m_Key: N2mapa1/Canvas/PanelGameOver/Volver (1)/Reintentar
+    m_Metadata:
+      m_Items: []
+  - m_Id: 382525433376768
+    m_Key: N2mapa1/Canvas/Tutorial1/Text
+    m_Metadata:
+      m_Items: []
+  - m_Id: 382665175003136
+    m_Key: N2mapa1/Canvas/InfoObjeto/Text
+    m_Metadata:
+      m_Items: []
+  - m_Id: 382701514452992
+    m_Key: N2mapa1/Canvas/PanelGameOver/Text
+    m_Metadata:
+      m_Items: []
+  - m_Id: 382743960809472
+    m_Key: N2mapa1/Canvas/PanelWin/Text
+    m_Metadata:
+      m_Items: []
+  - m_Id: 382784012218368
+    m_Key: N2mapa1/Canvas/PanelWin/Volver/Text
+    m_Metadata:
+      m_Items: []
+  - m_Id: 382797744369664
+    m_Key: N2mapa1/Canvas/PanelWin/Reintentar/Text
+    m_Metadata:
+      m_Items: []
+  - m_Id: 382816417411072
+    m_Key: N2mapa1/Canvas/PanelWin/Siguiente/Text
+    m_Metadata:
+      m_Items: []
+  - m_Id: 382833119129600
+    m_Key: N2mapa1/Canvas/PanelGameOver/Volver/Text (1)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 382866379960320
+    m_Key: N2mapa2/Canvas/PanelWin/Panel (1)/Panel/Puntuacion
+    m_Metadata:
+      m_Items: []
+  - m_Id: 382879755595776
+    m_Key: N2mapa2/Canvas/PanelGameOver/Volver (1)/Reintentar
+    m_Metadata:
+      m_Items: []
+  - m_Id: 382943827783680
+    m_Key: N2mapa2/Canvas/Tutorial1/Text
+    m_Metadata:
+      m_Items: []
+  - m_Id: 390956286406656
+    m_Key: N2mapa2/Canvas/InfoObjeto/Text
+    m_Metadata:
+      m_Items: []
+  - m_Id: 391011928043520
+    m_Key: N2mapa2/Canvas/PanelGameOver/Text
+    m_Metadata:
+      m_Items: []
+  - m_Id: 391063983550464
+    m_Key: N2mapa2/Canvas/PanelWin/Text
+    m_Metadata:
+      m_Items: []
+  - m_Id: 391113388257280
+    m_Key: N2mapa2/Canvas/PanelWin/Volver/Text
+    m_Metadata:
+      m_Items: []
+  - m_Id: 391129733459968
+    m_Key: N2mapa2/Canvas/PanelWin/Reintentar/Text
+    m_Metadata:
+      m_Items: []
+  - m_Id: 391151808081920
+    m_Key: N2mapa2/Canvas/PanelWin/Siguiente/Text
+    m_Metadata:
+      m_Items: []
+  - m_Id: 391210264096768
+    m_Key: N2mapa2/Canvas/PanelGameOver/Volver/Text (1)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 391240731521024
+    m_Key: N2mapa3/Canvas/PanelWin/Panel (1)/Panel/Puntuacion
+    m_Metadata:
+      m_Items: []
+  - m_Id: 391255151538176
+    m_Key: N2mapa3/Canvas/PanelGameOver/Volver (1)/Reintentar
+    m_Metadata:
+      m_Items: []
+  - m_Id: 391292657004544
+    m_Key: N2mapa3/Canvas/Tutorial1/Text
+    m_Metadata:
+      m_Items: []
+  - m_Id: 391334151254016
+    m_Key: N2mapa3/Canvas/InfoObjeto/Text
+    m_Metadata:
+      m_Items: []
+  - m_Id: 391355122774016
+    m_Key: N2mapa3/Canvas/PanelGameOver/Text
+    m_Metadata:
+      m_Items: []
+  - m_Id: 391420587470848
+    m_Key: N2mapa3/Canvas/PanelWin/Text
+    m_Metadata:
+      m_Items: []
+  - m_Id: 391466439602176
+    m_Key: N2mapa3/Canvas/PanelWin/Volver/Text
+    m_Metadata:
+      m_Items: []
+  - m_Id: 391485955698688
+    m_Key: N2mapa3/Canvas/PanelWin/Reintentar/Text
+    m_Metadata:
+      m_Items: []
+  - m_Id: 391504989450240
+    m_Key: N2mapa3/Canvas/PanelWin/Siguiente/Text
+    m_Metadata:
+      m_Items: []
+  - m_Id: 391522269982720
+    m_Key: N2mapa3/Canvas/PanelGameOver/Volver/Text (1)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 391585876602880
+    m_Key: N3mapa1/Canvas/PanelWin/Panel (1)/Panel/Puntuacion
+    m_Metadata:
+      m_Items: []
+  - m_Id: 391598727950336
+    m_Key: N3mapa1/Canvas/PanelGameOver/Volver (1)/Reintentar
+    m_Metadata:
+      m_Items: []
+  - m_Id: 391688980983808
+    m_Key: N3mapa1/Canvas/Tutorial1/Text
+    m_Metadata:
+      m_Items: []
+  - m_Id: 391749672562688
+    m_Key: N3mapa1/Canvas/InfoObjeto/Text
+    m_Metadata:
+      m_Items: []
+  - m_Id: 391778936221696
+    m_Key: N3mapa1/Canvas/PanelGameOver/Text
+    m_Metadata:
+      m_Items: []
+  - m_Id: 391819990069248
+    m_Key: N3mapa1/Canvas/PanelWin/Text
+    m_Metadata:
+      m_Items: []
+  - m_Id: 391869919064064
+    m_Key: N3mapa1/Canvas/PanelWin/Volver/Text
+    m_Metadata:
+      m_Items: []
+  - m_Id: 391890752172032
+    m_Key: N3mapa1/Canvas/PanelWin/Reintentar/Text
+    m_Metadata:
+      m_Items: []
+  - m_Id: 391906514366464
+    m_Key: N3mapa1/Canvas/PanelWin/Siguiente/Text
+    m_Metadata:
+      m_Items: []
+  - m_Id: 391923773927424
+    m_Key: N3mapa1/Canvas/PanelGameOver/Volver/Text (1)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 391946523832320
+    m_Key: N3mapa2/Canvas/PanelWin/Panel (1)/Panel/Puntuacion
+    m_Metadata:
+      m_Items: []
+  - m_Id: 391957076701184
+    m_Key: N3mapa2/Canvas/PanelGameOver/Volver (1)/Reintentar
+    m_Metadata:
+      m_Items: []
+  - m_Id: 391993319682048
+    m_Key: N3mapa2/Canvas/Tutorial1/Text
+    m_Metadata:
+      m_Items: []
+  - m_Id: 392060822810624
+    m_Key: N3mapa2/Canvas/InfoObjeto/Text
+    m_Metadata:
+      m_Items: []
+  - m_Id: 392081878216704
+    m_Key: N3mapa2/Canvas/PanelGameOver/Text
+    m_Metadata:
+      m_Items: []
+  - m_Id: 392126040043520
+    m_Key: N3mapa2/Canvas/PanelWin/Text
+    m_Metadata:
+      m_Items: []
+  - m_Id: 392174069018624
+    m_Key: N3mapa2/Canvas/PanelWin/Volver/Text
+    m_Metadata:
+      m_Items: []
+  - m_Id: 392199679438848
+    m_Key: N3mapa2/Canvas/PanelWin/Reintentar/Text
+    m_Metadata:
+      m_Items: []
+  - m_Id: 392229224116224
+    m_Key: N3mapa2/Canvas/PanelWin/Siguiente/Text
+    m_Metadata:
+      m_Items: []
+  - m_Id: 392281292206080
+    m_Key: N3mapa2/Canvas/PanelGameOver/Volver/Text (1)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 392315664527360
+    m_Key: N3mapa3/Canvas/PanelWin/Panel (1)/Panel/Puntuacion
+    m_Metadata:
+      m_Items: []
+  - m_Id: 392326385168384
+    m_Key: N3mapa3/Canvas/PanelGameOver/Volver (1)/Reintentar
+    m_Metadata:
+      m_Items: []
+  - m_Id: 392364813381632
+    m_Key: N3mapa3/Canvas/Tutorial1/Text
+    m_Metadata:
+      m_Items: []
+  - m_Id: 392418211065856
+    m_Key: N3mapa3/Canvas/InfoObjeto/Text
+    m_Metadata:
+      m_Items: []
+  - m_Id: 392435290271744
+    m_Key: N3mapa3/Canvas/PanelGameOver/Text
+    m_Metadata:
+      m_Items: []
+  - m_Id: 392482337779712
+    m_Key: N3mapa3/Canvas/PanelWin/Text
+    m_Metadata:
+      m_Items: []
+  - m_Id: 392523278381056
+    m_Key: N3mapa3/Canvas/PanelWin/Volver/Text
+    m_Metadata:
+      m_Items: []
+  - m_Id: 392556090421248
+    m_Key: N3mapa3/Canvas/PanelWin/Reintentar/Text
+    m_Metadata:
+      m_Items: []
+  - m_Id: 392572456595456
+    m_Key: N3mapa3/Canvas/PanelGameOver/Volver/Text (1)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 392702018646016
+    m_Key: N3mapa3/Edificios/Oficinas
+    m_Metadata:
+      m_Items: []
+  - m_Id: 392823116591104
+    m_Key: N3mapa3/Edificios/Oficinas (1)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 392875348258816
+    m_Key: N3mapa3/Edificios/MiEdificio
+    m_Metadata:
+      m_Items: []
+  - m_Id: 392979111145472
+    m_Key: N3mapa3/Edificios/Pisos1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 393016973127680
+    m_Key: N3mapa3/Edificios/Cafeteria2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 393093523369984
+    m_Key: N3mapa3/Edificios/Pisos1 (1)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 393146019278848
+    m_Key: N3mapa3/Edificios/Cafeteria2 (1)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 393193935007744
+    m_Key: N3mapa3/Edificios/RestauranteChino
+    m_Metadata:
+      m_Items: []
+  - m_Id: 393273387708416
+    m_Key: N3mapa3/Edificios/PisosEstudiantes
+    m_Metadata:
+      m_Items: []
+  - m_Id: 393384356409344
+    m_Key: N3mapa3/Edificios/Taller
+    m_Metadata:
+      m_Items: []
+  - m_Id: 393418221219840
+    m_Key: N3mapa3/Edificios/Oficinas (2)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 407516317151232
+    m_Key: N3mapa3/Edificios/Hotel
+    m_Metadata:
+      m_Items: []
+  - m_Id: 407577054867456
+    m_Key: N3mapa3/Edificios/Museo 1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 407620893732864
+    m_Key: N3mapa3/Edificios/Museo 1 (1)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 407652929826816
+    m_Key: N3mapa3/Edificios/Museo 1 (2)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 407733242359808
+    m_Key: N3mapa2/Edificios/MiEdificio
+    m_Metadata:
+      m_Items: []
+  - m_Id: 407847558115328
+    m_Key: N3mapa2/Edificios/Oficinas
+    m_Metadata:
+      m_Items: []
+  - m_Id: 407918123085824
+    m_Key: N3mapa2/Edificios/Oficinas (2)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 407918139863040
+    m_Key: N3mapa2/Edificios/Museo 1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 407918152445952
+    m_Key: N3mapa2/Edificios/Bomberos
+    m_Metadata:
+      m_Items: []
+  - m_Id: 407918160834560
+    m_Key: N3mapa2/Edificios/Cafeteria2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 407918169223168
+    m_Key: N3mapa2/Edificios/PisosDeEstudiantes
+    m_Metadata:
+      m_Items: []
+  - m_Id: 407918181806080
+    m_Key: N3mapa2/Edificios/Oficinas (1)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 407918194388992
+    m_Key: N3mapa2/Edificios/Cafeteria2 (1)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 407918202777600
+    m_Key: N3mapa2/Edificios/Museo
+    m_Metadata:
+      m_Items: []
+  - m_Id: 407918211166208
+    m_Key: N3mapa2/Edificios/PisosEstudiantes
+    m_Metadata:
+      m_Items: []
+  - m_Id: 407918223749120
+    m_Key: N3mapa2/Edificios/Pisos1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 440243728871424
+    m_Key: N3mapa1/Edificios/MiEdificio
+    m_Metadata:
+      m_Items: []
+  - m_Id: 440365736980480
+    m_Key: N3mapa1/Edificios/Oficinas
+    m_Metadata:
+      m_Items: []
+  - m_Id: 440565222273024
+    m_Key: N3mapa1/Edificios/Oficinas (1)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 440594775339008
+    m_Key: N3mapa1/Edificios/Cafeteria2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 440906315657216
+    m_Key: N3mapa1/Edificios/Pisos1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 440945972801536
+    m_Key: N3mapa1/Edificios/Pisos1 (1)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 442842507046912
+    m_Key: N3mapa1/Edificios/Cafeteria2 (1)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 442886052311040
+    m_Key: N3mapa1/Edificios/RestauranteChino
+    m_Metadata:
+      m_Items: []
+  - m_Id: 442955065389056
+    m_Key: N3mapa1/Edificios/Bomberos
+    m_Metadata:
+      m_Items: []
+  - m_Id: 446488670040064
+    m_Key: N3mapa1/Edificios/Hotel
+    m_Metadata:
+      m_Items: []
+  - m_Id: 446537177165824
+    m_Key: N3mapa1/Edificios/Taller
+    m_Metadata:
+      m_Items: []
+  - m_Id: 446712939474944
+    m_Key: N3mapa1/Edificios/Museo 1 (2)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 446748788191232
+    m_Key: N3mapa1/Edificios/Oficinas (2)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 446775992446976
+    m_Key: N3mapa1/Edificios/Museo 1 (1)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 446805818142720
+    m_Key: N3mapa1/Edificios/Hotel (1)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 446827628523520
+    m_Key: N3mapa1/Edificios/Museo 1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 446883047862272
+    m_Key: N3mapa1/Edificios/Museo 1 (3)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 446953881268224
+    m_Key: N2mapa3/Edificios/MiEdificio
+    m_Metadata:
+      m_Items: []
+  - m_Id: 446970717204480
+    m_Key: N2mapa3/Edificios/Taller
+    m_Metadata:
+      m_Items: []
+  - m_Id: 446998856790016
+    m_Key: N2mapa3/Edificios/Hotel
+    m_Metadata:
+      m_Items: []
+  - m_Id: 447033749204992
+    m_Key: N2mapa3/Edificios/RestauranteChino
+    m_Metadata:
+      m_Items: []
+  - m_Id: 447101533351936
+    m_Key: N2mapa3/Edificios/Bomberos
+    m_Metadata:
+      m_Items: []
+  - m_Id: 447144961175552
+    m_Key: N2mapa3/Edificios/Pisos1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 447174522630144
+    m_Key: N2mapa3/Edificios/Cafeteria2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 447218575405056
+    m_Key: N2mapa3/Edificios/Museo 1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 450418808385536
+    m_Key: N2mapa2/Edificios/MiEdificio
+    m_Metadata:
+      m_Items: []
+  - m_Id: 450446901833728
+    m_Key: N2mapa2/Edificios/Oficinas
+    m_Metadata:
+      m_Items: []
+  - m_Id: 450497019572224
+    m_Key: N2mapa2/Edificios/Oficinas (1)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 450511045324800
+    m_Key: N2mapa2/Edificios/Oficinas (2)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 450535858827264
+    m_Key: N2mapa2/Edificios/Taller
+    m_Metadata:
+      m_Items: []
+  - m_Id: 450581274750976
+    m_Key: N2mapa2/Edificios/Hotel
+    m_Metadata:
+      m_Items: []
+  - m_Id: 450622265683968
+    m_Key: N2mapa2/Edificios/Pisos1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 450698471993344
+    m_Key: N2mapa2/Edificios/Museo 1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 450891015712768
+    m_Key: N2mapa1/Edificios/MiEdificio
+    m_Metadata:
+      m_Items: []
+  - m_Id: 450911983038464
+    m_Key: N2mapa1/Edificios/Taller
+    m_Metadata:
+      m_Items: []
+  - m_Id: 450944144961536
+    m_Key: N2mapa1/Edificios/Oficinas
+    m_Metadata:
+      m_Items: []
+  - m_Id: 451087766319104
+    m_Key: N2mapa1/Edificios/Hotel
+    m_Metadata:
+      m_Items: []
+  - m_Id: 451116203700224
+    m_Key: N2mapa1/Edificios/Cafeteria2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 451155282030592
+    m_Key: N2mapa1/Edificios/Pisos1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 458471939174400
+    m_Key: N1mapa3/Edificios/MiEdificio
+    m_Metadata:
+      m_Items: []
+  - m_Id: 458496563933184
+    m_Key: N1mapa3/Edificios/Pisos1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 458546295795712
+    m_Key: N1mapa3/Edificios/Cafeteria2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 458583960645632
+    m_Key: N1mapa3/Edificios/FireStation
+    m_Metadata:
+      m_Items: []
+  - m_Id: 458632325165056
+    m_Key: N1mapa3/Edificios/Museo 1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 458705637404672
+    m_Key: N1mapa2/Edificios/MiEdificio
+    m_Metadata:
+      m_Items: []
+  - m_Id: 458730111168512
+    m_Key: N1mapa2/Edificios/Taller
+    m_Metadata:
+      m_Items: []
+  - m_Id: 458762398920704
+    m_Key: N1mapa2/Edificios/Asian Fast Food
+    m_Metadata:
+      m_Items: []
+  - m_Id: 458831076454400
+    m_Key: N1mapa2/Edificios/Pisos1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 458911464484864
+    m_Key: N1mapa2/Edificios/Cafeteria2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 459003739172864
+    m_Key: N1mapa1/Edificios/model
+    m_Metadata:
+      m_Items: []
+  - m_Id: 459027034337280
+    m_Key: N1mapa1/Edificios/Cafeteria2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 459068151099392
+    m_Key: N1mapa1/Edificios/Pisos1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 459102515032064
+    m_Key: N1mapa1/Edificios/miEdificio
+    m_Metadata:
+      m_Items: []
+  m_Metadata:
+    m_Items: []
+  m_KeyGenerator:
+    rid: 3258602897091592216
+  references:
+    version: 2
+    RefIds:
+    - rid: 3258602897091592216
+      type: {class: DistributedUIDGenerator, ns: UnityEngine.Localization.Tables,
+        asm: Unity.Localization}
+      data:
+        m_CustomEpoch: 1719999601482

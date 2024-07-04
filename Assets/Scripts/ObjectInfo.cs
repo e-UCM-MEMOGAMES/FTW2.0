@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class ObjectInfo : MonoBehaviour {
 
     public GameObject info;
-    public string name;
+    public new string name;
 	// Use this for initialization
 	void Start () {
         info.SetActive(false);

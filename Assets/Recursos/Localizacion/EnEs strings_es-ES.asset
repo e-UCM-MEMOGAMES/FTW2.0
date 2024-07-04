@@ -1,0 +1,958 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: EnEs strings_es-ES
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: es-ES
+  m_SharedData: {fileID: 11400000, guid: 3c277c871fda2e14ea7cb69eab1eb04c, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 1191103885312
+    m_Localized: Nivel 1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1220417875968
+    m_Localized: Nivel 2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1237564190720
+    m_Localized: Nivel 3
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1394930282496
+    m_Localized: NIVEL 1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1421660581888
+    m_Localized: Volver
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1733632913408
+    m_Localized: Volver
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1792588050432
+    m_Localized: NIVEL 2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1998268329984
+    m_Localized: Volver
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2060880900096
+    m_Localized: NIVEL 3
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2207668957184
+    m_Localized: Puntuacion
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2248425009152
+    m_Localized: Reintentar
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2377315971072
+    m_Localized: 'Te has quedado sin gasolina...
+
+      Vuelva a intentarlo'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2442747113472
+    m_Localized: Siguiente nivel
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2472044326912
+    m_Localized: Volver a jugar
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2549534093312
+    m_Localized: Has llegado a tu destino
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2585038876672
+    m_Localized: Haz click para continuar
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2619348283392
+    m_Localized: Tu casa
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2667964461056
+    m_Localized: "La barra indica la gasolina que te queda. Ir\xE1 disminuyendo seg\xFAn
+      avances."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2936525746176
+    m_Localized: "Aqu\xED puedes ver tu consumo.\nIntenta llegar a la meta antes
+      de agotarlo."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3099042443264
+    m_Localized: "Haz clic en las flechas rojas para elegir la direcci\xF3n del coche."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3190365024256
+    m_Localized: tambien puedes cambiar la perspectiva pulsando este boton
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3293125472256
+    m_Localized: "Haz clic en el mapa para cerrarlo.\nEl n\xFAmero indica las veces
+      que puedes consultarlo"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3439280189440
+    m_Localized: "Coloca el rat\xF3n sobre los edificios para saber qu\xE9 son."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3508679143424
+    m_Localized: "Aqu\xED puedes ver en amarillo el mejor camino hasta el objetivo."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3632025235456
+    m_Localized: "La flecha az\xFAl se\xF1ala tu posici\xF3n. La flecha rosa indica
+      d\xF3nde debes llegar."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3787541639168
+    m_Localized: "Este es el mapa de la ciudad. Tendr\xE1s que memorizar la ruta
+      hasta tu destino para ganar."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3990483038208
+    m_Localized: Clic para continuar
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4018354188288
+    m_Localized: Clic para continuar
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4048767086592
+    m_Localized: Clic para continuar
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4069080100864
+    m_Localized: Clic para continuar
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4089321811968
+    m_Localized: Salir
+    m_Metadata:
+      m_Items: []
+  - m_Id: 378826388598784
+    m_Localized: Gastar menos del 50% de gasolina
+    m_Metadata:
+      m_Items: []
+  - m_Id: 378990167781376
+    m_Localized: No haber consultado el mapa
+    m_Metadata:
+      m_Items: []
+  - m_Id: 379021444706304
+    m_Localized: Tomar el camino mas corto
+    m_Metadata:
+      m_Items: []
+  - m_Id: 379289351680000
+    m_Localized: Gastar menos del 50% de gasolina
+    m_Metadata:
+      m_Items: []
+  - m_Id: 379305139040256
+    m_Localized: Gastar menos del 50% de gasolina
+    m_Metadata:
+      m_Items: []
+  - m_Id: 379317923278848
+    m_Localized: Gastar menos del 50% de gasolina
+    m_Metadata:
+      m_Items: []
+  - m_Id: 379335803596800
+    m_Localized: Gastar menos del 50% de gasolina
+    m_Metadata:
+      m_Items: []
+  - m_Id: 379378975567872
+    m_Localized: Gastar menos del 50% de gasolina
+    m_Metadata:
+      m_Items: []
+  - m_Id: 379400421044224
+    m_Localized: Gastar menos del 50% de gasolina
+    m_Metadata:
+      m_Items: []
+  - m_Id: 379484810440704
+    m_Localized: Gastar menos del 50% de gasolina
+    m_Metadata:
+      m_Items: []
+  - m_Id: 379501747040256
+    m_Localized: Gastar menos del 50% de gasolina
+    m_Metadata:
+      m_Items: []
+  - m_Id: 379517593120768
+    m_Localized: Gastar menos del 50% de gasolina
+    m_Metadata:
+      m_Items: []
+  - m_Id: 379591693889536
+    m_Localized: No haber consultado el mapa
+    m_Metadata:
+      m_Items: []
+  - m_Id: 379604461350912
+    m_Localized: No haber consultado el mapa
+    m_Metadata:
+      m_Items: []
+  - m_Id: 379619921555456
+    m_Localized: No haber consultado el mapa
+    m_Metadata:
+      m_Items: []
+  - m_Id: 379641211842560
+    m_Localized: No haber consultado el mapa
+    m_Metadata:
+      m_Items: []
+  - m_Id: 379669628252160
+    m_Localized: No haber consultado el mapa
+    m_Metadata:
+      m_Items: []
+  - m_Id: 379688938827776
+    m_Localized: No haber consultado el mapa
+    m_Metadata:
+      m_Items: []
+  - m_Id: 379702838751232
+    m_Localized: No haber consultado el mapa
+    m_Metadata:
+      m_Items: []
+  - m_Id: 379713714581504
+    m_Localized: No haber consultado el mapa
+    m_Metadata:
+      m_Items: []
+  - m_Id: 379783025455104
+    m_Localized: Tomar el camino mas corto
+    m_Metadata:
+      m_Items: []
+  - m_Id: 379795667087360
+    m_Localized: Tomar el camino mas corto
+    m_Metadata:
+      m_Items: []
+  - m_Id: 379813035700224
+    m_Localized: Tomar el camino mas corto
+    m_Metadata:
+      m_Items: []
+  - m_Id: 379832832815104
+    m_Localized: Tomar el camino mas corto
+    m_Metadata:
+      m_Items: []
+  - m_Id: 379846896316416
+    m_Localized: Tomar el camino mas corto
+    m_Metadata:
+      m_Items: []
+  - m_Id: 379859659583488
+    m_Localized: Tomar el camino mas corto
+    m_Metadata:
+      m_Items: []
+  - m_Id: 379889825017856
+    m_Localized: Tomar el camino mas corto
+    m_Metadata:
+      m_Items: []
+  - m_Id: 379902630227968
+    m_Localized: Tomar el camino mas corto
+    m_Metadata:
+      m_Items: []
+  - m_Id: 379916710506496
+    m_Localized: Tomar el camino mas corto
+    m_Metadata:
+      m_Items: []
+  - m_Id: 380346798632960
+    m_Localized: Puntuacion
+    m_Metadata:
+      m_Items: []
+  - m_Id: 380360874717184
+    m_Localized: Reintentar
+    m_Metadata:
+      m_Items: []
+  - m_Id: 380423084634112
+    m_Localized: Tienes que ir al hotel a recoger a tu amigo.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 380569763639296
+    m_Localized: Tu casa
+    m_Metadata:
+      m_Items: []
+  - m_Id: 380620560855040
+    m_Localized: Has llegado a tu destino
+    m_Metadata:
+      m_Items: []
+  - m_Id: 381017769832448
+    m_Localized: Salir
+    m_Metadata:
+      m_Items: []
+  - m_Id: 381051387179008
+    m_Localized: Volver a jugar
+    m_Metadata:
+      m_Items: []
+  - m_Id: 381066935463936
+    m_Localized: Siguiente nivel
+    m_Metadata:
+      m_Items: []
+  - m_Id: 381098979946496
+    m_Localized: 'Te has quedado sin gasolina...
+
+      Vuelva a intentarlo'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 381155322032128
+    m_Localized: Salir
+    m_Metadata:
+      m_Items: []
+  - m_Id: 381194614272000
+    m_Localized: Puntuacion
+    m_Metadata:
+      m_Items: []
+  - m_Id: 381341813370880
+    m_Localized: Reintentar
+    m_Metadata:
+      m_Items: []
+  - m_Id: 381468602986496
+    m_Localized: Necesitas ir al taller.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 381516229308416
+    m_Localized: Tu casa
+    m_Metadata:
+      m_Items: []
+  - m_Id: 381534608748544
+    m_Localized: Has llegado a tu destino
+    m_Metadata:
+      m_Items: []
+  - m_Id: 381580641234944
+    m_Localized: Salir
+    m_Metadata:
+      m_Items: []
+  - m_Id: 381594805399552
+    m_Localized: Volver a jugar
+    m_Metadata:
+      m_Items: []
+  - m_Id: 381608130703360
+    m_Localized: Siguiente nivel
+    m_Metadata:
+      m_Items: []
+  - m_Id: 381624622706688
+    m_Localized: Salir
+    m_Metadata:
+      m_Items: []
+  - m_Id: 381811445395456
+    m_Localized: Puntuacion
+    m_Metadata:
+      m_Items: []
+  - m_Id: 381822874873856
+    m_Localized: Reintentar
+    m_Metadata:
+      m_Items: []
+  - m_Id: 381894484226048
+    m_Localized: Te apetece ir a la cafeteria a tomarte algo
+    m_Metadata:
+      m_Items: []
+  - m_Id: 382261963976704
+    m_Localized: Tu casa
+    m_Metadata:
+      m_Items: []
+  - m_Id: 382284319617024
+    m_Localized: 'Te has quedado sin gasolina...
+
+      Vuelva a intentarlo'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 382334328303616
+    m_Localized: Has llegado a tu destino
+    m_Metadata:
+      m_Items: []
+  - m_Id: 382385213599744
+    m_Localized: Salir
+    m_Metadata:
+      m_Items: []
+  - m_Id: 382400648638464
+    m_Localized: Volver a jugar
+    m_Metadata:
+      m_Items: []
+  - m_Id: 382413957165056
+    m_Localized: Siguiente nivel
+    m_Metadata:
+      m_Items: []
+  - m_Id: 382431124451328
+    m_Localized: Salir
+    m_Metadata:
+      m_Items: []
+  - m_Id: 382484970926080
+    m_Localized: Puntuacion
+    m_Metadata:
+      m_Items: []
+  - m_Id: 382499135090688
+    m_Localized: Reintentar
+    m_Metadata:
+      m_Items: []
+  - m_Id: 382525433376768
+    m_Localized: Necesitar ir a las oficinas a por unos papeles.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 382665175003136
+    m_Localized: Tu casa
+    m_Metadata:
+      m_Items: []
+  - m_Id: 382701514452992
+    m_Localized: 'Te has quedado sin gasolina...
+
+      Vuelva a intentarlo'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 382743960809472
+    m_Localized: Has llegado a tu destino
+    m_Metadata:
+      m_Items: []
+  - m_Id: 382784012218368
+    m_Localized: Salir
+    m_Metadata:
+      m_Items: []
+  - m_Id: 382797744369664
+    m_Localized: Volver a jugar
+    m_Metadata:
+      m_Items: []
+  - m_Id: 382816417411072
+    m_Localized: Siguiente nivel
+    m_Metadata:
+      m_Items: []
+  - m_Id: 382833119129600
+    m_Localized: Salir
+    m_Metadata:
+      m_Items: []
+  - m_Id: 382866379960320
+    m_Localized: Puntuacion
+    m_Metadata:
+      m_Items: []
+  - m_Id: 382879755595776
+    m_Localized: Reintentar
+    m_Metadata:
+      m_Items: []
+  - m_Id: 382943827783680
+    m_Localized: Ve a visitar el museo.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 390956286406656
+    m_Localized: Tu casa
+    m_Metadata:
+      m_Items: []
+  - m_Id: 391011928043520
+    m_Localized: 'Te has quedado sin gasolina...
+
+      Vuelva a intentarlo'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 391063983550464
+    m_Localized: Has llegado a tu destino
+    m_Metadata:
+      m_Items: []
+  - m_Id: 391113388257280
+    m_Localized: Salir
+    m_Metadata:
+      m_Items: []
+  - m_Id: 391129733459968
+    m_Localized: Volver a jugar
+    m_Metadata:
+      m_Items: []
+  - m_Id: 391151808081920
+    m_Localized: Siguiente nivel
+    m_Metadata:
+      m_Items: []
+  - m_Id: 391210264096768
+    m_Localized: Salir
+    m_Metadata:
+      m_Items: []
+  - m_Id: 391240731521024
+    m_Localized: Puntuacion
+    m_Metadata:
+      m_Items: []
+  - m_Id: 391255151538176
+    m_Localized: Reintentar
+    m_Metadata:
+      m_Items: []
+  - m_Id: 391292657004544
+    m_Localized: Ve a ver a los bomberos.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 391334151254016
+    m_Localized: Tu casa
+    m_Metadata:
+      m_Items: []
+  - m_Id: 391355122774016
+    m_Localized: 'Te has quedado sin gasolina...
+
+      Vuelva a intentarlo'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 391420587470848
+    m_Localized: Has llegado a tu destino
+    m_Metadata:
+      m_Items: []
+  - m_Id: 391466439602176
+    m_Localized: Salir
+    m_Metadata:
+      m_Items: []
+  - m_Id: 391485955698688
+    m_Localized: Volver a jugar
+    m_Metadata:
+      m_Items: []
+  - m_Id: 391504989450240
+    m_Localized: Siguiente nivel
+    m_Metadata:
+      m_Items: []
+  - m_Id: 391522269982720
+    m_Localized: Salir
+    m_Metadata:
+      m_Items: []
+  - m_Id: 391585876602880
+    m_Localized: Puntuacion
+    m_Metadata:
+      m_Items: []
+  - m_Id: 391598727950336
+    m_Localized: Reintentar
+    m_Metadata:
+      m_Items: []
+  - m_Id: 391688980983808
+    m_Localized: Tienes reserva en el restaurante chino.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 391749672562688
+    m_Localized: Tu casa
+    m_Metadata:
+      m_Items: []
+  - m_Id: 391778936221696
+    m_Localized: 'Te has quedado sin gasolina...
+
+      Vuelva a intentarlo'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 391819990069248
+    m_Localized: Has llegado a tu destino
+    m_Metadata:
+      m_Items: []
+  - m_Id: 391869919064064
+    m_Localized: Salir
+    m_Metadata:
+      m_Items: []
+  - m_Id: 391890752172032
+    m_Localized: Volver a jugar
+    m_Metadata:
+      m_Items: []
+  - m_Id: 391906514366464
+    m_Localized: Siguiente nivel
+    m_Metadata:
+      m_Items: []
+  - m_Id: 391923773927424
+    m_Localized: Salir
+    m_Metadata:
+      m_Items: []
+  - m_Id: 391946523832320
+    m_Localized: Puntuacion
+    m_Metadata:
+      m_Items: []
+  - m_Id: 391957076701184
+    m_Localized: Reintentar
+    m_Metadata:
+      m_Items: []
+  - m_Id: 391993319682048
+    m_Localized: Tienes que ir al museo de nuevo.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 392060822810624
+    m_Localized: Tu casa
+    m_Metadata:
+      m_Items: []
+  - m_Id: 392081878216704
+    m_Localized: 'Te has quedado sin gasolina...
+
+      Vuelva a intentarlo'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 392126040043520
+    m_Localized: Has llegado a tu destino
+    m_Metadata:
+      m_Items: []
+  - m_Id: 392174069018624
+    m_Localized: Salir
+    m_Metadata:
+      m_Items: []
+  - m_Id: 392199679438848
+    m_Localized: Volver a jugar
+    m_Metadata:
+      m_Items: []
+  - m_Id: 392229224116224
+    m_Localized: Siguiente nivel
+    m_Metadata:
+      m_Items: []
+  - m_Id: 392281292206080
+    m_Localized: Salir
+    m_Metadata:
+      m_Items: []
+  - m_Id: 392315664527360
+    m_Localized: Puntuacion
+    m_Metadata:
+      m_Items: []
+  - m_Id: 392326385168384
+    m_Localized: Reintentar
+    m_Metadata:
+      m_Items: []
+  - m_Id: 392364813381632
+    m_Localized: Ve al taller.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 392418211065856
+    m_Localized: Tu casa
+    m_Metadata:
+      m_Items: []
+  - m_Id: 392435290271744
+    m_Localized: 'Te has quedado sin gasolina...
+
+      Vuelva a intentarlo'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 392482337779712
+    m_Localized: Has llegado a tu destino
+    m_Metadata:
+      m_Items: []
+  - m_Id: 392523278381056
+    m_Localized: Salir
+    m_Metadata:
+      m_Items: []
+  - m_Id: 392556090421248
+    m_Localized: Volver a jugar
+    m_Metadata:
+      m_Items: []
+  - m_Id: 392572456595456
+    m_Localized: Salir
+    m_Metadata:
+      m_Items: []
+  - m_Id: 392702018646016
+    m_Localized: Oficinas
+    m_Metadata:
+      m_Items: []
+  - m_Id: 392823116591104
+    m_Localized: Oficinas
+    m_Metadata:
+      m_Items: []
+  - m_Id: 392875348258816
+    m_Localized: Tu casa
+    m_Metadata:
+      m_Items: []
+  - m_Id: 392979111145472
+    m_Localized: Residencia de ancianos
+    m_Metadata:
+      m_Items: []
+  - m_Id: 393016973127680
+    m_Localized: Cafeteria
+    m_Metadata:
+      m_Items: []
+  - m_Id: 393093523369984
+    m_Localized: Residencia de ancianos
+    m_Metadata:
+      m_Items: []
+  - m_Id: 393146019278848
+    m_Localized: Cafeteria
+    m_Metadata:
+      m_Items: []
+  - m_Id: 393193935007744
+    m_Localized: Restaurante chino
+    m_Metadata:
+      m_Items: []
+  - m_Id: 393273387708416
+    m_Localized: Pisos de estudiantes
+    m_Metadata:
+      m_Items: []
+  - m_Id: 393384356409344
+    m_Localized: Taller
+    m_Metadata:
+      m_Items: []
+  - m_Id: 393418221219840
+    m_Localized: Oficinas
+    m_Metadata:
+      m_Items: []
+  - m_Id: 407516317151232
+    m_Localized: Hotel
+    m_Metadata:
+      m_Items: []
+  - m_Id: 407577054867456
+    m_Localized: Museo
+    m_Metadata:
+      m_Items: []
+  - m_Id: 407620893732864
+    m_Localized: Museo
+    m_Metadata:
+      m_Items: []
+  - m_Id: 407652929826816
+    m_Localized: Museo
+    m_Metadata:
+      m_Items: []
+  - m_Id: 407733242359808
+    m_Localized: Tu casa
+    m_Metadata:
+      m_Items: []
+  - m_Id: 407847558115328
+    m_Localized: Oficinas
+    m_Metadata:
+      m_Items: []
+  - m_Id: 407918123085824
+    m_Localized: Oficinas
+    m_Metadata:
+      m_Items: []
+  - m_Id: 407918139863040
+    m_Localized: Museo
+    m_Metadata:
+      m_Items: []
+  - m_Id: 407918152445952
+    m_Localized: Bomberos
+    m_Metadata:
+      m_Items: []
+  - m_Id: 407918160834560
+    m_Localized: Cafeteria
+    m_Metadata:
+      m_Items: []
+  - m_Id: 407918169223168
+    m_Localized: Pisos de estudiantes
+    m_Metadata:
+      m_Items: []
+  - m_Id: 407918181806080
+    m_Localized: Oficinas
+    m_Metadata:
+      m_Items: []
+  - m_Id: 407918194388992
+    m_Localized: Cafeteria
+    m_Metadata:
+      m_Items: []
+  - m_Id: 407918202777600
+    m_Localized: Museo
+    m_Metadata:
+      m_Items: []
+  - m_Id: 407918211166208
+    m_Localized: Pisos de estudiantes
+    m_Metadata:
+      m_Items: []
+  - m_Id: 407918223749120
+    m_Localized: Pisos
+    m_Metadata:
+      m_Items: []
+  - m_Id: 440243728871424
+    m_Localized: Tu casa
+    m_Metadata:
+      m_Items: []
+  - m_Id: 440365736980480
+    m_Localized: Oficinas
+    m_Metadata:
+      m_Items: []
+  - m_Id: 440565222273024
+    m_Localized: Oficinas
+    m_Metadata:
+      m_Items: []
+  - m_Id: 440594775339008
+    m_Localized: Cafeteria
+    m_Metadata:
+      m_Items: []
+  - m_Id: 440906315657216
+    m_Localized: Residencia de ancianos
+    m_Metadata:
+      m_Items: []
+  - m_Id: 440945972801536
+    m_Localized: Residencia de ancianos
+    m_Metadata:
+      m_Items: []
+  - m_Id: 442842507046912
+    m_Localized: Cafeteria
+    m_Metadata:
+      m_Items: []
+  - m_Id: 442886052311040
+    m_Localized: Restaurante chino
+    m_Metadata:
+      m_Items: []
+  - m_Id: 442955065389056
+    m_Localized: "Estaci\xF3n de Bomberos"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 446488670040064
+    m_Localized: Hotel
+    m_Metadata:
+      m_Items: []
+  - m_Id: 446537177165824
+    m_Localized: Taller
+    m_Metadata:
+      m_Items: []
+  - m_Id: 446712939474944
+    m_Localized: Museo
+    m_Metadata:
+      m_Items: []
+  - m_Id: 446748788191232
+    m_Localized: Oficinas
+    m_Metadata:
+      m_Items: []
+  - m_Id: 446775992446976
+    m_Localized: Museo
+    m_Metadata:
+      m_Items: []
+  - m_Id: 446805818142720
+    m_Localized: Hotel
+    m_Metadata:
+      m_Items: []
+  - m_Id: 446827628523520
+    m_Localized: Museo
+    m_Metadata:
+      m_Items: []
+  - m_Id: 446883047862272
+    m_Localized: Museo
+    m_Metadata:
+      m_Items: []
+  - m_Id: 446953881268224
+    m_Localized: Tu casa
+    m_Metadata:
+      m_Items: []
+  - m_Id: 446970717204480
+    m_Localized: Taller
+    m_Metadata:
+      m_Items: []
+  - m_Id: 446998856790016
+    m_Localized: Hotel
+    m_Metadata:
+      m_Items: []
+  - m_Id: 447033749204992
+    m_Localized: Restaurante chino
+    m_Metadata:
+      m_Items: []
+  - m_Id: 447101533351936
+    m_Localized: "Estaci\xF3n de Bomberos"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 447144961175552
+    m_Localized: Residencia de ancianos
+    m_Metadata:
+      m_Items: []
+  - m_Id: 447174522630144
+    m_Localized: Cafeteria
+    m_Metadata:
+      m_Items: []
+  - m_Id: 447218575405056
+    m_Localized: Museo
+    m_Metadata:
+      m_Items: []
+  - m_Id: 450418808385536
+    m_Localized: Tu casa
+    m_Metadata:
+      m_Items: []
+  - m_Id: 450446901833728
+    m_Localized: Oficinas
+    m_Metadata:
+      m_Items: []
+  - m_Id: 450497019572224
+    m_Localized: Oficinas
+    m_Metadata:
+      m_Items: []
+  - m_Id: 450511045324800
+    m_Localized: Oficinas
+    m_Metadata:
+      m_Items: []
+  - m_Id: 450535858827264
+    m_Localized: Taller
+    m_Metadata:
+      m_Items: []
+  - m_Id: 450581274750976
+    m_Localized: Hotel
+    m_Metadata:
+      m_Items: []
+  - m_Id: 450622265683968
+    m_Localized: Residencia de ancianos
+    m_Metadata:
+      m_Items: []
+  - m_Id: 450698471993344
+    m_Localized: Museo
+    m_Metadata:
+      m_Items: []
+  - m_Id: 450891015712768
+    m_Localized: Tu casa
+    m_Metadata:
+      m_Items: []
+  - m_Id: 450911983038464
+    m_Localized: Taller
+    m_Metadata:
+      m_Items: []
+  - m_Id: 450944144961536
+    m_Localized: Oficinas
+    m_Metadata:
+      m_Items: []
+  - m_Id: 451087766319104
+    m_Localized: Hotel
+    m_Metadata:
+      m_Items: []
+  - m_Id: 451116203700224
+    m_Localized: Cafeteria
+    m_Metadata:
+      m_Items: []
+  - m_Id: 451155282030592
+    m_Localized: Residencia de ancianos
+    m_Metadata:
+      m_Items: []
+  - m_Id: 458471939174400
+    m_Localized: Tu casa
+    m_Metadata:
+      m_Items: []
+  - m_Id: 458496563933184
+    m_Localized: Residencia de ancianos
+    m_Metadata:
+      m_Items: []
+  - m_Id: 458546295795712
+    m_Localized: Cafeteria
+    m_Metadata:
+      m_Items: []
+  - m_Id: 458583960645632
+    m_Localized: "Estaci\xF3n de Bomberos"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 458632325165056
+    m_Localized: Museo
+    m_Metadata:
+      m_Items: []
+  - m_Id: 458705637404672
+    m_Localized: Tu casa
+    m_Metadata:
+      m_Items: []
+  - m_Id: 458730111168512
+    m_Localized: Taller
+    m_Metadata:
+      m_Items: []
+  - m_Id: 458762398920704
+    m_Localized: Restaurante chino
+    m_Metadata:
+      m_Items: []
+  - m_Id: 458831076454400
+    m_Localized: Residencia de ancianos
+    m_Metadata:
+      m_Items: []
+  - m_Id: 458911464484864
+    m_Localized: Cafeteria
+    m_Metadata:
+      m_Items: []
+  - m_Id: 459003739172864
+    m_Localized: Hotel
+    m_Metadata:
+      m_Items: []
+  - m_Id: 459027034337280
+    m_Localized: Cafeteria
+    m_Metadata:
+      m_Items: []
+  - m_Id: 459068151099392
+    m_Localized: Residencia de ancianos
+    m_Metadata:
+      m_Items: []
+  - m_Id: 459102515032064
+    m_Localized: Tu casa
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds: []

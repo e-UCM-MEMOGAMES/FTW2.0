@@ -251,7 +251,7 @@ public class GM : MonoBehaviour
              * es mayor al que teníamos anteriormente */
             //Tracker.T.setVar("Estrellas " + nivelMapa, numEstr);
 
-            Xasu.HighLevel.CompletableTracker.Instance.Completed(nivelMapa, Xasu.HighLevel.CompletableTracker.CompletableType.Level);
+            //Xasu.HighLevel.CompletableTracker.Instance.Completed(nivelMapa, Xasu.HighLevel.CompletableTracker.CompletableType.Level);
             //Tracker.T.Completable.Completed(nivelMapa, CompletableTracker.Completable.Level, true);
 
             int estrellasActuales = PlayerPrefs.HasKey(nivelMapa) ? PlayerPrefs.GetInt(nivelMapa) : 0;
@@ -267,7 +267,7 @@ public class GM : MonoBehaviour
         else
         {
             panelGameOver.gameObject.SetActive(true);
-            Xasu.HighLevel.CompletableTracker.Instance.Completed(nivelMapa, Xasu.HighLevel.CompletableTracker.CompletableType.Level);
+            //Xasu.HighLevel.CompletableTracker.Instance.Completed(nivelMapa, Xasu.HighLevel.CompletableTracker.CompletableType.Level);
             //Tracker.T.Completable.Completed(nivelMapa, CompletableTracker.Completable.Level, false);
         }
     }
