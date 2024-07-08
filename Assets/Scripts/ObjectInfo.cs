@@ -12,10 +12,6 @@ public class ObjectInfo : MonoBehaviour {
         info.SetActive(false);
 	}
 	
-	// Update is called once per frame
-	void Update () {
-		
-	}
     private void OnMouseEnter()
     {
         info.SetActive(true);

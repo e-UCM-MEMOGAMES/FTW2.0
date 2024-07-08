@@ -385,7 +385,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 382431124451328
-    m_Localized: EXI
+    m_Localized: EXIT
     m_Metadata:
       m_Items: []
   - m_Id: 382484970926080
@@ -569,7 +569,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 392060822810624
-    m_Localized: Hom
+    m_Localized: Home
     m_Metadata:
       m_Items: []
   - m_Id: 392081878216704
@@ -954,6 +954,12 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 459102515032064
     m_Localized: Home
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1954527508099072
+    m_Localized: 'You ran out of fuel...
+
+      Try again'
     m_Metadata:
       m_Items: []
   references:

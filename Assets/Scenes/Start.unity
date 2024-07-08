@@ -9719,6 +9719,7 @@ GameObject:
   m_Component:
   - component: {fileID: 274373282}
   - component: {fileID: 274373281}
+  - component: {fileID: 274373283}
   m_Layer: 0
   m_Name: Tracker
   m_TagString: Untagged
@@ -9733,12 +9734,12 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 274373280}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ce9251e9e3ed36f4eb38a5089a747a25, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  AutoStart: 1
+  AutoStart: 0
   processingLoopTime: 1
 --- !u!4 &274373282
 Transform:
@@ -9755,6 +9756,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &274373283
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 274373280}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 980c9b44d03890e408b4211674f841df, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &277947588 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4608268793167926, guid: b4765182917a269489257f4524c513ee,

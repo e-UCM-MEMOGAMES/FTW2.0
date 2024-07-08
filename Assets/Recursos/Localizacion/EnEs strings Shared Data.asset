@@ -927,6 +927,10 @@ MonoBehaviour:
     m_Key: N1mapa1/Edificios/miEdificio
     m_Metadata:
       m_Items: []
+  - m_Id: 1954527508099072
+    m_Key: N1mapa2/Canvas/PanelGameOver/Text
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

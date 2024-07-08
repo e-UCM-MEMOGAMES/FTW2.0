@@ -117,7 +117,7 @@ public class GM : MonoBehaviour
         aS = GameObject.Find("SoundManager").GetComponent<AudioSource>();
         StartCoroutine(fadeOut());
         consumoIdeal = -1;
-        nivel = GameObject.Find("Nivel").gameObject;
+        nivel = GameObject.Find("Nivel");
         num = initNum;
 
         //Se inicializan los atributos para el A*
@@ -187,15 +187,15 @@ public class GM : MonoBehaviour
             paused = !paused;
             car.GetComponent<Car>().OnPause();
             car.transform.Find("Posicion").gameObject.SetActive(paused);
-            cameraPausa.gameObject.SetActive(paused);
-            cameraPrincipal.gameObject.SetActive(!paused);
+            cameraPausa.SetActive(paused);
+            cameraPrincipal.SetActive(!paused);
 
             if (paused)
             {
                 ImageConsumo.SetActive(false);
                 metaO.GetComponent<MeshRenderer>().enabled = true;
-                x = Mathf.FloorToInt(car.gameObject.transform.position.x);
-                y = Mathf.FloorToInt(-car.gameObject.transform.position.y);
+                x = Mathf.FloorToInt(car.transform.position.x);
+                y = Mathf.FloorToInt(-car.transform.position.y);
                 Posicion pos = car.GetComponentInChildren<Car>().UltimaCasilla();
 
                 if (texto != null) texto.GetComponent<Text>().text = (num - 1).ToString();
@@ -237,7 +237,7 @@ public class GM : MonoBehaviour
         finished = true;
         if (win) //Si se ha ganado se activa el panel de victoria y se dan las estrellas correspondientes según el consumo.
         {
-            panelWin.gameObject.SetActive(true);
+            panelWin.SetActive(true);
             Car c = car.GetComponent<Car>();
             int consumo = c.GetConsumoTotal();
             float maxGasolina = c.GetCombustibleMax();
@@ -251,7 +251,7 @@ public class GM : MonoBehaviour
              * es mayor al que teníamos anteriormente */
             //Tracker.T.setVar("Estrellas " + nivelMapa, numEstr);
 
-            //Xasu.HighLevel.CompletableTracker.Instance.Completed(nivelMapa, Xasu.HighLevel.CompletableTracker.CompletableType.Level);
+            Xasu.HighLevel.CompletableTracker.Instance.Completed(nivelMapa, Xasu.HighLevel.CompletableTracker.CompletableType.Level);
             //Tracker.T.Completable.Completed(nivelMapa, CompletableTracker.Completable.Level, true);
 
             int estrellasActuales = PlayerPrefs.HasKey(nivelMapa) ? PlayerPrefs.GetInt(nivelMapa) : 0;
@@ -266,8 +266,8 @@ public class GM : MonoBehaviour
         }
         else
         {
-            panelGameOver.gameObject.SetActive(true);
-            //Xasu.HighLevel.CompletableTracker.Instance.Completed(nivelMapa, Xasu.HighLevel.CompletableTracker.CompletableType.Level);
+            panelGameOver.SetActive(true);
+            Xasu.HighLevel.CompletableTracker.Instance.Completed(nivelMapa, Xasu.HighLevel.CompletableTracker.CompletableType.Level);
             //Tracker.T.Completable.Completed(nivelMapa, CompletableTracker.Completable.Level, false);
         }
     }

@@ -7,10 +7,6 @@ using Xasu;
 
 public class InteractedTracker : MonoBehaviour
 {
-
-    // Use this for initialization
-    void Start() { }
-
     // Update is called once per frame
     void Update()
     {
@@ -39,20 +35,8 @@ public class InteractedTracker : MonoBehaviour
             Scene scene = SceneManager.GetActiveScene();
             string name = scene.name;
 
-            //Xasu.HighLevel.GameObjectTracker.Instance.Interacted(name);
+            Xasu.HighLevel.GameObjectTracker.Instance.Interacted(name);
             //Tracker.T.GameObject.Interacted(name);
         }
-    }
-
-    private async Task CloseTracker()
-    {
-        //var progress = new Progress<float>();
-        //progress.ProgressChanged += (_, p) =>
-        //{
-        //    Debug.Log("Finalization progress: " + p);
-        //};
-        //await XasuTracker.Instance.Finalize(progress);
-        //Debug.Log("Tracker finalized");
-        //Application.Quit();
     }
 }

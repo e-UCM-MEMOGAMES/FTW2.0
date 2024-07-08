@@ -953,6 +953,12 @@ MonoBehaviour:
     m_Localized: Tu casa
     m_Metadata:
       m_Items: []
+  - m_Id: 1954527508099072
+    m_Localized: 'Te has quedado sin gasolina...
+
+      Vuelva a intentarlo'
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []
