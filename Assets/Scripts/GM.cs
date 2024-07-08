@@ -280,4 +280,8 @@ public class GM : MonoBehaviour
     {
         get { return paused; }
     }
+    public void UpdateCarPosition(Vector3 pos)
+    {
+        cameraPrincipal.GetComponent<CameraControl>().UpdateCarPosition(pos);
+    }
 }

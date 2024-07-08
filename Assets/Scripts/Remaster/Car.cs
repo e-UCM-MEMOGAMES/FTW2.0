@@ -176,7 +176,7 @@ public class Car : MonoBehaviour {
     {
         OnMove = true;
         foreach (GameObject go in arrows) go.SetActive(false);
-       Vector3 vAux = new Vector3(v.x+0.5f, v.y, v.z);
+        Vector3 vAux = new Vector3(v.x+0.5f, v.y, v.z);
         car.transform.LookAt(vAux, car.transform.up);
         while (transform.position != v)
         {
@@ -197,7 +197,7 @@ public class Car : MonoBehaviour {
         }
         OnMove = false;
         showArrows();
-
+        gm.UpdateCarPosition(v);
     }
     // Update is called once per frame
     void Update () {

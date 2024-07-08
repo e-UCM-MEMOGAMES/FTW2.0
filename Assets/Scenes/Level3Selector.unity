@@ -6019,7 +6019,7 @@ MonoBehaviour:
         m_VariantData:
         - localeIdentifier:
             m_Code: es-ES
-          value: -10.999985
+          value: -0.99998474
         - localeIdentifier:
             m_Code: en-US
           value: 0.9999695
@@ -6031,7 +6031,7 @@ MonoBehaviour:
         m_VariantData:
         - localeIdentifier:
             m_Code: es-ES
-          value: 22.063
+          value: 0.06300354
         - localeIdentifier:
             m_Code: en-US
           value: -0.029922485
@@ -6043,7 +6043,7 @@ MonoBehaviour:
         m_VariantData:
         - localeIdentifier:
             m_Code: es-ES
-          value: 0.7478865
+          value: 0.82122207
         - localeIdentifier:
             m_Code: en-US
           value: 0.82122207
@@ -6055,7 +6055,7 @@ MonoBehaviour:
         m_VariantData:
         - localeIdentifier:
             m_Code: es-ES
-          value: -21.925
+          value: 0.07500076
         - localeIdentifier:
             m_Code: en-US
           value: -0.059900045
@@ -6067,7 +6067,7 @@ MonoBehaviour:
         m_VariantData:
         - localeIdentifier:
             m_Code: es-ES
-          value: 0.83875
+          value: 0.84000003
         - localeIdentifier:
             m_Code: en-US
           value: 0.83375
@@ -6079,7 +6079,7 @@ MonoBehaviour:
         m_VariantData:
         - localeIdentifier:
             m_Code: es-ES
-          value: 22.0463
+          value: 0.046300888
         - localeIdentifier:
             m_Code: en-US
           value: 0.04629898
@@ -6091,7 +6091,7 @@ MonoBehaviour:
         m_VariantData:
         - localeIdentifier:
             m_Code: es-ES
-          value: 0.9753271
+          value: 1
         - localeIdentifier:
             m_Code: en-US
           value: 1
@@ -6103,7 +6103,7 @@ MonoBehaviour:
         m_VariantData:
         - localeIdentifier:
             m_Code: es-ES
-          value: 0.615
+          value: 0.58875
         - localeIdentifier:
             m_Code: en-US
           value: 0.5875001

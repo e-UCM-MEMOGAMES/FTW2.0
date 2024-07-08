@@ -52369,7 +52369,7 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1447660643}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -52378,7 +52378,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.615, y: 0.85010535}
   m_AnchorMax: {x: 0.8112501, y: 0.9753271}
-  m_AnchoredPosition: {x: 22.0231, y: -18.113}
+  m_AnchoredPosition: {x: 22.023132, y: -18.112976}
   m_SizeDelta: {x: 44.0463, y: 58.442}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1447660645
@@ -52487,7 +52487,7 @@ MonoBehaviour:
         m_VariantData:
         - localeIdentifier:
             m_Code: es-ES
-          value: -18.113
+          value: 0.08206177
         - localeIdentifier:
             m_Code: en-US
           value: 0.028994
@@ -52499,7 +52499,7 @@ MonoBehaviour:
         m_VariantData:
         - localeIdentifier:
             m_Code: es-ES
-          value: 58.442
+          value: 0.044000626
         - localeIdentifier:
             m_Code: en-US
           value: -0.057999
@@ -52511,7 +52511,7 @@ MonoBehaviour:
         m_VariantData:
         - localeIdentifier:
             m_Code: es-ES
-          value: 22.0231
+          value: 0
         - localeIdentifier:
             m_Code: en-US
           value: 1
@@ -52523,7 +52523,7 @@ MonoBehaviour:
         m_VariantData:
         - localeIdentifier:
             m_Code: es-ES
-          value: 0.8112501
+          value: 0.83875
         - localeIdentifier:
             m_Code: en-US
           value: 0.8375
@@ -52535,7 +52535,7 @@ MonoBehaviour:
         m_VariantData:
         - localeIdentifier:
             m_Code: es-ES
-          value: 44.0463
+          value: 0.04629898
         - localeIdentifier:
             m_Code: en-US
           value: 0.0463
@@ -52547,7 +52547,7 @@ MonoBehaviour:
         m_VariantData:
         - localeIdentifier:
             m_Code: es-ES
-          value: 0.85010535
+          value: 0.82122207
         - localeIdentifier:
             m_Code: en-US
           value: 0.82122403
@@ -52559,7 +52559,7 @@ MonoBehaviour:
         m_VariantData:
         - localeIdentifier:
             m_Code: es-ES
-          value: 0.9753271
+          value: 1
         - localeIdentifier:
             m_Code: en-US
           value: 1
@@ -52571,7 +52571,7 @@ MonoBehaviour:
         m_VariantData:
         - localeIdentifier:
             m_Code: es-ES
-          value: 0.615
+          value: 0.5875
         - localeIdentifier:
             m_Code: en-US
           value: 0.58875

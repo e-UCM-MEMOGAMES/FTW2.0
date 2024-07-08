@@ -53138,7 +53138,7 @@ MonoBehaviour:
         m_VariantData:
         - localeIdentifier:
             m_Code: es-ES
-          value: 0
+          value: 0.7071068
         - localeIdentifier:
             m_Code: en-US
           value: 0.7071068
@@ -53150,7 +53150,7 @@ MonoBehaviour:
         m_VariantData:
         - localeIdentifier:
             m_Code: es-ES
-          value: 1
+          value: 0.7071068
         - localeIdentifier:
             m_Code: en-US
           value: 0.7071068
