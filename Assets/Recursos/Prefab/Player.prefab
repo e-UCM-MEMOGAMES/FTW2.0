@@ -528,6 +528,7 @@ MonoBehaviour:
   posX: 5
   posY: 2
   combustible: {fileID: 0}
+  consumo: 8
 --- !u!82 &82463267222173980
 AudioSource:
   m_ObjectHideFlags: 0
@@ -537,7 +538,8 @@ AudioSource:
   m_GameObject: {fileID: 1336536387731292}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 7545759462578350472, guid: 5e2640e44930a5342aa4222e027f3ac7,
+    type: 2}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
   m_Volume: 1
@@ -913,3 +915,4 @@ MonoBehaviour:
   posX: 4
   posY: 2
   combustible: {fileID: 0}
+  consumo: 8

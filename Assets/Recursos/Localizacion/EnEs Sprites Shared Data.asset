@@ -35,6 +35,10 @@ MonoBehaviour:
     m_Key: Level3Selector/Canvas/Image (1)
     m_Metadata:
       m_Items: []
+  - m_Id: 2173558261477376
+    m_Key: Settings/SettingsManager
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items:
     - rid: 3258602897091592221

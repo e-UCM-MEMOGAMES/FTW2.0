@@ -959,6 +959,18 @@ MonoBehaviour:
       Vuelva a intentarlo'
     m_Metadata:
       m_Items: []
+  - m_Id: 2166539467026432
+    m_Localized: Musica
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2166554218393600
+    m_Localized: Efectos de sonido
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2175342619062272
+    m_Localized: AJUSTES
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []
