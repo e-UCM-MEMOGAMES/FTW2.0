@@ -89,7 +89,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 2667964461056
-    m_Localized: This bar represents you remaining fuel. It will deplete each time
+    m_Localized: This bar represents your remaining fuel. It will decrease each time
       you move.
     m_Metadata:
       m_Items: []
@@ -157,7 +157,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 378990167781376
-    m_Localized: Not check the map
+    m_Localized: Didn't check the map
     m_Metadata:
       m_Items: []
   - m_Id: 379021444706304

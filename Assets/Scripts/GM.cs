@@ -101,6 +101,7 @@ public class GM : MonoBehaviour
     protected int num;
     protected bool finished = false;
     protected bool first = true;
+    public GameObject[] stars;
 
     IEnumerator fadeOut()
     {
@@ -232,7 +233,6 @@ public class GM : MonoBehaviour
     /// <param name="win"></param>
     public virtual void GameOver(bool win)
     {
-        string nivelMapa = string.Concat("N", this.numNivel, "mapa", this.numMapa);
         car.GetComponent<Car>().OnPause();
         finished = true;
         if (win) //Si se ha ganado se activa el panel de victoria y se dan las estrellas correspondientes según el consumo.
@@ -241,34 +241,29 @@ public class GM : MonoBehaviour
             Car c = car.GetComponent<Car>();
             int consumo = c.GetConsumoTotal();
             float maxGasolina = c.GetCombustibleMax();
-            int numEstr = 0;
-           
-            if (consumo <= consumoIdeal) numEstr++;
-            if (consumo <= maxGasolina) numEstr++;
-            if (num == initNum) numEstr++;
 
             /* Guardamos el número de estrellas que hemos conseguido si el número de estrellas 
              * es mayor al que teníamos anteriormente */
             //Tracker.T.setVar("Estrellas " + nivelMapa, numEstr);
 
-            Xasu.HighLevel.CompletableTracker.Instance.Completed(nivelMapa, Xasu.HighLevel.CompletableTracker.CompletableType.Level);
+            string nivelMapa = string.Concat("N", numNivel, "mapa", numMapa);
+            //Xasu.HighLevel.CompletableTracker.Instance.Completed(nivelMapa, Xasu.HighLevel.CompletableTracker.CompletableType.Level);
             //Tracker.T.Completable.Completed(nivelMapa, CompletableTracker.Completable.Level, true);
 
             int estrellasActuales = PlayerPrefs.HasKey(nivelMapa) ? PlayerPrefs.GetInt(nivelMapa) : 0;
 
-            if (numEstr > estrellasActuales)
-            {
-                PlayerPrefs.SetInt(nivelMapa, numEstr);
-            }
+            int numEstr = 0;
+            ActivateStar(consumo <= maxGasolina / 2, 0, ref numEstr);
+            ActivateStar(num == initNum, 1, ref numEstr);
+            ActivateStar(consumo <= consumoIdeal, 2, ref numEstr);
 
-            //for (int i = 0; i < numEstr; i++)
-            //    panelWin.transform.GetChild(i).transform.GetChild(0).gameObject.SetActive(true);
+            if (numEstr > estrellasActuales)
+                PlayerPrefs.SetInt(nivelMapa, numEstr);
         }
         else
         {
             panelGameOver.SetActive(true);
-            Xasu.HighLevel.CompletableTracker.Instance.Completed(nivelMapa, Xasu.HighLevel.CompletableTracker.CompletableType.Level);
-            //Tracker.T.Completable.Completed(nivelMapa, CompletableTracker.Completable.Level, false);
+            Xasu.HighLevel.CompletableTracker.Instance.Completed(string.Concat("N", numNivel, "mapa", numMapa), Xasu.HighLevel.CompletableTracker.CompletableType.Level);
         }
     }
 
@@ -280,8 +275,14 @@ public class GM : MonoBehaviour
     {
         get { return paused; }
     }
-    public void UpdateCarPosition(Vector3 pos)
+
+    //Activa una estrella en el menu de fin
+    void ActivateStar(bool condition, int starIndex, ref int numEstr)
     {
-        cameraPrincipal.GetComponent<CameraControl>().UpdateCarPosition(pos);
+        if (condition)
+        {
+            stars[starIndex].SetActive(true);
+            ++numEstr;
+        }
     }
 }

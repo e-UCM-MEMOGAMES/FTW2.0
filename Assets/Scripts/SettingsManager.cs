@@ -38,23 +38,27 @@ public class SettingsManager : MonoBehaviour
         ChangeSoundVolume();        
     }
 
+    //metodo que se llama cuando se selecciona un idioma en el dropdown
     public void OnDropDownChanged(TMP_Dropdown dropDown)
     {
-        Debug.Log("DROP DOWN CHANGED -> " + dropDown.value);
         LocalizationSettings.SelectedLocale = lcs[dropDown.value];
     }
 
+    //cambia el volumen de la musica
     public void ChangeMusicVolume()
     {
         mixer.SetFloat("Music", Mathf.Log10(musicSlider.value) * 20);
         PlayerPrefs.SetFloat("musicVolume", musicSlider.value);
     }
+
+    //cambia el volumen de los sonidos
     public void ChangeSoundVolume()
     {
         mixer.SetFloat("SFX", Mathf.Log10(soundSlider.value) * 20);
         PlayerPrefs.SetFloat("soundVolume", soundSlider.value);
     }
 
+    //carga de 
     private void Load()
     {
         musicSlider.value = PlayerPrefs.GetFloat("musicVolume");

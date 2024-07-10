@@ -10,8 +10,8 @@ using UnityEngine.UI;
 public class GMTutorial : GM
 {
 
-    public GameObject exitButton;
-    public GameObject manoPath, manoCombustible, manoPerspectiva;
+    public GameObject exitButton, recenterButton, mapButton;
+    public GameObject manoPath, manoCombustible, manoPerspectiva, manoRecentrar;
     public GameObject[] cartelesTutorial;
     float timeBlocked = 25;
 
@@ -35,10 +35,12 @@ public class GMTutorial : GM
     {
         aS = GameObject.Find("SoundManager").GetComponent<AudioSource>();
         StartCoroutine(fadeOut());
-        manoMapa.gameObject.SetActive(false);
-        manoPath.gameObject.SetActive(false);
-        manoPerspectiva.gameObject.SetActive(false);
-        manoCombustible.gameObject.SetActive(false);
+        recenterButton.SetActive(false);
+        manoMapa.SetActive(false);
+        manoPath.SetActive(false);
+        manoPerspectiva.SetActive(false);
+        manoCombustible.SetActive(false);
+        manoRecentrar.SetActive(false);
         foreach (GameObject go in cartelesTutorial) go.gameObject.SetActive(false);
         indTutorial = 0;
 
@@ -86,23 +88,21 @@ public class GMTutorial : GM
      public override void OnMapClicked(GameObject texto)
     {
         //Debug.Log(indTutorial);
-        if (indTutorial == 0 || indTutorial == 6 || indTutorial>= 9)
+        if (indTutorial == 0 || indTutorial == 6 || indTutorial>= cartelesTutorial.Length)
         {
-            Debug.Log(indTutorial);
             actualizaTutorial();
         }
         else return;
         
        int num = 100;
         if (texto != null) num = int.Parse(texto.GetComponent<Text>().text);
-        Debug.Log(num);
         if (num > 0)
         {
             paused = !paused;
             car.GetComponent<Car>().OnPause();
             car.transform.Find("Posicion").gameObject.SetActive(paused);
-            cameraPausa.gameObject.SetActive(paused);
-            cameraPrincipal.gameObject.SetActive(!paused);
+            cameraPausa.SetActive(paused);
+            cameraPrincipal.SetActive(!paused);
             
 
             if (paused)
@@ -153,53 +153,54 @@ public class GMTutorial : GM
         {
             case 0:
                 car.transform.Find("Coche").gameObject.GetComponent<Car>().OnPause();
-                cartelesTutorial[indTutorial].gameObject.SetActive(true);
+                cartelesTutorial[indTutorial].SetActive(true);
                 break;
             case 1:
-                cartelesTutorial[indTutorial - 1].gameObject.SetActive(false);
-                cartelesTutorial[indTutorial].gameObject.SetActive(true);
+                cartelesTutorial[indTutorial - 1].SetActive(false);
+                cartelesTutorial[indTutorial].SetActive(true);
                 break;
             case 2:
                 manoMapa.SetActive(false);
-                cartelesTutorial[indTutorial - 1].gameObject.SetActive(false);
+                cartelesTutorial[indTutorial - 1].SetActive(false);
                 manoPath.SetActive(true);
-                cartelesTutorial[indTutorial].gameObject.SetActive(true);
+                cartelesTutorial[indTutorial].SetActive(true);
                 break;
             case 3:
-                cartelesTutorial[indTutorial - 1].gameObject.SetActive(false);
+                cartelesTutorial[indTutorial - 1].SetActive(false);
                 manoPath.SetActive(false);
-                cartelesTutorial[indTutorial].gameObject.SetActive(true);
+                cartelesTutorial[indTutorial].SetActive(true);
                 break;
             case 4:
-                cartelesTutorial[indTutorial - 1].gameObject.SetActive(false);
+                cartelesTutorial[indTutorial - 1].SetActive(false);
                 manoPath.SetActive(false);
                 manoPerspectiva.SetActive(true);
-                cartelesTutorial[indTutorial].gameObject.SetActive(true);
+                cartelesTutorial[indTutorial].SetActive(true);
                 break;
             case 5:
-                cartelesTutorial[indTutorial - 1].gameObject.SetActive(false);
+                cartelesTutorial[indTutorial - 1].SetActive(false);
                 manoMapa.SetActive(true);
                 manoPerspectiva.SetActive(false);
-                cartelesTutorial[indTutorial].gameObject.SetActive(true);
+                cartelesTutorial[indTutorial].SetActive(true);
                 break;
             case 6:
-                cartelesTutorial[indTutorial - 1].gameObject.SetActive(false);
-                cartelesTutorial[indTutorial].gameObject.SetActive(true);
+                cartelesTutorial[indTutorial - 1].SetActive(false);
                 manoMapa.SetActive(false);
+                manoCombustible.SetActive(true);
                 car.transform.Find("Coche").gameObject.GetComponent<Car>().OnPause();
                 break;
             case 7:
-                cartelesTutorial[indTutorial - 1].gameObject.SetActive(false);
-                cartelesTutorial[indTutorial].gameObject.SetActive(true);
-                manoCombustible.gameObject.SetActive(true);
+                cartelesTutorial[indTutorial].SetActive(false);
+                manoCombustible.SetActive(false);
+                manoRecentrar.SetActive(true);
+                recenterButton.SetActive(true);
+                cartelesTutorial[indTutorial + 1].SetActive(true);
                 break;
             case 8:
-                cartelesTutorial[indTutorial - 1].gameObject.SetActive(false);
-                cartelesTutorial[indTutorial].gameObject.SetActive(true);
-                manoCombustible.gameObject.SetActive(false);
+                cartelesTutorial[indTutorial].SetActive(false);
+                recenterButton.SetActive(false);
+                manoRecentrar.SetActive(false);
                 break;
             case 9:
-                cartelesTutorial[indTutorial - 1].gameObject.SetActive(false);
                 exitButton.SetActive(true);
                 break;
 
@@ -209,7 +210,7 @@ public class GMTutorial : GM
     private void Update()
     {
         if (!car.transform.Find("Coche").GetComponent<Car>().IsMoving() && indTutorial == 0) actualizaTutorial();
-        if (indTutorial <= 9 && indTutorial != 6 && Input.GetMouseButtonDown(0)) actualizaTutorial();
+        if (indTutorial <= cartelesTutorial.Length && indTutorial != 6 && Input.GetMouseButtonDown(0)) actualizaTutorial();
         if (Input.GetMouseButtonDown(0))
         {
             timeBlocked = 10;

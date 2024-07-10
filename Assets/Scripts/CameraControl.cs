@@ -19,7 +19,6 @@ public class CameraControl : MonoBehaviour
     public GameObject resetCamButton;
 
     Vector3 touchStart;
-    Vector3 initPosition;
     Vector3 cameraOffset;
     float initZoom;
     //private float zoom = 3.84f;
@@ -32,7 +31,6 @@ public class CameraControl : MonoBehaviour
         posXmin = 0 + offsetXmin;
         posYmax = 50;// 0 - offsetYmax;
         posYmin = -57;
-        initPosition = Camera.main.transform.position;
         initZoom = Camera.main.orthographicSize;
         resetCamButton.SetActive(false);
 
@@ -101,10 +99,5 @@ public class CameraControl : MonoBehaviour
         Camera.main.transform.position = target.transform.position - cameraOffset;
         Camera.main.orthographicSize = initZoom;
         resetCamButton.SetActive(false);
-    }
-
-    public void UpdateCarPosition(Vector3 pos)
-    {
-        initPosition += pos;
     }
 }

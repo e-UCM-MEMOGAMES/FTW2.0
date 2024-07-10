@@ -89,8 +89,8 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 2667964461056
-    m_Localized: "La barra indica la gasolina que te queda. Ir\xE1 disminuyendo seg\xFAn
-      avances."
+    m_Localized: Esta barra indica tu energia restante. se reduce cada vez que el
+      coche se mueve.
     m_Metadata:
       m_Items: []
   - m_Id: 2936525746176

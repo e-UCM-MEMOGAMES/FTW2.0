@@ -197,7 +197,6 @@ public class Car : MonoBehaviour {
         }
         OnMove = false;
         showArrows();
-        gm.UpdateCarPosition(v);
     }
     // Update is called once per frame
     void Update () {

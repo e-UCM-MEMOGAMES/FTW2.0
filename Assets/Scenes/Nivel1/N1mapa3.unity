@@ -13226,6 +13226,7 @@ GameObject:
   - component: {fileID: 566025553}
   - component: {fileID: 566025552}
   - component: {fileID: 566025551}
+  - component: {fileID: 566025554}
   m_Layer: 5
   m_Name: Button
   m_TagString: Untagged
@@ -13347,6 +13348,22 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 566025549}
   m_CullTransparentMesh: 0
+--- !u!111 &566025554
+Animation:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 566025549}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Animation: {fileID: 7400000, guid: f6c41d779f1a1334f8735853f6718230, type: 2}
+  m_Animations:
+  - {fileID: 7400000, guid: f6c41d779f1a1334f8735853f6718230, type: 2}
+  m_WrapMode: 0
+  m_PlayAutomatically: 1
+  m_AnimatePhysics: 0
+  m_CullingType: 0
 --- !u!1 &566197188
 GameObject:
   m_ObjectHideFlags: 0
@@ -31270,6 +31287,10 @@ MonoBehaviour:
   manoMapa: {fileID: 1769675865}
   ImageConsumo: {fileID: 1953825745}
   initNum: 3
+  stars:
+  - {fileID: 537277846}
+  - {fileID: 278634245}
+  - {fileID: 1642779027}
 --- !u!4 &1354479153
 Transform:
   m_ObjectHideFlags: 0
@@ -39369,10 +39390,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 218827942}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 559.2571, y: 138.91313}
-  m_SizeDelta: {x: 141.82013, y: 134.2437}
+  m_AnchorMin: {x: 0.9098028, y: 0.68188554}
+  m_AnchorMax: {x: 0.9098028, y: 0.68188554}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 141.82013, y: 135.2437}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!111 &1769675867
 Animation:
