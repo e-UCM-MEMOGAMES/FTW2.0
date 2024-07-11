@@ -5860,8 +5860,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 329235477}
-        m_TargetAssemblyTypeName: CameraControl, Assembly-CSharp
+      - m_Target: {fileID: 1259978930}
+        m_TargetAssemblyTypeName: ChangePerspective, Assembly-CSharp
         m_MethodName: ResetCamera
         m_Mode: 1
         m_Arguments:
@@ -5872,8 +5872,8 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1259978930}
-        m_TargetAssemblyTypeName: ChangePerspective, Assembly-CSharp
+      - m_Target: {fileID: 329235477}
+        m_TargetAssemblyTypeName: CameraControl, Assembly-CSharp
         m_MethodName: ResetCamera
         m_Mode: 1
         m_Arguments:
@@ -8621,6 +8621,8 @@ MonoBehaviour:
   offsetYmax: 5
   vel: 3
   resetCamButton: {fileID: 225779723}
+  isoCam: {fileID: 2145664329}
+  cenCam: {fileID: 305245015}
 --- !u!4 &329235478
 Transform:
   m_ObjectHideFlags: 0
@@ -13103,6 +13105,8 @@ MonoBehaviour:
   offsetYmax: 5
   vel: 0
   resetCamButton: {fileID: 0}
+  isoCam: {fileID: 0}
+  cenCam: {fileID: 0}
 --- !u!81 &561706520
 AudioListener:
   m_ObjectHideFlags: 0
@@ -18766,6 +18770,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 658713254}
+  - {fileID: 225779724}
   - {fileID: 257570545}
   - {fileID: 2032992155}
   - {fileID: 1303386447}
@@ -18775,7 +18780,6 @@ RectTransform:
   - {fileID: 1749515740}
   - {fileID: 665032132}
   - {fileID: 1122110265}
-  - {fileID: 225779724}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -47052,7 +47056,6 @@ GameObject:
   - component: {fileID: 2145664335}
   - component: {fileID: 2145664334}
   - component: {fileID: 2145664333}
-  - component: {fileID: 2145664332}
   - component: {fileID: 2145664331}
   m_Layer: 0
   m_Name: CameraIso
@@ -47172,28 +47175,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 0
---- !u!114 &2145664332
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2145664329}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d9cad1b692825bc4a88f7465ad2f4215, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  target: {fileID: 0}
-  posXmax: 100
-  posXmin: 0
-  posYmax: 0
-  posYmin: 0
-  offsetXmax: 20
-  offsetXmin: 4
-  offsetYmax: 20
-  vel: 0
-  resetCamButton: {fileID: 0}
 --- !u!81 &2145664333
 AudioListener:
   m_ObjectHideFlags: 0

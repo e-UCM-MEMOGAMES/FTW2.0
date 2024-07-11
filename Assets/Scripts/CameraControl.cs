@@ -17,10 +17,15 @@ public class CameraControl : MonoBehaviour
     public float offsetYmax = 15;
     public float vel;
     public GameObject resetCamButton;
+    public GameObject isoCam;
+    public GameObject cenCam;
 
+    
     Vector3 touchStart;
-    Vector3 cameraOffset;
-    float initZoom;
+    Vector3 cameraIsoOffset;
+    Vector3 cameraCenOffset;
+    float initIsoZoom;
+    float initCenZoom;
     //private float zoom = 3.84f;
     //private float zoomAmount = 40f;
 
@@ -31,11 +36,14 @@ public class CameraControl : MonoBehaviour
         posXmin = 0 + offsetXmin;
         posYmax = 50;// 0 - offsetYmax;
         posYmin = -57;
-        initZoom = Camera.main.orthographicSize;
+        initIsoZoom = isoCam.GetComponent<Camera>().orthographicSize;
+        initCenZoom = cenCam.GetComponent<Camera>().orthographicSize;
         resetCamButton.SetActive(false);
 
         offset = target.transform.position - transform.position;
-        cameraOffset = Camera.main.ScreenToWorldPoint(target.transform.position) - Camera.main.ScreenToWorldPoint(Camera.main.transform.position);
+        
+        cameraIsoOffset = target.transform.position - isoCam.transform.position;
+        cameraCenOffset = target.transform.position - cenCam.transform.position;
     }
 
     private void Update()
@@ -96,8 +104,10 @@ public class CameraControl : MonoBehaviour
 
     public void ResetCamera()
     {
-        Camera.main.transform.position = target.transform.position - cameraOffset;
-        Camera.main.orthographicSize = initZoom;
+        isoCam.transform.position = target.transform.position - cameraIsoOffset;
+        cenCam.transform.position = target.transform.position - cameraCenOffset;
+        isoCam.GetComponent<Camera>().orthographicSize = initIsoZoom;
+        cenCam.GetComponent<Camera>().orthographicSize = initCenZoom;
         resetCamButton.SetActive(false);
     }
 }

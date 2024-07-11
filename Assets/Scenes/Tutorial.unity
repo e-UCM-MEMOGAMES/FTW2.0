@@ -4161,6 +4161,8 @@ MonoBehaviour:
   offsetYmax: 5
   vel: 3
   resetCamButton: {fileID: 2076784420}
+  isoCam: {fileID: 0}
+  cenCam: {fileID: 0}
 --- !u!4 &270863965
 Transform:
   m_ObjectHideFlags: 0
@@ -13540,7 +13542,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 346, y: -177.00012}
+  m_AnchoredPosition: {x: -356.1, y: -184.1}
   m_SizeDelta: {x: 160, y: 29}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1098805971
@@ -20146,6 +20148,8 @@ MonoBehaviour:
   offsetYmax: 20
   vel: 0
   resetCamButton: {fileID: 0}
+  isoCam: {fileID: 0}
+  cenCam: {fileID: 0}
 --- !u!81 &1580598582
 AudioListener:
   m_ObjectHideFlags: 0
@@ -22663,6 +22667,8 @@ MonoBehaviour:
   offsetYmax: 20
   vel: 0
   resetCamButton: {fileID: 0}
+  isoCam: {fileID: 0}
+  cenCam: {fileID: 0}
 --- !u!81 &1796116102
 AudioListener:
   m_ObjectHideFlags: 0
