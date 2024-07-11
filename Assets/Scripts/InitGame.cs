@@ -18,10 +18,4 @@ public class InitGame : MonoBehaviour
         if (PlayerPrefs.HasKey("soundVolume"))
             mixer.SetFloat("Music", Mathf.Log10(PlayerPrefs.GetFloat("musicVolume")) * 20);
     }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }

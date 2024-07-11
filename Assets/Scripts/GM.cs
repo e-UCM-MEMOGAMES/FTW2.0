@@ -5,6 +5,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using System.Collections;
 using Xasu.HighLevel;
+using Xasu;
 
 /// <summary>
 /// Script Game Manager. Se encarga de centralizar operaciones como llamar al canvas, poner el juego en pausa, controlar el estado de la partida...
@@ -240,30 +241,32 @@ public class GM : MonoBehaviour
             panelWin.SetActive(true);
             Car c = car.GetComponent<Car>();
             int consumo = c.GetConsumoTotal();
-            float maxGasolina = c.GetCombustibleMax();
 
-            /* Guardamos el número de estrellas que hemos conseguido si el número de estrellas 
-             * es mayor al que teníamos anteriormente */
-            //Tracker.T.setVar("Estrellas " + nivelMapa, numEstr);
 
             string nivelMapa = string.Concat("N", numNivel, "mapa", numMapa);
-            //Xasu.HighLevel.CompletableTracker.Instance.Completed(nivelMapa, Xasu.HighLevel.CompletableTracker.CompletableType.Level);
-            //Tracker.T.Completable.Completed(nivelMapa, CompletableTracker.Completable.Level, true);
 
             int estrellasActuales = PlayerPrefs.HasKey(nivelMapa) ? PlayerPrefs.GetInt(nivelMapa) : 0;
-
             int numEstr = 0;
-            ActivateStar(consumo <= maxGasolina / 2, 0, ref numEstr);
+
+            ActivateStar(consumo <= 50, 0, ref numEstr);
             ActivateStar(num == initNum, 1, ref numEstr);
             ActivateStar(consumo <= consumoIdeal, 2, ref numEstr);
 
             if (numEstr > estrellasActuales)
                 PlayerPrefs.SetInt(nivelMapa, numEstr);
+
+            /* Guardamos el número de estrellas que hemos conseguido si el número de estrellas 
+             * es mayor al que teníamos anteriormente */
+            if (XasuTracker.Instance.Status.State != TrackerState.Uninitialized)
+                Xasu.HighLevel.CompletableTracker.Instance.
+                    Completed(nivelMapa, Xasu.HighLevel.CompletableTracker.CompletableType.Level).
+                    WithResultExtensions(new Dictionary<string, object> { { "https://" + "Estrellas " + nivelMapa, numEstr } });
         }
         else
         {
             panelGameOver.SetActive(true);
-            Xasu.HighLevel.CompletableTracker.Instance.Completed(string.Concat("N", numNivel, "mapa", numMapa), Xasu.HighLevel.CompletableTracker.CompletableType.Level);
+            if (XasuTracker.Instance.Status.State != TrackerState.Uninitialized)
+                Xasu.HighLevel.CompletableTracker.Instance.Completed(string.Concat("N", numNivel, "mapa", numMapa), Xasu.HighLevel.CompletableTracker.CompletableType.Level);
         }
     }
 

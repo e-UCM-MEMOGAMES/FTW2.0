@@ -35,8 +35,8 @@ public class InteractedTracker : MonoBehaviour
             Scene scene = SceneManager.GetActiveScene();
             string name = scene.name;
 
-            Xasu.HighLevel.GameObjectTracker.Instance.Interacted(name);
-            //Tracker.T.GameObject.Interacted(name);
+            if (XasuTracker.Instance.Status.State != TrackerState.Uninitialized)
+                Xasu.HighLevel.GameObjectTracker.Instance.Interacted(name);
         }
     }
 }

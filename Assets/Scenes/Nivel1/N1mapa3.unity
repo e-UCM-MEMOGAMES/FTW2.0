@@ -5824,6 +5824,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1953825746}
+  - {fileID: 959698900}
   - {fileID: 566025550}
   - {fileID: 918686255}
   - {fileID: 124405583}
@@ -5831,9 +5832,8 @@ RectTransform:
   - {fileID: 1017457466}
   - {fileID: 811597198}
   - {fileID: 1489982995}
-  - {fileID: 1683524940}
   - {fileID: 442824810}
-  - {fileID: 959698900}
+  - {fileID: 1683524940}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -10780,12 +10780,12 @@ PrefabInstance:
     - target: {fileID: 760293588874577607, guid: 83dc20fc8b5488949beb7d022bc1efae,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -26.600567
+      value: -27.46
       objectReference: {fileID: 0}
     - target: {fileID: 760293588874577607, guid: 83dc20fc8b5488949beb7d022bc1efae,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 16.383686
+      value: 16.04
       objectReference: {fileID: 0}
     - target: {fileID: 760293588874577607, guid: 83dc20fc8b5488949beb7d022bc1efae,
         type: 3}
@@ -14871,12 +14871,12 @@ PrefabInstance:
     - target: {fileID: 3799998064246174593, guid: 699f519cb99e2ce4fb85dc574f9456b1,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -38.655766
+      value: -39
       objectReference: {fileID: 0}
     - target: {fileID: 3799998064246174593, guid: 699f519cb99e2ce4fb85dc574f9456b1,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 10.891544
+      value: 9.23
       objectReference: {fileID: 0}
     - target: {fileID: 3799998064246174593, guid: 699f519cb99e2ce4fb85dc574f9456b1,
         type: 3}
@@ -15580,12 +15580,12 @@ PrefabInstance:
     - target: {fileID: 6339208433340281721, guid: 1dc65752cd9dcda4681361e198c6a13c,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -38.6917
+      value: -28.99
       objectReference: {fileID: 0}
     - target: {fileID: 6339208433340281721, guid: 1dc65752cd9dcda4681361e198c6a13c,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 9.317044
+      value: 10.09
       objectReference: {fileID: 0}
     - target: {fileID: 6339208433340281721, guid: 1dc65752cd9dcda4681361e198c6a13c,
         type: 3}
@@ -22646,18 +22646,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 811597199}
-        m_TargetAssemblyTypeName: ChangePerspective, Assembly-CSharp
-        m_MethodName: ResetCamera
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!114 &959698902
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -29209,12 +29197,12 @@ PrefabInstance:
     - target: {fileID: 4569315748195144981, guid: f7df15e9afd74ba48ad272901ad99619,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -23.995977
+      value: -23.17
       objectReference: {fileID: 0}
     - target: {fileID: 4569315748195144981, guid: f7df15e9afd74ba48ad272901ad99619,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 16.18
+      value: 15.84
       objectReference: {fileID: 0}
     - target: {fileID: 4569315748195144981, guid: f7df15e9afd74ba48ad272901ad99619,
         type: 3}

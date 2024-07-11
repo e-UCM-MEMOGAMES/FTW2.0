@@ -36,7 +36,7 @@ public class SettingsManager : MonoBehaviour
             soundSlider.value = PlayerPrefs.GetFloat("soundVolume");
 
         ChangeMusicVolume();
-        ChangeSoundVolume();        
+        ChangeSoundVolume(); 
     }
 
     //metodo que se llama cuando se selecciona un idioma en el dropdown

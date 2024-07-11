@@ -2,6 +2,7 @@ using System;
 using System.Threading.Tasks;
 using UnityEngine;
 using Xasu;
+using Xasu.Config;
 
 public class InitTracker : MonoBehaviour
 {
@@ -13,18 +14,28 @@ public class InitTracker : MonoBehaviour
 
     private async void Init()
     {
-        await XasuTracker.Instance.Init();
-        await Task.Yield();
-        while (XasuTracker.Instance.Status.State == TrackerState.Uninitialized)
+        bool hasConfig = false;
+        try
         {
-            await Task.Yield();
+            var trackerConfig = await TrackerConfigLoader.LoadLocalAsync();
+            hasConfig = true;
         }
-        //await Xasu.HighLevel.CompletableTracker.Instance.Initialized("MyGame", Xasu.HighLevel.CompletableTracker.CompletableType.Game);
+        catch { Debug.Log("Tracker config not found."); }
+        if(hasConfig)
+        {
+            await XasuTracker.Instance.Init();
+            await Task.Yield();
+            while (XasuTracker.Instance.Status.State == TrackerState.Uninitialized)
+            {
+                await Task.Yield();
+            }
+        }
     }
 
     private async void OnApplicationQuit()
     {
-        await CloseTracker();
+        if (XasuTracker.Instance.Status.State != TrackerState.Uninitialized)
+            await CloseTracker();
     }
     private async Task CloseTracker() 
     {

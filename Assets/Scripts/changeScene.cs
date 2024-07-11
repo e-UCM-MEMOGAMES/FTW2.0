@@ -2,6 +2,7 @@
 using System.Collections;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using Xasu;
 
 public class changeScene : MonoBehaviour
 {
@@ -25,7 +26,7 @@ public class changeScene : MonoBehaviour
 
     IEnumerator LoadScene(string scene)
     {
-        if(SceneManager.GetActiveScene().name != "Start")
+        if(SceneManager.GetActiveScene().name != "Start" && XasuTracker.Instance.Status.State != TrackerState.Uninitialized)
             Xasu.HighLevel.AccessibleTracker.Instance.Accessed(scene, Xasu.HighLevel.AccessibleTracker.AccessibleType.Screen);
         if(!transicion.gameObject.activeInHierarchy)
             transicion.gameObject.SetActive(true);
