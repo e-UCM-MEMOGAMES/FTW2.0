@@ -89,7 +89,8 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 2667964461056
-    m_Localized: Este boton te permite recentrar la camara sobre el coche
+    m_Localized: "Esta barra indica la energ\xEDa restante del coche. Disminuir\xE1
+      cada vez que se mueva"
     m_Metadata:
       m_Items: []
   - m_Id: 2936525746176
@@ -968,6 +969,10 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 2175342619062272
     m_Localized: AJUSTES
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3050120716414976
+    m_Localized: Puedes centrar la camara en el coche de nuevo pulsando este boton
     m_Metadata:
       m_Items: []
   references:

@@ -175,28 +175,29 @@ public class GMTutorial : GM
                 manoMapa.SetActive(true);
                 manoPerspectiva.SetActive(false);
                 cartelesTutorial[indTutorial].SetActive(true);
-                Debug.Log("aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa");
                 break;
             case 6:
                 cartelesTutorial[indTutorial - 1].SetActive(false);
                 manoMapa.SetActive(false);
-                manoCombustible.SetActive(true);
                 car.transform.Find("Coche").gameObject.GetComponent<Car>().OnPause();
+                cartelesTutorial[indTutorial].SetActive(true);
                 break;
             case 7:
-                cartelesTutorial[indTutorial].SetActive(false);
+                cartelesTutorial[indTutorial - 1].SetActive(false);
+                manoCombustible.SetActive(true);
+                cartelesTutorial[indTutorial].SetActive(true);
+                break;
+            case 8:
+                cartelesTutorial[indTutorial - 1].SetActive(false);
                 manoCombustible.SetActive(false);
                 manoRecentrar.SetActive(true);
                 recenterButton.SetActive(true);
-                cartelesTutorial[indTutorial + 1].SetActive(true);
-                Debug.Log("VBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB");
-                break;
-            case 8:
-                cartelesTutorial[indTutorial].SetActive(false);
-                recenterButton.SetActive(false);
-                manoRecentrar.SetActive(false);
+                cartelesTutorial[indTutorial].SetActive(true);
                 break;
             case 9:
+                cartelesTutorial[indTutorial - 1].SetActive(false);
+                recenterButton.SetActive(false);
+                manoRecentrar.SetActive(false);
                 exitButton.SetActive(true);
                 break;
 

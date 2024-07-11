@@ -943,6 +943,10 @@ MonoBehaviour:
     m_Key: LevelGeneralSelector/Canvas/Ajustes/Text
     m_Metadata:
       m_Items: []
+  - m_Id: 3050120716414976
+    m_Key: Tutorial/Canvas/Tutorial6/Text (Legacy)
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

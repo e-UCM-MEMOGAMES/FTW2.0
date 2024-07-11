@@ -165,7 +165,7 @@ public class GM : MonoBehaviour
     {
         sol = solver.Solve(x, y, meta);
         sol.RemoveFirst();
-        if(consumoIdeal <=0)
+        if(consumoIdeal <=0 && first)
         {
             consumoIdeal = sol.Count;
         }
@@ -260,7 +260,7 @@ public class GM : MonoBehaviour
             if (XasuTracker.Instance.Status.State != TrackerState.Uninitialized)
                 Xasu.HighLevel.CompletableTracker.Instance.
                     Completed(nivelMapa, Xasu.HighLevel.CompletableTracker.CompletableType.Level).
-                    WithResultExtensions(new Dictionary<string, object> { { "https://" + "Estrellas " + nivelMapa, numEstr } });
+                    WithResultExtensions(new Dictionary<string, object> { { "https://" + "Estrellas" + nivelMapa, numEstr } });
         }
         else
         {
