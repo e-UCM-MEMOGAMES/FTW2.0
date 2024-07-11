@@ -90,6 +90,7 @@ public class GMTutorial : GM
         //Debug.Log(indTutorial);
         if (indTutorial == 0 || indTutorial == 6 || indTutorial>= cartelesTutorial.Length)
         {
+            Debug.Log("DAWIODJAWODAWDA");
             actualizaTutorial();
         }
         else return;
@@ -109,17 +110,14 @@ public class GMTutorial : GM
             {
                 ImageConsumo.SetActive(false);
                 metaO.GetComponent<MeshRenderer>().enabled = true;
-                x = Mathf.FloorToInt(car.gameObject.transform.position.x);
-                y = Mathf.FloorToInt(-car.gameObject.transform.position.y);
+                x = Mathf.FloorToInt(car.transform.position.x);
+                y = Mathf.FloorToInt(-car.transform.position.y);
                 Posicion pos = car.GetComponentInChildren<Car>().UltimaCasilla();
 
                 if (texto != null) texto.GetComponent<Text>().text = (num - 1).ToString();
 
                 mapa[pos.y, pos.x] = 100000;
                 Find(x, y, true);
-                if (!first)
-                    contexto.SetActive(true);
-
             }
            else
             {
@@ -129,15 +127,11 @@ public class GMTutorial : GM
                 Posicion pos = car.GetComponentInChildren<Car>().UltimaCasilla();
                 mapa[pos.y, pos.x] = 1;
                 if (!first)
-                {
-                    contexto.SetActive(false);
                     num--;
-                }
                 else
-                {
-                    contexto.SetActive(true);
                     first = false;
-                }
+                
+                contexto.SetActive(false);
                 metaO.GetComponent<MeshRenderer>().enabled = false;
 
             }
@@ -181,6 +175,7 @@ public class GMTutorial : GM
                 manoMapa.SetActive(true);
                 manoPerspectiva.SetActive(false);
                 cartelesTutorial[indTutorial].SetActive(true);
+                Debug.Log("aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa");
                 break;
             case 6:
                 cartelesTutorial[indTutorial - 1].SetActive(false);
@@ -194,6 +189,7 @@ public class GMTutorial : GM
                 manoRecentrar.SetActive(true);
                 recenterButton.SetActive(true);
                 cartelesTutorial[indTutorial + 1].SetActive(true);
+                Debug.Log("VBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB");
                 break;
             case 8:
                 cartelesTutorial[indTutorial].SetActive(false);

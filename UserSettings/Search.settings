@@ -70,6 +70,7 @@ providers = {
 objectSelectors = {
 }
 recentSearches = [
+	"p: t:texture"
 ]
 searchItemFavorites = [
 ]
@@ -78,7 +79,7 @@ showSavedSearchPanel = false
 hideTabs = false
 expandedQueries = [
 ]
-queryBuilder = true
+queryBuilder = false
 ignoredProperties = "id;name;classname;imagecontentshash"
 helperWidgetCurrentArea = "all"
 disabledIndexers = ""

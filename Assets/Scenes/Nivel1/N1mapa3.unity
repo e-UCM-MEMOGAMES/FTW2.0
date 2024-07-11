@@ -13689,6 +13689,8 @@ MonoBehaviour:
   offsetYmax: 5
   vel: 3
   resetCamButton: {fileID: 959698899}
+  isoCam: {fileID: 999767749}
+  cenCam: {fileID: 2074752440}
 --- !u!4 &576195010
 Transform:
   m_ObjectHideFlags: 0
@@ -23722,6 +23724,8 @@ MonoBehaviour:
   offsetYmax: 20
   vel: 0
   resetCamButton: {fileID: 0}
+  isoCam: {fileID: 0}
+  cenCam: {fileID: 0}
 --- !u!81 &999767753
 AudioListener:
   m_ObjectHideFlags: 0
@@ -43034,6 +43038,8 @@ MonoBehaviour:
   offsetYmax: 5
   vel: 0
   resetCamButton: {fileID: 0}
+  isoCam: {fileID: 0}
+  cenCam: {fileID: 0}
 --- !u!81 &1942859163
 AudioListener:
   m_ObjectHideFlags: 0
@@ -46108,6 +46114,8 @@ MonoBehaviour:
   offsetYmax: 20
   vel: 0
   resetCamButton: {fileID: 0}
+  isoCam: {fileID: 0}
+  cenCam: {fileID: 0}
 --- !u!81 &2074752444
 AudioListener:
   m_ObjectHideFlags: 0

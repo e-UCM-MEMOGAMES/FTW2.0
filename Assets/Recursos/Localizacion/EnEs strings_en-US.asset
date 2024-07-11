@@ -89,8 +89,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 2667964461056
-    m_Localized: This bar represents your remaining fuel. It will decrease each time
-      you move.
+    m_Localized: You may also recenter the camera on the car by tapping this button
     m_Metadata:
       m_Items: []
   - m_Id: 2936525746176

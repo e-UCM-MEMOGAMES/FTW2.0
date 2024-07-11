@@ -4161,8 +4161,8 @@ MonoBehaviour:
   offsetYmax: 5
   vel: 3
   resetCamButton: {fileID: 2076784420}
-  isoCam: {fileID: 0}
-  cenCam: {fileID: 0}
+  isoCam: {fileID: 1796116098}
+  cenCam: {fileID: 1580598578}
 --- !u!4 &270863965
 Transform:
   m_ObjectHideFlags: 0
