@@ -216,7 +216,7 @@ public class GMTutorial : GM
             timeBlocked = 10;
             recordatorio.SetActive(false);
         }
-        if(timeBlocked <= 0)
+        if(timeBlocked <= 0 && indTutorial < cartelesTutorial.Length)
         {
             recordatorio.SetActive(true);
             timeBlocked = 10;

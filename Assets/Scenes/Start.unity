@@ -9709,65 +9709,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 593589353}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &274373280
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 274373282}
-  - component: {fileID: 274373281}
-  - component: {fileID: 274373283}
-  m_Layer: 0
-  m_Name: Tracker
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &274373281
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 274373280}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ce9251e9e3ed36f4eb38a5089a747a25, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  AutoStart: 0
-  processingLoopTime: 1
---- !u!4 &274373282
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 274373280}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 116.79672, y: -45.625134, z: 18.074066}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &274373283
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 274373280}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 980c9b44d03890e408b4211674f841df, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!4 &277947588 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4608268793167926, guid: b4765182917a269489257f4524c513ee,
@@ -34658,6 +34599,7 @@ GameObject:
   m_Component:
   - component: {fileID: 972751260}
   - component: {fileID: 972751259}
+  - component: {fileID: 972751261}
   m_Layer: 0
   m_Name: SceneManager
   m_TagString: Untagged
@@ -34693,6 +34635,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &972751261
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 972751258}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f3796b83cfcbe941b1b6dbf1262d96f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mixer: {fileID: 24100000, guid: 5e2640e44930a5342aa4222e027f3ac7, type: 2}
 --- !u!4 &975454584 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4608268793167926, guid: b4765182917a269489257f4524c513ee,
@@ -35219,33 +35174,33 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_TrackedObjects:
-  - rid: 3258602897091592218
+  - rid: 3258603078228115458
   references:
     version: 2
     RefIds:
-    - rid: 3258602897091592218
+    - rid: 3258603078228115458
       type: {class: TrackedUGuiGraphic, ns: UnityEngine.Localization.PropertyVariants.TrackedObjects,
         asm: Unity.Localization}
       data:
         m_Target: {fileID: 985865156}
         m_TrackedProperties:
           items:
-          - rid: 3258602897091592219
+          - rid: 3258603078228115459
         m_UpdateType: 0
-    - rid: 3258602897091592219
+    - rid: 3258603078228115459
       type: {class: LocalizedAssetProperty, ns: UnityEngine.Localization.PropertyVariants.TrackedProperties,
         asm: Unity.Localization}
       data:
         m_Localized:
-          rid: 3258602897091592220
+          rid: 3258603078228115460
         m_PropertyPath: m_Sprite
-    - rid: 3258602897091592220
+    - rid: 3258603078228115460
       type: {class: LocalizedSprite, ns: UnityEngine.Localization, asm: Unity.Localization}
       data:
         m_TableReference:
           m_TableCollectionName: GUID:5f44dfec425617041af18d1a5b2e299d
         m_TableEntryReference:
-          m_KeyId: 260966641664
+          m_KeyId: 2908497151979520
           m_Key: 
         m_FallbackState: 0
         m_WaitForCompletion: 0
@@ -82889,4 +82844,3 @@ SceneRoots:
   - {fileID: 1464402695}
   - {fileID: 2067045216}
   - {fileID: 327577093}
-  - {fileID: 274373282}

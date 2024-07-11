@@ -38,6 +38,10 @@ MonoBehaviour:
     m_Localized: d782af22149598d4fa17db06f85e6fdf[texto_FINDTHEWAYEsp]
     m_Metadata:
       m_Items: []
+  - m_Id: 2908497151979520
+    m_Localized: d782af22149598d4fa17db06f85e6fdf[texto_FINDTHEWAYEsp]
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

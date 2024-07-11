@@ -39,6 +39,10 @@ MonoBehaviour:
     m_Key: Settings/SettingsManager
     m_Metadata:
       m_Items: []
+  - m_Id: 2908497151979520
+    m_Key: Start/Canvas/Image (1) 1
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items:
     - rid: 3258602897091592221
@@ -73,6 +77,10 @@ MonoBehaviour:
           - es-ES
           - en-US
         - m_KeyId: 1955238965248
+          m_TableCodes:
+          - es-ES
+          - en-US
+        - m_KeyId: 2908497151979520
           m_TableCodes:
           - es-ES
           - en-US

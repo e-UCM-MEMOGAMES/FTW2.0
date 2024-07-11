@@ -26,14 +26,15 @@ public class SettingsManager : MonoBehaviour
             dropdown.options.Add(new TMP_Dropdown.OptionData() { text = lcs[i].LocaleName });
         }
 
-        Debug.Log(lcs.IndexOf(LocalizationSettings.SelectedLocale));
-
-        dropdown.value = -1;
-        dropdown.value = lcs.IndexOf(LocalizationSettings.SelectedLocale);
+        int lid = lcs.IndexOf(LocalizationSettings.SelectedLocale);
+        dropdown.value = lid;
+        PlayerPrefs.SetInt("language", lid);
 
         if (PlayerPrefs.HasKey("musicVolume"))
-            Load();
-        
+            musicSlider.value = PlayerPrefs.GetFloat("musicVolume");
+        if (PlayerPrefs.HasKey("soundVolume"))
+            soundSlider.value = PlayerPrefs.GetFloat("soundVolume");
+
         ChangeMusicVolume();
         ChangeSoundVolume();        
     }
@@ -42,6 +43,7 @@ public class SettingsManager : MonoBehaviour
     public void OnDropDownChanged(TMP_Dropdown dropDown)
     {
         LocalizationSettings.SelectedLocale = lcs[dropDown.value];
+        PlayerPrefs.SetInt("language", dropDown.value);
     }
 
     //cambia el volumen de la musica
@@ -56,12 +58,5 @@ public class SettingsManager : MonoBehaviour
     {
         mixer.SetFloat("SFX", Mathf.Log10(soundSlider.value) * 20);
         PlayerPrefs.SetFloat("soundVolume", soundSlider.value);
-    }
-
-    //carga de 
-    private void Load()
-    {
-        musicSlider.value = PlayerPrefs.GetFloat("musicVolume");
-        soundSlider.value = PlayerPrefs.GetFloat("soundVolume");
     }
 }

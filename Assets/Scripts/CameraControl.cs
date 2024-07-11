@@ -35,7 +35,7 @@ public class CameraControl : MonoBehaviour
         resetCamButton.SetActive(false);
 
         offset = target.transform.position - transform.position;
-        cameraOffset = target.transform.position - Camera.main.transform.position;
+        cameraOffset = Camera.main.ScreenToWorldPoint(target.transform.position) - Camera.main.ScreenToWorldPoint(Camera.main.transform.position);
     }
 
     private void Update()
