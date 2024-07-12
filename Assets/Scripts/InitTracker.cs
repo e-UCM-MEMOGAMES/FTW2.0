@@ -12,6 +12,9 @@ public class InitTracker : MonoBehaviour
         Init();
     }
 
+    /// <summary>
+    /// Inicializa el tracker
+    /// </summary>
     private async void Init()
     {
         bool hasConfig = false;
@@ -37,6 +40,10 @@ public class InitTracker : MonoBehaviour
         if (XasuTracker.Instance.Status.State != TrackerState.Uninitialized)
             await CloseTracker();
     }
+
+    /// <summary>
+    /// Cierra el tracker
+    /// </summary>
     private async Task CloseTracker() 
     {
         var progress = new Progress<float>();

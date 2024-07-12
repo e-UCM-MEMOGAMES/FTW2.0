@@ -43,6 +43,7 @@ public class GMTutorial : GM
         manoRecentrar.SetActive(false);
         foreach (GameObject go in cartelesTutorial) go.gameObject.SetActive(false);
         indTutorial = 0;
+        num = 3;
 
         nivel = GameObject.Find("Nivel").gameObject;
 
@@ -83,28 +84,25 @@ public class GMTutorial : GM
 
 
     /// <summary>
-    /// Se llama cuando se pulsa el botón de Pausa
+    /// Se llama cuando se pulsa el botón del mapa
     /// </summary>
      public override void OnMapClicked(GameObject texto)
     {
         //Debug.Log(indTutorial);
         if (indTutorial == 0 || indTutorial == 6 || indTutorial>= cartelesTutorial.Length)
         {
-            Debug.Log("DAWIODJAWODAWDA");
             actualizaTutorial();
         }
         else return;
-        
-       int num = 100;
-        if (texto != null) num = int.Parse(texto.GetComponent<Text>().text);
-        if (num > 0)
+
+        if (num > 0 && !finished)
         {
             paused = !paused;
             car.GetComponent<Car>().OnPause();
             car.transform.Find("Posicion").gameObject.SetActive(paused);
             cameraPausa.SetActive(paused);
             cameraPrincipal.SetActive(!paused);
-            
+
 
             if (paused)
             {
@@ -130,7 +128,7 @@ public class GMTutorial : GM
                     num--;
                 else
                     first = false;
-                
+
                 contexto.SetActive(false);
                 metaO.GetComponent<MeshRenderer>().enabled = false;
 
@@ -140,7 +138,9 @@ public class GMTutorial : GM
 
     }
 
-    
+    /// <summary>
+    /// Actualiza el tutorial mostrando y ocultando los elementos opertunos
+    /// </summary>
     void actualizaTutorial()
     {
         switch (indTutorial)

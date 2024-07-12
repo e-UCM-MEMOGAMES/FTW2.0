@@ -48,10 +48,12 @@ public class CameraControl : MonoBehaviour
 
     private void Update()
     {
+        // Arrastra la pantalla 
         if (Input.GetMouseButtonDown(0))
         {
             touchStart = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         }
+        // Hacer zoom con tablet
         if (Input.touchCount == 2)
         {
             Touch touchZero = Input.GetTouch(0);
@@ -76,6 +78,9 @@ public class CameraControl : MonoBehaviour
         zoom(Input.GetAxis("Mouse ScrollWheel"));
     }
 
+    /// <summary>
+    /// Se llama cuando para hacer zoom.
+    /// </summary>
     void zoom(float increment)
     {
         Camera.main.orthographicSize = Mathf.Clamp(Camera.main.orthographicSize - increment, 3f, 10f);
@@ -102,6 +107,9 @@ public class CameraControl : MonoBehaviour
         transform.position = despl;
     }
 
+    /// <summary>
+    /// Centra la camara sobre el coche
+    /// </summary>
     public void ResetCamera()
     {
         isoCam.transform.position = target.transform.position - cameraIsoOffset;

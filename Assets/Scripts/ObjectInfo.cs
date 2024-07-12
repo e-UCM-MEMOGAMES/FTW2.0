@@ -4,10 +4,14 @@ using UnityEngine;
 using UnityEngine.UI;
 
 public class ObjectInfo : MonoBehaviour {
-
+    /// <summary>
+    /// Panel donde se muestra la informacion
+    /// </summary>
     public GameObject info;
+    /// <summary>
+    /// Nombre del objeto
+    /// </summary>
     public new string name;
-	// Use this for initialization
 	void Start () {
         info.SetActive(false);
 	}

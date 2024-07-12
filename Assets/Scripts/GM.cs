@@ -88,7 +88,6 @@ public class GM : MonoBehaviour
     /// </summary>
     public GameObject contexto;
 
-
     /// <summary>
     /// Mano de ayuda que señala el mapa.
     /// </summary>
@@ -98,10 +97,26 @@ public class GM : MonoBehaviour
     /// Imagen con el consumo
     /// </summary>
     public GameObject ImageConsumo;
+
+    /// <summary>
+    /// Numero de veces que se puede consultar el mapa
+    /// </summary>
     public int initNum = 3;
     protected int num;
+
+    /// <summary>
+    /// Indica si se ha terminado el nivel
+    /// </summary>
     protected bool finished = false;
+
+    /// <summary>
+    /// Indica si es la primera vez que se pulsa el mapa
+    /// </summary>
     protected bool first = true;
+
+    /// <summary>
+    /// Array que contiene las estrellas del menu de victoria
+    /// </summary>
     public GameObject[] stars;
 
     IEnumerator fadeOut()
@@ -270,16 +285,30 @@ public class GM : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// El consumo minimo para llegar a la meta
+    /// </summary>
     public int ConsumoIdeal
     {
         get { return consumoIdeal; }
     }
+    /// <summary>
+    /// Indica si el juego esta pausado
+    /// </summary>
     public virtual bool Paused
     {
         get { return paused; }
     }
 
-    //Activa una estrella en el menu de fin
+    /// <summary>
+    /// Este método se encarga de mostrar una estrella al terminar el nivel
+    /// Condition es la condicion es la que se tiene que cumplir para conseguir la estrella
+    /// starIndex es la estrella que se mostrara
+    /// numEstr es una referencia para guardar el numero de estrellas que se han coseguido
+    /// </summary>
+    /// <param name="condition"></param>
+    /// <param name="y"></param>
+    /// <param name="mostrar"></param>
     void ActivateStar(bool condition, int starIndex, ref int numEstr)
     {
         if (condition)

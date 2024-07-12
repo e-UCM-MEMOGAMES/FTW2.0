@@ -1,6 +1,5 @@
 ﻿using RAGE.Analytics;
 using System.Collections;
-using UnityEditor.SearchService;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using Xasu;
@@ -8,6 +7,9 @@ using Xasu;
 public class changeScene : MonoBehaviour
 {
     public Animator transicion;
+    /// <summary>
+    /// Cambia a otra escena o sale del juego
+    /// </summary>
     public void Change(string scene)
     {
         if (scene != "exit")
@@ -19,6 +21,9 @@ public class changeScene : MonoBehaviour
 		Application.Quit();
 #endif
     }
+    /// <summary>
+    /// Carga los creditos
+    /// </summary>
     public void LoadCredits()
     {
         if (XasuTracker.Instance.Status.State != TrackerState.Uninitialized)
@@ -26,11 +31,17 @@ public class changeScene : MonoBehaviour
       
     }
 
+    /// <summary>
+    /// Vuelve a cargar la escena
+    /// </summary>
     public void Reset()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 
+    /// <summary>
+    /// SCarga una escena
+    /// </summary>
     IEnumerator LoadScene(string scene)
     {
         if(SceneManager.GetActiveScene().name != "Start" && XasuTracker.Instance.Status.State != TrackerState.Uninitialized)

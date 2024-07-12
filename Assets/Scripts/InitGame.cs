@@ -5,6 +5,9 @@ using UnityEngine.Audio;
 using UnityEngine.Localization.Settings;
 using UnityEngine.UI;
 
+/// <summary>
+/// Se llama para inicializar el juego con valores guardados
+/// </summary>
 public class InitGame : MonoBehaviour
 {
     [SerializeField]

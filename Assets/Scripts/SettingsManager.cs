@@ -9,18 +9,39 @@ using UnityEngine.UI;
 
 public class SettingsManager : MonoBehaviour
 {
+    /// <summary>
+    /// Lista de idiomas disponibles
+    /// </summary>
     List<Locale> lcs;
+    /// <summary>
+    /// El dropdown de idiomas
+    /// </summary>
     [SerializeField]
     TMP_Dropdown dropdown;
+    /// <summary>
+    /// Mixer para controlar volumenes
+    /// </summary>
     [SerializeField]
     AudioMixer mixer;
+    /// <summary>
+    /// Slider para controlar el volumen la musica
+    /// </summary>
     [SerializeField]
     Slider musicSlider;
+    /// <summary>
+    /// Slider para controlar el volumen de los sonidos
+    /// </summary>
     [SerializeField]
     Slider soundSlider;
+    /// <summary>
+    /// Sonido que se reproduce al mover los sliders
+    /// </summary>
     [SerializeField]
     AudioSource sound;
 
+    /// <summary>
+    /// Indica si se ejecuta por primera vez
+    /// </summary>
     bool first = true;
     void Awake()
     {
@@ -44,14 +65,19 @@ public class SettingsManager : MonoBehaviour
         first = false;
     }
 
-    //metodo que se llama cuando se selecciona un idioma en el dropdown
+    /// <summary>
+    /// metodo que se llama cuando se selecciona un idioma en el dropdown
+    /// </summary> 
     public void OnDropDownChanged(TMP_Dropdown dropDown)
     {
         LocalizationSettings.SelectedLocale = lcs[dropDown.value];
         PlayerPrefs.SetInt("language", dropDown.value);
     }
 
-    //cambia el volumen de la musica
+
+    /// <summary>
+    /// cambia el volumen de la musica
+    /// </summary> 
     public void ChangeMusicVolume()
     {
         if(!first) sound.Play();
@@ -59,8 +85,9 @@ public class SettingsManager : MonoBehaviour
         mixer.SetFloat("Music", Mathf.Log10(musicSlider.value) * 20);
         PlayerPrefs.SetFloat("musicVolume", musicSlider.value);
     }
-
-    //cambia el volumen de los sonidos
+    /// <summary>
+    /// cambia el volumen de los sonidos
+    /// </summary> 
     public void ChangeSoundVolume()
     {
         if (!first) sound.Play();
