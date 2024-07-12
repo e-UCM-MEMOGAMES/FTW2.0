@@ -2798,7 +2798,7 @@ MonoBehaviour:
     m_AlignByGeometry: 1
     m_RichText: 1
     m_HorizontalOverflow: 0
-    m_VerticalOverflow: 0
+    m_VerticalOverflow: 1
     m_LineSpacing: 0.62
   m_Text: NEXT LEVEL
 --- !u!222 &77629986
@@ -17259,7 +17259,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &583538760
 RectTransform:
   m_ObjectHideFlags: 0
@@ -19916,7 +19916,7 @@ MonoBehaviour:
     m_AlignByGeometry: 1
     m_RichText: 1
     m_HorizontalOverflow: 0
-    m_VerticalOverflow: 0
+    m_VerticalOverflow: 1
     m_LineSpacing: 0.62
   m_Text: PLAY AGAIN
 --- !u!222 &695371255
@@ -40503,6 +40503,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1353043333}
+        m_TargetAssemblyTypeName: UnityEngine.Animation, UnityEngine
+        m_MethodName: Stop
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1353043331
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -48339,6 +48351,7 @@ GameObject:
   - component: {fileID: 1583492221}
   - component: {fileID: 1583492223}
   - component: {fileID: 1583492222}
+  - component: {fileID: 1583492224}
   m_Layer: 5
   m_Name: Descripcion 2
   m_TagString: Untagged
@@ -48407,6 +48420,46 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1583492220}
   m_CullTransparentMesh: 0
+--- !u!114 &1583492224
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1583492220}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 69beb381e244f92449b8c4cf954630e9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_TrackedObjects:
+  - rid: 3258603100646146052
+  references:
+    version: 2
+    RefIds:
+    - rid: 3258603100646146052
+      type: {class: TrackedUGuiGraphic, ns: UnityEngine.Localization.PropertyVariants.TrackedObjects,
+        asm: Unity.Localization}
+      data:
+        m_Target: {fileID: 1583492222}
+        m_TrackedProperties:
+          items:
+          - rid: 3258603100646146053
+        m_UpdateType: 0
+    - rid: 3258603100646146053
+      type: {class: LocalizedStringProperty, ns: UnityEngine.Localization.PropertyVariants.TrackedProperties,
+        asm: Unity.Localization}
+      data:
+        m_Localized:
+          m_TableReference:
+            m_TableCollectionName: GUID:3c277c871fda2e14ea7cb69eab1eb04c
+          m_TableEntryReference:
+            m_KeyId: 3269127893610496
+            m_Key: 
+          m_FallbackState: 0
+          m_WaitForCompletion: 0
+          m_LocalVariables: []
+        m_PropertyPath: m_Text
 --- !u!1001 &1584414964
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -50528,7 +50581,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1612569773
 RectTransform:
   m_ObjectHideFlags: 0
@@ -61385,7 +61438,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &2030954475
 RectTransform:
   m_ObjectHideFlags: 0

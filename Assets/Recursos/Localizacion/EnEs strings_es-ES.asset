@@ -975,6 +975,14 @@ MonoBehaviour:
     m_Localized: Puedes centrar la camara en el coche de nuevo pulsando este boton
     m_Metadata:
       m_Items: []
+  - m_Id: 3269127893610496
+    m_Localized: No haber consultado el mapa
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3272644960120832
+    m_Localized: Idioma
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

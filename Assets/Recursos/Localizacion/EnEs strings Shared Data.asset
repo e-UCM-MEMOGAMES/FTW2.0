@@ -947,6 +947,14 @@ MonoBehaviour:
     m_Key: Tutorial/Canvas/Tutorial6/Text (Legacy)
     m_Metadata:
       m_Items: []
+  - m_Id: 3269127893610496
+    m_Key: N2mapa2/Canvas/PanelWin/Panel (1)/Panel/Descripcion 2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3272644960120832
+    m_Key: Settings/Canvas/Dropdown/Text (TMP)
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

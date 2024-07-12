@@ -397,7 +397,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 382525433376768
-    m_Localized: You need to go to the office to pick up some paper
+    m_Localized: You need to go to the office to pick up some paperwork
     m_Metadata:
       m_Items: []
   - m_Id: 382665175003136
@@ -461,7 +461,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 391129733459968
-    m_Localized: PLAY AGAIN
+    m_Localized: REPLAY
     m_Metadata:
       m_Items: []
   - m_Id: 391151808081920
@@ -503,7 +503,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 391485955698688
-    m_Localized: PLAY AGAIN
+    m_Localized: replay
     m_Metadata:
       m_Items: []
   - m_Id: 391504989450240
@@ -545,7 +545,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 391890752172032
-    m_Localized: PLAY AGAIN
+    m_Localized: REPLAY
     m_Metadata:
       m_Items: []
   - m_Id: 391906514366464
@@ -629,7 +629,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 392556090421248
-    m_Localized: REPLA
+    m_Localized: REPLAY
     m_Metadata:
       m_Items: []
   - m_Id: 392572456595456
@@ -976,6 +976,14 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 3050120716414976
     m_Localized: You may also recenter the camera on the car by tapping this button
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3269127893610496
+    m_Localized: Not check the map
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3272644960120832
+    m_Localized: Language
     m_Metadata:
       m_Items: []
   references:
