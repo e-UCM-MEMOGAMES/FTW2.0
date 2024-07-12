@@ -45952,7 +45952,7 @@ PrefabInstance:
     - target: {fileID: 23349542153178728, guid: f490b12d9f8a5b64c9a306c76bd453ad,
         type: 3}
       propertyPath: m_CastShadows
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 114598953225554784, guid: f490b12d9f8a5b64c9a306c76bd453ad, type: 3}
@@ -52401,6 +52401,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tree_03 1
       objectReference: {fileID: 0}
+    - target: {fileID: 8258636257821695437, guid: c60edd51c065ceb46b345849a03bc106,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -56472,6 +56477,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5485172833262161395, guid: e289bf5debb17f6459818c207d781953,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

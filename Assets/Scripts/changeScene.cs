@@ -1,5 +1,6 @@
 ﻿using RAGE.Analytics;
 using System.Collections;
+using UnityEditor.SearchService;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using Xasu;
@@ -18,6 +19,12 @@ public class changeScene : MonoBehaviour
 		Application.Quit();
 #endif
     }
+    public void LoadCredits()
+    {
+        if (XasuTracker.Instance.Status.State != TrackerState.Uninitialized)
+            Xasu.HighLevel.AccessibleTracker.Instance.Accessed("Credits", Xasu.HighLevel.AccessibleTracker.AccessibleType.Screen);
+      
+    }
 
     public void Reset()
     {
@@ -34,5 +41,7 @@ public class changeScene : MonoBehaviour
         yield return new WaitForSeconds(1.0f);
         SceneManager.LoadScene(scene);
     }
+ 
+
 
 }
