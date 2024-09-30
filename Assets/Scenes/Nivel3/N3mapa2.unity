@@ -6867,6 +6867,7 @@ GameObject:
   - component: {fileID: 121028943}
   - component: {fileID: 121028942}
   - component: {fileID: 121028941}
+  - component: {fileID: 121028946}
   m_Layer: 0
   m_Name: CameraCenital
   m_TagString: MainCamera
@@ -7077,6 +7078,19 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
+--- !u!114 &121028946
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 121028939}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6f5a52b28b5825043a8207bfbd33d139, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetAspect: {x: 16, y: 9}
 --- !u!4 &121776376 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4110763680888524, guid: 1854b14386f347f4f84c7b148e43fafa,
@@ -26693,6 +26707,7 @@ GameObject:
   - component: {fileID: 413821655}
   - component: {fileID: 413821657}
   - component: {fileID: 413821656}
+  - component: {fileID: 413821658}
   m_Layer: 0
   m_Name: CamaraPausaCenital
   m_TagString: MainCamera
@@ -26774,6 +26789,19 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
+--- !u!114 &413821658
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 413821654}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6f5a52b28b5825043a8207bfbd33d139, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetAspect: {x: 16, y: 9}
 --- !u!1001 &414467887
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -44067,6 +44095,7 @@ GameObject:
   - component: {fileID: 698862129}
   - component: {fileID: 698862131}
   - component: {fileID: 698862130}
+  - component: {fileID: 698862132}
   m_Layer: 0
   m_Name: CamaraPausa
   m_TagString: MainCamera
@@ -44148,6 +44177,19 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
+--- !u!114 &698862132
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 698862128}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6f5a52b28b5825043a8207bfbd33d139, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetAspect: {x: 16, y: 9}
 --- !u!4 &699105281 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4533055352422078, guid: b2ccce5d404ae7342ab488faf6bee97b,
@@ -90669,6 +90711,7 @@ GameObject:
   - component: {fileID: 1567416731}
   - component: {fileID: 1567416730}
   - component: {fileID: 1567416729}
+  - component: {fileID: 1567416734}
   m_Layer: 0
   m_Name: CameraIso
   m_TagString: MainCamera
@@ -90879,6 +90922,19 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
+--- !u!114 &1567416734
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1567416727}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6f5a52b28b5825043a8207bfbd33d139, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetAspect: {x: 16, y: 9}
 --- !u!1001 &1567531663
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -99923,6 +99979,7 @@ GameObject:
   - component: {fileID: 1723074448}
   - component: {fileID: 1723074447}
   - component: {fileID: 1723074446}
+  - component: {fileID: 1723074451}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -100036,6 +100093,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1723074451
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1723074445}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6f5a52b28b5825043a8207bfbd33d139, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetAspect: {x: 16, y: 9}
 --- !u!1001 &1724829154
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -116832,6 +116902,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2030709408}
   - component: {fileID: 2030709407}
+  - component: {fileID: 2030709409}
   m_Layer: 0
   m_Name: CanvasCamera
   m_TagString: Untagged
@@ -116905,6 +116976,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2030709409
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2030709406}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6f5a52b28b5825043a8207bfbd33d139, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetAspect: {x: 16, y: 9}
 --- !u!4 &2032288566 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4110763680888524, guid: 1854b14386f347f4f84c7b148e43fafa,
