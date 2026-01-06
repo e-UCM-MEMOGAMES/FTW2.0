@@ -18,7 +18,7 @@ MonoBehaviour:
   m_GUID: 62110ec604fd8d544970406c096c68ee
   m_SerializeEntries:
   - m_GUID: 45b489de44b9ce84ba7f8e4781173fe8
-    m_Address: texto_FINDTHEWAY
+    m_Address: Logo_eng
     m_ReadOnly: 1
     m_SerializedLabels:
     - Locale-en-US

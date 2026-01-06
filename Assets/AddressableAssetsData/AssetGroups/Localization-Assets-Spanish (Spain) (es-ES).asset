@@ -18,7 +18,7 @@ MonoBehaviour:
   m_GUID: 366efe1a9b7c47c4898e2b1ead67d647
   m_SerializeEntries:
   - m_GUID: d782af22149598d4fa17db06f85e6fdf
-    m_Address: texto_FINDTHEWAYEsp
+    m_Address: Logo_esp
     m_ReadOnly: 1
     m_SerializedLabels:
     - Locale-es-ES
