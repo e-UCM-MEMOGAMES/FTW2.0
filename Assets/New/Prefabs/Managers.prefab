@@ -26,7 +26,7 @@ Transform:
   m_GameObject: {fileID: 4558778388544957128}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 1.539161}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -398,7 +398,7 @@ GameObject:
   - component: {fileID: 1329234913438600352}
   - component: {fileID: 2777091050803855920}
   - component: {fileID: 1664974332139097464}
-  - component: {fileID: 9155763384545475398}
+  - component: {fileID: 7173744846852105605}
   - component: {fileID: 2025093144858826701}
   m_Layer: 0
   m_Name: Managers
@@ -456,7 +456,7 @@ MonoBehaviour:
     audioClip: {fileID: 8300000, guid: 8b40167d751c1c34e8c16a602fe47a6f, type: 3}
   bgmSource: {fileID: 2413921747549152415}
   sfxSource: {fileID: 3005395233402566959}
---- !u!114 &9155763384545475398
+--- !u!114 &7173744846852105605
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
