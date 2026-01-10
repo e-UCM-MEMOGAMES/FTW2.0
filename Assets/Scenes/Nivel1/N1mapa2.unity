@@ -13479,7 +13479,6 @@ GameObject:
   - component: {fileID: 606317534}
   - component: {fileID: 606317536}
   - component: {fileID: 606317535}
-  - component: {fileID: 606317537}
   m_Layer: 0
   m_Name: CamaraPausaCenital
   m_TagString: MainCamera
@@ -13561,19 +13560,6 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
---- !u!114 &606317537
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 606317533}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6f5a52b28b5825043a8207bfbd33d139, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  targetAspect: {x: 16, y: 9}
 --- !u!1001 &612398716
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -14134,7 +14120,6 @@ GameObject:
   - component: {fileID: 658184719}
   - component: {fileID: 658184718}
   - component: {fileID: 658184717}
-  - component: {fileID: 658184716}
   m_Layer: 0
   m_Name: CameraIso
   m_TagString: MainCamera
@@ -14158,19 +14143,6 @@ Transform:
   - {fileID: 1200035220}
   m_Father: {fileID: 1344686473}
   m_LocalEulerAnglesHint: {x: -33.322002, y: 20.587002, z: -41.347}
---- !u!114 &658184716
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 658184714}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6f5a52b28b5825043a8207bfbd33d139, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  targetAspect: {x: 16, y: 9}
 --- !u!82 &658184717
 AudioSource:
   m_ObjectHideFlags: 0
@@ -18477,7 +18449,6 @@ GameObject:
   - component: {fileID: 801314980}
   - component: {fileID: 801314982}
   - component: {fileID: 801314981}
-  - component: {fileID: 801314983}
   m_Layer: 0
   m_Name: CamaraPausa
   m_TagString: MainCamera
@@ -18559,19 +18530,6 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
---- !u!114 &801314983
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 801314979}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6f5a52b28b5825043a8207bfbd33d139, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  targetAspect: {x: 16, y: 9}
 --- !u!1001 &802118060
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -26246,7 +26204,6 @@ GameObject:
   - component: {fileID: 1206933698}
   - component: {fileID: 1206933697}
   - component: {fileID: 1206933696}
-  - component: {fileID: 1206933701}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -26362,19 +26319,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1206933701
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1206933695}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6f5a52b28b5825043a8207bfbd33d139, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  targetAspect: {x: 16, y: 9}
 --- !u!1001 &1208400390
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -27968,7 +27912,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1275104666}
   - component: {fileID: 1275104665}
-  - component: {fileID: 1275104667}
   m_Layer: 0
   m_Name: CanvasCamera
   m_TagString: Untagged
@@ -28042,19 +27985,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1275104667
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1275104663}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6f5a52b28b5825043a8207bfbd33d139, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  targetAspect: {x: 16, y: 9}
 --- !u!1001 &1278500986
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -39496,7 +39426,6 @@ GameObject:
   - component: {fileID: 1768297909}
   - component: {fileID: 1768297908}
   - component: {fileID: 1768297907}
-  - component: {fileID: 1768297906}
   m_Layer: 0
   m_Name: CameraCenital
   m_TagString: MainCamera
@@ -39520,19 +39449,6 @@ Transform:
   - {fileID: 137925283}
   m_Father: {fileID: 1344686473}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1768297906
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1768297904}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6f5a52b28b5825043a8207bfbd33d139, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  targetAspect: {x: 16, y: 9}
 --- !u!82 &1768297907
 AudioSource:
   m_ObjectHideFlags: 0

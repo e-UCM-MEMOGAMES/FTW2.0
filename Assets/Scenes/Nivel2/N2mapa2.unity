@@ -11188,7 +11188,6 @@ GameObject:
   m_Component:
   - component: {fileID: 392051224}
   - component: {fileID: 392051223}
-  - component: {fileID: 392051225}
   m_Layer: 0
   m_Name: CanvasCamera
   m_TagString: Untagged
@@ -11262,19 +11261,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &392051225
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 392051222}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6f5a52b28b5825043a8207bfbd33d139, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  targetAspect: {x: 16, y: 9}
 --- !u!1001 &398282904
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11439,7 +11425,6 @@ GameObject:
   - component: {fileID: 408598654}
   - component: {fileID: 408598656}
   - component: {fileID: 408598655}
-  - component: {fileID: 408598657}
   m_Layer: 0
   m_Name: CamaraPausa
   m_TagString: MainCamera
@@ -11521,19 +11506,6 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
---- !u!114 &408598657
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 408598653}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6f5a52b28b5825043a8207bfbd33d139, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  targetAspect: {x: 16, y: 9}
 --- !u!1001 &408678308
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -16802,7 +16774,6 @@ GameObject:
   - component: {fileID: 578751909}
   - component: {fileID: 578751911}
   - component: {fileID: 578751910}
-  - component: {fileID: 578751912}
   m_Layer: 0
   m_Name: CamaraPausaCenital
   m_TagString: MainCamera
@@ -16884,19 +16855,6 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
---- !u!114 &578751912
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 578751908}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6f5a52b28b5825043a8207bfbd33d139, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  targetAspect: {x: 16, y: 9}
 --- !u!1001 &579399046
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -45689,7 +45647,6 @@ GameObject:
   - component: {fileID: 1488972567}
   - component: {fileID: 1488972566}
   - component: {fileID: 1488972565}
-  - component: {fileID: 1488972564}
   m_Layer: 0
   m_Name: CameraCenital
   m_TagString: MainCamera
@@ -45713,19 +45670,6 @@ Transform:
   - {fileID: 901128450}
   m_Father: {fileID: 1529886975}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1488972564
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1488972562}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6f5a52b28b5825043a8207bfbd33d139, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  targetAspect: {x: 16, y: 9}
 --- !u!82 &1488972565
 AudioSource:
   m_ObjectHideFlags: 0
@@ -47652,7 +47596,6 @@ GameObject:
   - component: {fileID: 1560739243}
   - component: {fileID: 1560739242}
   - component: {fileID: 1560739241}
-  - component: {fileID: 1560739240}
   m_Layer: 0
   m_Name: CameraIso
   m_TagString: MainCamera
@@ -47676,19 +47619,6 @@ Transform:
   - {fileID: 1109374556}
   m_Father: {fileID: 1529886975}
   m_LocalEulerAnglesHint: {x: -33.322002, y: 20.587002, z: -41.347}
---- !u!114 &1560739240
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1560739238}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6f5a52b28b5825043a8207bfbd33d139, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  targetAspect: {x: 16, y: 9}
 --- !u!82 &1560739241
 AudioSource:
   m_ObjectHideFlags: 0

@@ -2966,14 +2966,14 @@ RectTransform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0, y: 0, z: 0}
-  m_ConstrainProportionsScale: 0
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 1110759775}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -18.0632, y: -35.6352}
-  m_SizeDelta: {x: 81.3778, y: 81.3778}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 200, y: 200}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!95 &82288374
 Animator:
@@ -35104,8 +35104,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 217, y: 81}
-  m_SizeDelta: {x: 81.8726, y: 113.7581}
+  m_AnchoredPosition: {x: 514.8026, y: 186.2456}
+  m_SizeDelta: {x: 194.6019, y: 270.3904}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &985865156
 MonoBehaviour:
@@ -39054,8 +39054,8 @@ MonoBehaviour:
   m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 800, y: 600}
-  m_ScreenMatchMode: 0
+  m_ReferenceResolution: {x: 1920, y: 1080}
+  m_ScreenMatchMode: 1
   m_MatchWidthOrHeight: 0
   m_PhysicalUnit: 3
   m_FallbackScreenDPI: 96
@@ -68349,7 +68349,6 @@ GameObject:
   - component: {fileID: 1740575675}
   - component: {fileID: 1740575674}
   - component: {fileID: 1740575673}
-  - component: {fileID: 1740575676}
   m_Layer: 0
   m_Name: CamaraPausa
   m_TagString: MainCamera
@@ -68439,19 +68438,6 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
---- !u!114 &1740575676
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1740575671}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6f5a52b28b5825043a8207bfbd33d139, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  targetAspect: {x: 16, y: 9}
 --- !u!4 &1743095933 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4608268793167926, guid: b4765182917a269489257f4524c513ee,
@@ -72571,8 +72557,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 191.83998, y: 81.31738}
-  m_SizeDelta: {x: 97.0081, y: 113.1152}
+  m_AnchoredPosition: {x: 455, y: 187}
+  m_SizeDelta: {x: 230.5774, y: 268.8621}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1855745355
 MonoBehaviour:
@@ -80448,8 +80434,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.0000076294, y: -113}
-  m_SizeDelta: {x: 141.1197, y: 142.4112}
+  m_AnchoredPosition: {x: -0.98217773, y: -274.87054}
+  m_SizeDelta: {x: 335.4257, y: 338.4954}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2073042314
 MonoBehaviour:

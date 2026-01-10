@@ -57122,7 +57122,6 @@ GameObject:
   - component: {fileID: 952875064}
   - component: {fileID: 952875066}
   - component: {fileID: 952875065}
-  - component: {fileID: 952875067}
   m_Layer: 0
   m_Name: CamaraPausaCenital
   m_TagString: MainCamera
@@ -57204,19 +57203,6 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
---- !u!114 &952875067
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 952875063}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6f5a52b28b5825043a8207bfbd33d139, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  targetAspect: {x: 16, y: 9}
 --- !u!1001 &953264661
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -60197,7 +60183,6 @@ GameObject:
   - component: {fileID: 1005532299}
   - component: {fileID: 1005532301}
   - component: {fileID: 1005532300}
-  - component: {fileID: 1005532302}
   m_Layer: 0
   m_Name: CamaraPausa
   m_TagString: MainCamera
@@ -60279,19 +60264,6 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
---- !u!114 &1005532302
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1005532298}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6f5a52b28b5825043a8207bfbd33d139, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  targetAspect: {x: 16, y: 9}
 --- !u!1001 &1005689277
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -72278,7 +72250,6 @@ GameObject:
   - component: {fileID: 1204664059}
   - component: {fileID: 1204664058}
   - component: {fileID: 1204664057}
-  - component: {fileID: 1204664056}
   m_Layer: 0
   m_Name: CameraIso
   m_TagString: MainCamera
@@ -72302,19 +72273,6 @@ Transform:
   - {fileID: 1052268877}
   m_Father: {fileID: 2010040620}
   m_LocalEulerAnglesHint: {x: -33.322002, y: 20.587002, z: -41.347}
---- !u!114 &1204664056
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1204664054}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6f5a52b28b5825043a8207bfbd33d139, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  targetAspect: {x: 16, y: 9}
 --- !u!82 &1204664057
 AudioSource:
   m_ObjectHideFlags: 0
@@ -83581,7 +83539,6 @@ GameObject:
   - component: {fileID: 1400679634}
   - component: {fileID: 1400679633}
   - component: {fileID: 1400679632}
-  - component: {fileID: 1400679631}
   m_Layer: 0
   m_Name: CameraCenital
   m_TagString: MainCamera
@@ -83605,19 +83562,6 @@ Transform:
   - {fileID: 2124304857}
   m_Father: {fileID: 2010040620}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1400679631
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1400679629}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6f5a52b28b5825043a8207bfbd33d139, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  targetAspect: {x: 16, y: 9}
 --- !u!82 &1400679632
 AudioSource:
   m_ObjectHideFlags: 0
@@ -104034,7 +103978,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1784827315}
   - component: {fileID: 1784827314}
-  - component: {fileID: 1784827316}
   m_Layer: 0
   m_Name: CanvasCamera
   m_TagString: Untagged
@@ -104108,19 +104051,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1784827316
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1784827313}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6f5a52b28b5825043a8207bfbd33d139, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  targetAspect: {x: 16, y: 9}
 --- !u!1001 &1788702344
 PrefabInstance:
   m_ObjectHideFlags: 0
