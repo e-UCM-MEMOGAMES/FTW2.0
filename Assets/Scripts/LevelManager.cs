@@ -36,16 +36,19 @@ public class LevelManager : MonoBehaviour
         int index = 0;
         foreach (GameObject nivel in niveles)
         {
+            nivel.gameObject.GetComponent<Button>().interactable = false;
             if (index == 0)
                 nivel.gameObject.GetComponent<Button>().interactable = true;
             else
             {
-                /* Cogemos los mapas del nivel anterior donde se han superado con al menos 2 estrellas. Ejemplo: Nivel1 */
-                string mapa2Star = string.Concat("Nivel", index);
+                ///* Cogemos los mapas del nivel anterior donde se han superado con al menos 2 estrellas. Ejemplo: Nivel1 */
+                //string mapa2Star = string.Concat("Nivel", index);
 
-                /* Comprobamos las condiciones para desbloquear el nivel */
-                bool desbloqueo = PlayerPrefs.HasKey(mapa2Star) && PlayerPrefs.GetInt(mapa2Star) >= 2;
+                ///* Comprobamos las condiciones para desbloquear el nivel */
+                //bool desbloqueo = PlayerPrefs.HasKey(mapa2Star) && PlayerPrefs.GetInt(mapa2Star) >= 2;
 
+                string mapa3NivAnt = string.Concat("N", index, "mapa", 3);
+                bool desbloqueo = PlayerPrefs.HasKey(mapa3NivAnt);
                 nivel.gameObject.GetComponent<Button>().interactable = desbloqueo;
                 nivel.transform.Find("Block").gameObject.SetActive(!desbloqueo);
             }
@@ -55,31 +58,47 @@ public class LevelManager : MonoBehaviour
         /* Recorremos los conjuntos de mapas de los diferentes niveles */
         foreach (GameObject cjtoMapa in mapas)
         {
-            /* Recorremos cada mapa (cada botón) */
-            int numMapa = 1;
-            string nivel = string.Concat("Nivel", level);
+            int numMapa = 0;
             int numNivelesPasados = 0;
+            string nivAnt = "";
+            string nivAct = "";
 
+            /* Recorremos cada mapa (cada botón) */
             foreach (Button mapa in cjtoMapa.transform.GetComponentsInChildren<Button>())
             {
-                /* Nombre del mapa. Ejemplo: N1mapa1 */
-                string s = string.Concat("N", level, "mapa", numMapa);
-                int m = PlayerPrefs.HasKey(s) ? PlayerPrefs.GetInt(s) : 0;
-                if (m >= 2)
+                mapa.gameObject.GetComponent<Button>().interactable = false;
+                nivAnt = string.Concat("N", level, "mapa", numMapa);
+                nivAct = string.Concat("N", level, "mapa", numMapa + 1);
+
+                if (numMapa == 0)
                 {
-                    ++numNivelesPasados;
+                    mapa.gameObject.GetComponent<Button>().interactable = true;
+                    numNivelesPasados++;
+                }
+                else
+                {
+
+                    bool desbloqueo = PlayerPrefs.HasKey(nivAnt) /*&& PlayerPrefs.GetInt(nivAnt) >= 2*/;
+                    mapa.gameObject.GetComponent<Button>().interactable = desbloqueo;
+
+                    if (desbloqueo)
+                    {
+                        ++numNivelesPasados;
+                    }
                 }
 
-                /* Recorremos todas las estrellas conseguidas en ese mapa. */
-                for (int j = 0; j < m; ++j)
+                if (PlayerPrefs.HasKey(nivAct))
                 {
-                    Debug.Log(j);
-                    mapa.transform.GetChild(j).transform.GetChild(0).gameObject.SetActive(false);
+                    /* Recorremos todas las estrellas conseguidas en ese mapa. */
+                    for (int j = 0; j < PlayerPrefs.GetInt(nivAct); ++j)
+                    {
+                        mapa.transform.GetChild(j).transform.GetChild(0).gameObject.SetActive(false);
+                    }
                 }
                 ++numMapa;
             }
-
-            PlayerPrefs.SetInt(nivel, numNivelesPasados);
+            string nombreNivel = string.Concat("Nivel", level);
+            PlayerPrefs.SetInt(nombreNivel, numNivelesPasados);
         }
     }
 }

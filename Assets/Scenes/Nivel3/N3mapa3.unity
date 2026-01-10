@@ -105758,8 +105758,8 @@ MonoBehaviour:
   cenitSprite: {fileID: 21300000, guid: f3bf970d51b9a1a448fded342872eaec, type: 3}
   cameraPauseIso: {fileID: 488911250}
   cameraPauseCenit: {fileID: 1199567042}
-  cameraGameIso: {fileID: 0}
-  cameraGameCenit: {fileID: 0}
+  cameraGameIso: {fileID: 2059041286}
+  cameraGameCenit: {fileID: 856295588}
   button: {fileID: 1879781394}
 --- !u!114 &1879781394
 MonoBehaviour:
