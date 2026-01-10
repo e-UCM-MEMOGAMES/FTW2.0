@@ -15,7 +15,7 @@ public class ChangePerspective : MonoBehaviour {
     public Camera cameraPauseIso, cameraPauseCenit, cameraGameIso, cameraGameCenit;
     /// <summary>
     /// Indica si la vista esta en isometrica
-    /// </summary>
+    /// </summary> 
     bool iso = false;
     /// <summary>
     /// Boton para cambiar de perspectiva

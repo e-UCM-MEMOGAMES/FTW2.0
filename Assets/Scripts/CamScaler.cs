@@ -3,8 +3,6 @@ using UnityEngine;
 [RequireComponent(typeof(Camera))]
 public class CamScaler : MonoBehaviour
 {
-
-    // Set this to your target aspect ratio, eg. (16, 9) or (4, 3).
     public Vector2 targetAspect = new Vector2(16, 9);
     Camera _camera;
 

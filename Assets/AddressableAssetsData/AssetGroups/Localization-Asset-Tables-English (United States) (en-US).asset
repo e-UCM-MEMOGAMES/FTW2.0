@@ -18,7 +18,7 @@ MonoBehaviour:
   m_GUID: 295f36f92bfdc8f48ba8d8bfcb0db743
   m_SerializeEntries:
   - m_GUID: a1478175a96e73f4fb1328f01b3e4ac2
-    m_Address: EnEs Sprites_en-US
+    m_Address: Images_en-US
     m_ReadOnly: 1
     m_SerializedLabels:
     - Locale-en-US

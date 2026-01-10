@@ -18,12 +18,12 @@ MonoBehaviour:
   m_GUID: ee8c9ffa3e9d02b439f968637bd1fdf4
   m_SerializeEntries:
   - m_GUID: 3c277c871fda2e14ea7cb69eab1eb04c
-    m_Address: Assets/Recursos/Localizacion/EnEs strings Shared Data.asset
+    m_Address: Assets/Resources/Localization/UI/UI Shared Data.asset
     m_ReadOnly: 1
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 5f44dfec425617041af18d1a5b2e299d
-    m_Address: Assets/Recursos/Localizacion/EnEs Sprites Shared Data.asset
+    m_Address: Assets/Resources/Localization/Images/Images Shared Data.asset
     m_ReadOnly: 1
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0

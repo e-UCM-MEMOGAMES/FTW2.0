@@ -17,8 +17,8 @@ public class CameraControl : MonoBehaviour
     public float offsetYmax = 15;
     public float vel;
     public GameObject resetCamButton;
-    public GameObject isoCam;
-    public GameObject cenCam;
+    public Camera isoCam, arrowsIsoCam;
+    public Camera cenCam, arrowCenCam;
 
     
     Vector3 touchStart;
@@ -36,8 +36,8 @@ public class CameraControl : MonoBehaviour
         posXmin = 0 + offsetXmin;
         posYmax = 50;// 0 - offsetYmax;
         posYmin = -57;
-        initIsoZoom = isoCam.GetComponent<Camera>().orthographicSize;
-        initCenZoom = cenCam.GetComponent<Camera>().orthographicSize;
+        initIsoZoom = isoCam.orthographicSize;
+        initCenZoom = cenCam.orthographicSize;
         resetCamButton.SetActive(false);
 
         offset = target.transform.position - transform.position;
@@ -80,10 +80,14 @@ public class CameraControl : MonoBehaviour
 
     /// <summary>
     /// Se llama cuando para hacer zoom.
-    /// </summary>
+    /// </summary> 
     void zoom(float increment)
     {
-        Camera.main.orthographicSize = Mathf.Clamp(Camera.main.orthographicSize - increment, 3f, 10f);
+        float size = Mathf.Clamp(Camera.main.orthographicSize - increment, 3f, 10f);
+        isoCam.orthographicSize = size;
+        arrowsIsoCam.orthographicSize = size;
+        cenCam.orthographicSize = size;
+        arrowCenCam.orthographicSize = size;
     }
 
     // ==========================
@@ -114,8 +118,13 @@ public class CameraControl : MonoBehaviour
     {
         isoCam.transform.position = target.transform.position - cameraIsoOffset;
         cenCam.transform.position = target.transform.position - cameraCenOffset;
-        isoCam.GetComponent<Camera>().orthographicSize = initIsoZoom;
-        cenCam.GetComponent<Camera>().orthographicSize = initCenZoom;
+
+        isoCam.orthographicSize = initIsoZoom;
+        arrowsIsoCam.orthographicSize = initIsoZoom;
+
+        cenCam.orthographicSize = initCenZoom;
+        arrowCenCam.orthographicSize = initCenZoom;
+
         resetCamButton.SetActive(false);
     }
 }
