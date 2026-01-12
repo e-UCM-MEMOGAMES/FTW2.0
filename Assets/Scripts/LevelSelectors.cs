@@ -29,37 +29,22 @@ public class LevelManager : MonoBehaviour
 
     }
     AudioSource aS;
+
+    public int MinStartToUnlockNext = 0,
+               MinStarsPerLevel = 0,
+               NeededLevelsWithMinStars = 2;
+
+
     void Start()
     {
         aS = GameObject.Find("SoundManager").GetComponent<AudioSource>();
         StartCoroutine(fadeIn());
-        int index = 0;
-        foreach (GameObject nivel in niveles)
-        {
-            nivel.gameObject.GetComponent<Button>().interactable = false;
-            if (index == 0)
-                nivel.gameObject.GetComponent<Button>().interactable = true;
-            else
-            {
-                ///* Cogemos los mapas del nivel anterior donde se han superado con al menos 2 estrellas. Ejemplo: Nivel1 */
-                //string mapa2Star = string.Concat("Nivel", index);
 
-                ///* Comprobamos las condiciones para desbloquear el nivel */
-                //bool desbloqueo = PlayerPrefs.HasKey(mapa2Star) && PlayerPrefs.GetInt(mapa2Star) >= 2;
-
-                string mapa3NivAnt = string.Concat("N", index, "mapa", 3);
-                bool desbloqueo = PlayerPrefs.HasKey(mapa3NivAnt);
-                nivel.gameObject.GetComponent<Button>().interactable = desbloqueo;
-                nivel.transform.Find("Block").gameObject.SetActive(!desbloqueo);
-            }
-            ++index;
-        }
-
+        int numNivelesPasados = 0;
         /* Recorremos los conjuntos de mapas de los diferentes niveles */
         foreach (GameObject cjtoMapa in mapas)
         {
             int numMapa = 0;
-            int numNivelesPasados = 0;
             string nivAnt = "";
             string nivAct = "";
 
@@ -77,11 +62,10 @@ public class LevelManager : MonoBehaviour
                 }
                 else
                 {
-
-                    bool desbloqueo = PlayerPrefs.HasKey(nivAnt) /*&& PlayerPrefs.GetInt(nivAnt) >= 2*/;
+                    bool desbloqueo = PlayerPrefs.HasKey(nivAnt) && PlayerPrefs.GetInt(nivAnt) >= MinStartToUnlockNext;
                     mapa.gameObject.GetComponent<Button>().interactable = desbloqueo;
 
-                    if (desbloqueo)
+                    if (desbloqueo && PlayerPrefs.GetInt(nivAct) >= MinStarsPerLevel)
                     {
                         ++numNivelesPasados;
                     }
@@ -99,6 +83,26 @@ public class LevelManager : MonoBehaviour
             }
             string nombreNivel = string.Concat("Nivel", level);
             PlayerPrefs.SetInt(nombreNivel, numNivelesPasados);
+        }
+
+        int index = 0;
+        foreach (GameObject nivel in niveles)
+        {
+            string nombreNivel = string.Concat("Nivel", index);
+
+            nivel.gameObject.GetComponent<Button>().interactable = false;
+            if (index == 0)
+            {
+                nivel.gameObject.GetComponent<Button>().interactable = true;
+            }
+            else
+            {
+                string mapa3NivAnt = string.Concat("N", index, "mapa", 3);
+                bool desbloqueo = PlayerPrefs.HasKey(mapa3NivAnt) && PlayerPrefs.GetInt(nombreNivel) >= NeededLevelsWithMinStars;
+                nivel.gameObject.GetComponent<Button>().interactable = desbloqueo;
+                nivel.transform.Find("Block").gameObject.SetActive(!desbloqueo);
+            }
+            ++index;
         }
     }
 }

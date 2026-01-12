@@ -46,6 +46,7 @@ public class CameraControl : MonoBehaviour
         cameraCenOffset = target.transform.position - cenCam.transform.position;
     }
 
+#if UNITY_EDITOR
     private void Update()
     {
         // Arrastra la pantalla 
@@ -69,6 +70,7 @@ public class CameraControl : MonoBehaviour
 
             zoom(difference * 0.01f);
         }
+
         else if (Input.GetMouseButton(0))
         {
             resetCamButton.SetActive(true);
@@ -89,6 +91,7 @@ public class CameraControl : MonoBehaviour
         cenCam.orthographicSize = size;
         arrowCenCam.orthographicSize = size;
     }
+#endif
 
     // ==========================
     void LateUpdate()

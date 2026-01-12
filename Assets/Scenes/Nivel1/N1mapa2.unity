@@ -14574,7 +14574,7 @@ GameObject:
   - component: {fileID: 666132274}
   - component: {fileID: 666132273}
   m_Layer: 5
-  m_Name: Siguiente
+  m_Name: Volver
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -14653,7 +14653,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: N1mapa3
+          m_StringArgument: Level1Selector
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &666132274
@@ -33039,7 +33039,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: LevelGeneralSelector
+          m_StringArgument: Level1Selector
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1483081485
@@ -46838,7 +46838,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 1
     m_LineSpacing: 0.62
-  m_Text: NEXT LEVEL
+  m_Text: RETURN
 --- !u!222 &2116201378
 CanvasRenderer:
   m_ObjectHideFlags: 0

@@ -12,7 +12,6 @@ using Xasu;
 /// </summary>
 public class GM : MonoBehaviour
 {
-
     //Atributos para el algoritmo de pathfinding A*
     protected AStarSolver solver;
     LinkedList<Posicion> sol;
@@ -118,6 +117,7 @@ public class GM : MonoBehaviour
     /// Array que contiene las estrellas del menu de victoria
     /// </summary>
     public GameObject[] stars;
+
 
     IEnumerator fadeOut()
     {
@@ -267,7 +267,7 @@ public class GM : MonoBehaviour
             ActivateStar(num == initNum, 1, ref numEstr);
             ActivateStar(consumo <= consumoIdeal, 2, ref numEstr);
 
-            if (numEstr > estrellasActuales)
+            if (numEstr >= estrellasActuales)
                 PlayerPrefs.SetInt(nivelMapa, numEstr);
 
             /* Guardamos el número de estrellas que hemos conseguido si el número de estrellas 
