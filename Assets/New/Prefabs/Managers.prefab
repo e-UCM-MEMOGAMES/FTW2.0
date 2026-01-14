@@ -454,6 +454,22 @@ MonoBehaviour:
     channelType: 2
     soundType: 2
     audioClip: {fileID: 8300000, guid: 8b40167d751c1c34e8c16a602fe47a6f, type: 3}
+  - Name: 
+    channelType: 2
+    soundType: 3
+    audioClip: {fileID: 8300000, guid: 2b024b5647b334746aa6063d589bb3ed, type: 3}
+  - Name: 
+    channelType: 1
+    soundType: 4
+    audioClip: {fileID: 8300000, guid: d13f56962f947af4e97c4cb4557f70c7, type: 3}
+  - Name: 
+    channelType: 1
+    soundType: 1
+    audioClip: {fileID: 8300000, guid: 8d7d7d9c0db65254d9bcd3bfef362698, type: 3}
+  - Name: 
+    channelType: 1
+    soundType: 5
+    audioClip: {fileID: 8300000, guid: e6edd007c765edb449d0b3e099feddaf, type: 3}
   bgmSource: {fileID: 2413921747549152415}
   sfxSource: {fileID: 3005395233402566959}
 --- !u!114 &7173744846852105605

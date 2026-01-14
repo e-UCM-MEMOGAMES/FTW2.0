@@ -10,15 +10,8 @@ public enum GameSound
     ButtonClicked,
     MenuBGM,
     LevelBGM,
-    DrawerOpen,
-    DrawerClose,
-    MedicineOpen,
-    MedicineClose,
-    PutIn,
-    TakeOut,
-    Notebook,
-    Star,
-    AirPlane
+    Engine,
+    StarUnlocked
 }
 public enum ChannelType
 {
