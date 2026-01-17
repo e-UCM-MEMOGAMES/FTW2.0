@@ -987,6 +987,10 @@ MonoBehaviour:
     m_Localized: CREDITOS
     m_Metadata:
       m_Items: []
+  - m_Id: 204015767881940992
+    m_Localized: SALIR
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

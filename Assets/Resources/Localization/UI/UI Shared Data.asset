@@ -15,6 +15,14 @@ MonoBehaviour:
   m_TableCollectionName: UI
   m_TableCollectionNameGuidString: 3c277c871fda2e14ea7cb69eab1eb04c
   m_Entries:
+  - m_Id: 2175342619062272
+    m_Key: MainMenu/Settings
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3280149750652928
+    m_Key: MainMenu/Credits
+    m_Metadata:
+      m_Items: []
   - m_Id: 1191103885312
     m_Key: LevelGeneralSelector/Canvas/Niveles/1/Text
     m_Metadata:
@@ -939,10 +947,6 @@ MonoBehaviour:
     m_Key: Settings/Canvas/Slider (1)/Text (TMP)
     m_Metadata:
       m_Items: []
-  - m_Id: 2175342619062272
-    m_Key: LevelGeneralSelector/Canvas/Ajustes/Text
-    m_Metadata:
-      m_Items: []
   - m_Id: 3050120716414976
     m_Key: Tutorial/Canvas/Tutorial6/Text (Legacy)
     m_Metadata:
@@ -955,8 +959,8 @@ MonoBehaviour:
     m_Key: Settings/Canvas/Dropdown/Text (TMP)
     m_Metadata:
       m_Items: []
-  - m_Id: 3280149750652928
-    m_Key: Settings/Canvas/Volver (1)/Text (TMP) (2)
+  - m_Id: 204015767881940992
+    m_Key: MainMenu/Exit
     m_Metadata:
       m_Items: []
   m_Metadata:

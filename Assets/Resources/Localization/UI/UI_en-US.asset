@@ -971,7 +971,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 2175342619062272
-    m_Localized: Settings
+    m_Localized: SETTINGS
     m_Metadata:
       m_Items: []
   - m_Id: 3050120716414976
@@ -988,6 +988,10 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 3280149750652928
     m_Localized: CREDITS
+    m_Metadata:
+      m_Items: []
+  - m_Id: 204015767881940992
+    m_Localized: EXIT
     m_Metadata:
       m_Items: []
   references:

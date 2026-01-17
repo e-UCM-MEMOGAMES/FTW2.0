@@ -17,6 +17,12 @@ MonoBehaviour:
     m_SerializedData: []
   m_GUID: 60357a7ab36e4bd4d8d65d5beec1f905
   m_SerializeEntries:
+  - m_GUID: 722e7de66c225d04094e7607a0d0dc4f
+    m_Address: Buildings_en-US
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-en-US
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: c0fbc2e2cf1af1947b9f4e347aa9970d
     m_Address: UI_en-US
     m_ReadOnly: 1
