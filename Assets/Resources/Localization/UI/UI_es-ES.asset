@@ -30,28 +30,8 @@ MonoBehaviour:
     m_Localized: Nivel 3
     m_Metadata:
       m_Items: []
-  - m_Id: 1394930282496
-    m_Localized: NIVEL 1
-    m_Metadata:
-      m_Items: []
   - m_Id: 1421660581888
     m_Localized: Volver
-    m_Metadata:
-      m_Items: []
-  - m_Id: 1733632913408
-    m_Localized: Volver
-    m_Metadata:
-      m_Items: []
-  - m_Id: 1792588050432
-    m_Localized: NIVEL 2
-    m_Metadata:
-      m_Items: []
-  - m_Id: 1998268329984
-    m_Localized: Volver
-    m_Metadata:
-      m_Items: []
-  - m_Id: 2060880900096
-    m_Localized: NIVEL 3
     m_Metadata:
       m_Items: []
   - m_Id: 2207668957184
@@ -1005,6 +985,10 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 205401368308420608
     m_Localized: No
+    m_Metadata:
+      m_Items: []
+  - m_Id: 205471815425486848
+    m_Localized: Tutorial
     m_Metadata:
       m_Items: []
   references:

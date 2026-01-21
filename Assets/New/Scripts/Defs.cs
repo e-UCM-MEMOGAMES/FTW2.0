@@ -1,14 +1,10 @@
 public static class Defs
 {
     /// <summary>
-    /// Nombre de la escena de seleccion de idiomas
-    /// </summary>
-    public static string
-    LANGUAGE_SCENE_NAME = "Language",
-    /// <summary>
     /// Nombre de la escena del menu principal
     /// </summary>
-    MENU_SCENE_NAME = "Intro",
+    public static string
+    MENU_SCENE_NAME = "Start",
     /// <summary>
     /// Nombre de la escena de configuracion
     /// </summary>
@@ -21,20 +17,7 @@ public static class Defs
     /// Nombre de la escena de opciones del nivel
     /// </summary>
     LEVEL_SETTINGS_SCENE_NAME = "LevelSelector",
-    /// <summary>
-    /// Nombre de la escena de juego
-    /// </summary>
-    GAME_SCENE_NAME = "Level",
 
-    /// <summary>
-    /// Id de la configuracion para saber si cargar partida o no
-    /// </summary>
-    NEW_GAME_PREFS_KEY = "newGame",
-    /// <summary>
-    /// Id de la configuracion para el genero del jugador
-    /// </summary>
-    GENDER_PREFS_KEY = "gender",
-    /// <summary>
     /// Id de la configuracion para el volumen de la musica de fondo en las preferencias
     /// </summary>
     BGM_VOLUME_PREFS_KEY = "bgmVolume",
@@ -48,44 +31,19 @@ public static class Defs
     LANGUAGE_PREFS_KEY = "language",
     /// <summary>
     /// Id de la configuracion para la informacion de cada nivel 
-    /// (la id empieza con este string y cambia dependiendo del nivel o el clima)
+    /// (la id empieza con este string y cambia dependiendo del nivel o el mapa)
     /// </summary>
-    LEVEL_NAME_PREFS_KEY = "Level";
-
+    LEVEL_NAME_PREFS_KEY = "Level",
     /// <summary>
-    /// Valores posibles para la configuracion para saber si cargar partida o no
+    /// Id de la configuracion para la informacion de cada mapa de cada nivel 
     /// </summary>
-    public enum LoadGameValues { NEW_GAME = 0, LOAD_GAME = 1 };
-
-    /// <summary>
-    /// Valores posibles para el genero del jugador
-    /// </summary>
-    public enum Gender { NEUTRAL = 0, MALE = 1, FEMALE = 2, };
-
-    /// <summary>
-    /// Climas en los que se puede jugar
-    /// </summary>
-    public enum Climate { BOTH, WARM, COLD };
-
-    /// <summary>
-    /// Categorias de las que pueden ser los objetos
-    /// </summary>
-    public enum ItemCategory { CLOTHING, FOOTWEAR, OTHER };
-
-    /// <summary>
-    /// Maneras en las que pueden aparecer los objetos segun su punto de aparicion
-    /// </summary>
-    public enum SpawnType { REGULAR, STORED, CABINET };
-    /// <summary>
-    /// Pivote/origen vertical con el que aparecen los objetos segun su punto de aparicion
-    /// </summary>
-    public enum SpawnPivot { TOP, MIDDLE, BOTTOM };
+    MAP_NAME_PREFS_KEY = "Map";
 
     /// <summary>
     /// Devuelve la Id de la configuracion para el nivel indicado en el clima indicado
     /// </summary>
-    public static string GetLevelSaveKey(int levelNumber, Climate climate)
+    public static string GetLevelKey(int levelNumber, int mapNumber)
     {
-        return $"{LEVEL_NAME_PREFS_KEY}_{levelNumber.ToString()}_{climate.ToString()}";
+        return $"{LEVEL_NAME_PREFS_KEY}_{levelNumber.ToString()}_{MAP_NAME_PREFS_KEY}_{mapNumber.ToString()}";
     }
 }

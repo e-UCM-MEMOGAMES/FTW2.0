@@ -19,48 +19,7 @@ public class GameManager : SingletonMonoBehaviour<GameManager>
     string COMPLETABLE_ID = "game";
     CompletableTracker.CompletableType COMPLETABLE_TYPE = CompletableTracker.CompletableType.Game;
 
-    /// <summary>
-    /// Genero del jugador
-    /// </summary>
-    Defs.Gender playerGender = Defs.Gender.MALE;
-    public Defs.Gender PlayerGender
-    {
-        get { return playerGender; }
-        set
-        {
-            playerGender = value;
-            PlayerPrefs.SetInt(Defs.GENDER_PREFS_KEY, (int)value);
-            trackerManager.TrySendStatement(AlternativeTracker.Instance.Selected("Gender", value.ToString()));
-        }
-    }
-    /// <summary>
-    /// Clima del nivel elegido
-    /// </summary>
-    Defs.Climate climate;
-    public Defs.Climate Climate
-    {
-        get { return climate; }
-        set
-        {
-            climate = value;
-            trackerManager.TrySendStatement(AlternativeTracker.Instance.Selected("Climate", value.ToString()));
-        }
-    }
-    /// <summary>
-    /// Numero del nivel elegido
-    /// </summary>
-    int level;
-    public int Level
-    {
-        get { return level; }
-        set
-        {
-            level = value;
-            trackerManager.TrySendStatement(AlternativeTracker.Instance.Selected("Level", value.ToString()));
-        }
-    }
-
-
+    
     // Start is called before the first frame update
     void Start()
     {

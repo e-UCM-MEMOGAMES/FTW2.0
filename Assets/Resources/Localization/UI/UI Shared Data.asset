@@ -31,6 +31,14 @@ MonoBehaviour:
     m_Key: Menus/Return
     m_Metadata:
       m_Items: []
+  - m_Id: 205401334435221504
+    m_Key: Menus/Yea
+    m_Metadata:
+      m_Items: []
+  - m_Id: 205401368308420608
+    m_Key: Menus/Nah
+    m_Metadata:
+      m_Items: []
   - m_Id: 2166539467026432
     m_Key: Settings/BGM
     m_Metadata:
@@ -52,35 +60,19 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 1191103885312
-    m_Key: LevelGeneralSelector/Canvas/Niveles/1/Text
+    m_Key: LevelSelector/Level1
     m_Metadata:
       m_Items: []
   - m_Id: 1220417875968
-    m_Key: LevelGeneralSelector/Canvas/Niveles/2/Text
+    m_Key: LevelSelector/Level2
     m_Metadata:
       m_Items: []
   - m_Id: 1237564190720
-    m_Key: LevelGeneralSelector/Canvas/Niveles/3/Text
+    m_Key: LevelSelector/Level3
     m_Metadata:
       m_Items: []
-  - m_Id: 1394930282496
-    m_Key: Level1Selector/Canvas/Text
-    m_Metadata:
-      m_Items: []
-  - m_Id: 1733632913408
-    m_Key: Level2Selector/Canvas/Volver/Text (TMP) (2)
-    m_Metadata:
-      m_Items: []
-  - m_Id: 1792588050432
-    m_Key: Level2Selector/Canvas/Text
-    m_Metadata:
-      m_Items: []
-  - m_Id: 1998268329984
-    m_Key: Level3Selector/Canvas/Volver/Text (TMP) (2)
-    m_Metadata:
-      m_Items: []
-  - m_Id: 2060880900096
-    m_Key: Level3Selector/Canvas/Text
+  - m_Id: 205471815425486848
+    m_Key: LevelSelector/Tutorial
     m_Metadata:
       m_Items: []
   - m_Id: 2207668957184
@@ -969,14 +961,6 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 3269127893610496
     m_Key: N2mapa2/Canvas/PanelWin/Panel (1)/Panel/Descripcion 2
-    m_Metadata:
-      m_Items: []
-  - m_Id: 205401334435221504
-    m_Key: Menus/Yes
-    m_Metadata:
-      m_Items: []
-  - m_Id: 205401368308420608
-    m_Key: Menus/No
     m_Metadata:
       m_Items: []
   m_Metadata:
