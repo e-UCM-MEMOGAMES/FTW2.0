@@ -17,7 +17,47 @@ MonoBehaviour:
   m_SharedData: {fileID: 11400000, guid: d3a6243fb5fabb143b77970aaa435733, type: 2}
   m_Metadata:
     m_Items: []
-  m_TableData: []
+  m_TableData:
+  - m_Id: 2619348283392
+    m_Localized: Casa
+    m_Metadata:
+      m_Items: []
+  - m_Id: 392702018646016
+    m_Localized: Oficinas
+    m_Metadata:
+      m_Items: []
+  - m_Id: 392979111145472
+    m_Localized: Residencia de ancianos
+    m_Metadata:
+      m_Items: []
+  - m_Id: 393016973127680
+    m_Localized: Cafeteria
+    m_Metadata:
+      m_Items: []
+  - m_Id: 393193935007744
+    m_Localized: Restaurante
+    m_Metadata:
+      m_Items: []
+  - m_Id: 393273387708416
+    m_Localized: Pisos de estudiantes
+    m_Metadata:
+      m_Items: []
+  - m_Id: 393384356409344
+    m_Localized: Taller
+    m_Metadata:
+      m_Items: []
+  - m_Id: 407516317151232
+    m_Localized: Hotel
+    m_Metadata:
+      m_Items: []
+  - m_Id: 407577054867456
+    m_Localized: Museo
+    m_Metadata:
+      m_Items: []
+  - m_Id: 442955065389056
+    m_Localized: "Estaci\xF3n de Bomberos"
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

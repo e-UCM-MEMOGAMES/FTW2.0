@@ -968,7 +968,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 2175342619062272
-    m_Localized: AJUSTES
+    m_Localized: Ajustes
     m_Metadata:
       m_Items: []
   - m_Id: 3050120716414976
@@ -984,11 +984,27 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 3280149750652928
-    m_Localized: CREDITOS
+    m_Localized: Creditos
     m_Metadata:
       m_Items: []
   - m_Id: 204015767881940992
-    m_Localized: SALIR
+    m_Localized: Salir
+    m_Metadata:
+      m_Items: []
+  - m_Id: 205395664264695808
+    m_Localized: Restablecer
+    m_Metadata:
+      m_Items: []
+  - m_Id: 205397274667716608
+    m_Localized: "\xBFQuiere restablecer los ajustes y borrar la partida guardada?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 205401334435221504
+    m_Localized: Si
+    m_Metadata:
+      m_Items: []
+  - m_Id: 205401368308420608
+    m_Localized: No
     m_Metadata:
       m_Items: []
   references:

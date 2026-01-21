@@ -23,6 +23,34 @@ MonoBehaviour:
     m_Key: MainMenu/Credits
     m_Metadata:
       m_Items: []
+  - m_Id: 204015767881940992
+    m_Key: MainMenu/Exit
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1421660581888
+    m_Key: Menus/Return
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2166539467026432
+    m_Key: Settings/BGM
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2166554218393600
+    m_Key: Settings/SFX
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3272644960120832
+    m_Key: Settings/Language
+    m_Metadata:
+      m_Items: []
+  - m_Id: 205395664264695808
+    m_Key: Settings/Reset
+    m_Metadata:
+      m_Items: []
+  - m_Id: 205397274667716608
+    m_Key: Settings/ResetWarning
+    m_Metadata:
+      m_Items: []
   - m_Id: 1191103885312
     m_Key: LevelGeneralSelector/Canvas/Niveles/1/Text
     m_Metadata:
@@ -37,10 +65,6 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 1394930282496
     m_Key: Level1Selector/Canvas/Text
-    m_Metadata:
-      m_Items: []
-  - m_Id: 1421660581888
-    m_Key: Level1Selector/Canvas/Volver/Text (TMP) (2)
     m_Metadata:
       m_Items: []
   - m_Id: 1733632913408
@@ -939,14 +963,6 @@ MonoBehaviour:
     m_Key: N1mapa2/Canvas/PanelGameOver/Text
     m_Metadata:
       m_Items: []
-  - m_Id: 2166539467026432
-    m_Key: Settings/Canvas/Slider/Text (TMP)
-    m_Metadata:
-      m_Items: []
-  - m_Id: 2166554218393600
-    m_Key: Settings/Canvas/Slider (1)/Text (TMP)
-    m_Metadata:
-      m_Items: []
   - m_Id: 3050120716414976
     m_Key: Tutorial/Canvas/Tutorial6/Text (Legacy)
     m_Metadata:
@@ -955,12 +971,12 @@ MonoBehaviour:
     m_Key: N2mapa2/Canvas/PanelWin/Panel (1)/Panel/Descripcion 2
     m_Metadata:
       m_Items: []
-  - m_Id: 3272644960120832
-    m_Key: Settings/Canvas/Dropdown/Text (TMP)
+  - m_Id: 205401334435221504
+    m_Key: Menus/Yes
     m_Metadata:
       m_Items: []
-  - m_Id: 204015767881940992
-    m_Key: MainMenu/Exit
+  - m_Id: 205401368308420608
+    m_Key: Menus/No
     m_Metadata:
       m_Items: []
   m_Metadata:

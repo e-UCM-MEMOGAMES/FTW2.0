@@ -7,6 +7,8 @@ public class MenuButtons : MonoBehaviour
     /// </summary>
     GameManager gameManager;
 
+    [SerializeField] Transition transition;
+
 
     //Start is called before the first frame update
     void Start()
@@ -16,7 +18,7 @@ public class MenuButtons : MonoBehaviour
 
     public void ChangeScene(string sceneName)
     {
-        gameManager.ChangeScene(sceneName);
+        transition.ChangeScene(sceneName);
     }
 
     public void ExitGame()
@@ -27,6 +29,5 @@ public class MenuButtons : MonoBehaviour
     public void ResetGame()
     {
         PlayerPrefs.DeleteAll();
-        gameManager.ChangeScene(Defs.LANGUAGE_SCENE_NAME);
     }
 }

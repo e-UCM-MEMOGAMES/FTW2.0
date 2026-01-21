@@ -971,7 +971,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 2175342619062272
-    m_Localized: SETTINGS
+    m_Localized: Settings
     m_Metadata:
       m_Items: []
   - m_Id: 3050120716414976
@@ -987,11 +987,27 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 3280149750652928
-    m_Localized: CREDITS
+    m_Localized: Credits
     m_Metadata:
       m_Items: []
   - m_Id: 204015767881940992
-    m_Localized: EXIT
+    m_Localized: Exit
+    m_Metadata:
+      m_Items: []
+  - m_Id: 205395664264695808
+    m_Localized: Reset
+    m_Metadata:
+      m_Items: []
+  - m_Id: 205397274667716608
+    m_Localized: Do you want to reset the settings and delete the saved game?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 205401334435221504
+    m_Localized: Yes
+    m_Metadata:
+      m_Items: []
+  - m_Id: 205401368308420608
+    m_Localized: No
     m_Metadata:
       m_Items: []
   references:
