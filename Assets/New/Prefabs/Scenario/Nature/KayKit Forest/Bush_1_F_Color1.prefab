@@ -68,6 +68,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bush_1_F_Color1
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 4e5cbc8145d77b44a89de0d5c19661ec,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

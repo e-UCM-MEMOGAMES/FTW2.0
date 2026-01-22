@@ -1,5 +1,5 @@
 using UnityEngine;
-using UnityEngine.Analytics;
+
 
 public class Transition : MonoBehaviour
 {

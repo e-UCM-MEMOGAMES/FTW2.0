@@ -68,7 +68,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 2207668957184
-    m_Key: Tutorial/Canvas/PanelWin/Panel (1)/Panel/Puntuacion
+    m_Key: Level/Score
     m_Metadata:
       m_Items: []
   - m_Id: 2248425009152
@@ -88,7 +88,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 2549534093312
-    m_Key: Tutorial/Canvas/PanelWin/Text
+    m_Key: Level/Complete
     m_Metadata:
       m_Items: []
   - m_Id: 2585038876672
@@ -444,7 +444,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 391011928043520
-    m_Key: N2mapa2/Canvas/PanelGameOver/Text
+    m_Key: Level/GameOver
     m_Metadata:
       m_Items: []
   - m_Id: 391063983550464
@@ -472,7 +472,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 391255151538176
-    m_Key: N2mapa3/Canvas/PanelGameOver/Volver (1)/Reintentar
+    m_Key: Level/Retry
     m_Metadata:
       m_Items: []
   - m_Id: 391292657004544

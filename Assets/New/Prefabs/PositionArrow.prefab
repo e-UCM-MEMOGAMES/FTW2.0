@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 9221175336342239372}
   - component: {fileID: 9213797315618284790}
   - component: {fileID: 1394656923198391493}
-  m_Layer: 9
+  m_Layer: 10
   m_Name: PositionArrow
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -27,13 +27,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 9190407752911066556}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.5, y: 0.5, z: -0.5, w: 0.5}
+  m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
   m_LocalPosition: {x: 0, y: 2.996, z: -0.09}
   m_LocalScale: {x: 0.38, y: 0.76, z: 0.76}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 90, y: 90, z: 0}
+  m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
 --- !u!33 &9221175336342239372
 MeshFilter:
   m_ObjectHideFlags: 0

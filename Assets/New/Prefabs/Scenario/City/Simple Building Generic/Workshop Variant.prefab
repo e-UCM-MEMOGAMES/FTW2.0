@@ -16,7 +16,12 @@ PrefabInstance:
     - target: {fileID: 8537673697885705002, guid: dca6cf054ebcb5349a8333d108c74279,
         type: 3}
       propertyPath: m_Name
-      value: Workshop
+      value: Workshop Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 8537673697885705002, guid: dca6cf054ebcb5349a8333d108c74279,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 9020771982624164240, guid: dca6cf054ebcb5349a8333d108c74279,
         type: 3}

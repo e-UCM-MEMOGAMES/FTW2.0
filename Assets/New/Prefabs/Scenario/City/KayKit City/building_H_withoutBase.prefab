@@ -88,6 +88,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: building_H_withoutBase
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: b084097be50f0794196d21e5be65c444,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

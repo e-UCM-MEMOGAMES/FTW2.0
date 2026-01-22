@@ -16,7 +16,12 @@ PrefabInstance:
     - target: {fileID: 8273424752105082923, guid: c1d3259b1b00f2745934a591a64234a2,
         type: 3}
       propertyPath: m_Name
-      value: Police_Station
+      value: Police_Station Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 8273424752105082923, guid: c1d3259b1b00f2745934a591a64234a2,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 8762539598914357905, guid: c1d3259b1b00f2745934a591a64234a2,
         type: 3}

@@ -11,7 +11,12 @@ PrefabInstance:
     - target: {fileID: 363025940278517486, guid: eb1a3f979ef5c8743a26ef5a30ec6511,
         type: 3}
       propertyPath: m_Name
-      value: Hospital
+      value: Hospital Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 363025940278517486, guid: eb1a3f979ef5c8743a26ef5a30ec6511,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 1027500796473623636, guid: eb1a3f979ef5c8743a26ef5a30ec6511,
         type: 3}
