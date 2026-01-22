@@ -7,18 +7,27 @@ public class LevelSelectorButtons : MonoBehaviour
     /// </summary>
     GameManager gameManager;
 
-    [SerializeField]
     /// <summary>
     /// Elementos de la seleccion de nivel
     /// </summary>
+    [SerializeField]
     GameObject levels,
     /// <summary>
     /// Elementos de la seleccion de mapa
     /// </summary>
     maps;
 
-    int selectedLevel = 0,
-        selectedMap = 0;
+    [SerializeField]
+    int minStarsForNextLevel = 0,
+        neededLevelsWithMinStars = 2,
+        minStarsPerLevel = 0;
+
+    [SerializeField]
+    LevelButton[] levelButtons;
+
+    [SerializeField]
+    MapButton[] mapButtons;
+
 
 
     // Start is called before the first frame update
@@ -28,6 +37,32 @@ public class LevelSelectorButtons : MonoBehaviour
 
         levels.SetActive(true);
         maps.SetActive(false);
+
+        string prevLvl = "";
+        string currLvl = "";
+
+        int beatenMapsPrevLevel = 0;
+
+        for (int levelNumber = 0; levelNumber < levelButtons.Length; levelNumber++)
+        {
+            for (int mapNumber = 0; mapNumber < mapButtons.Length; mapNumber++)
+            {
+                mapButtons[mapNumber].Setup(minStarsForNextLevel);
+
+                prevLvl = Defs.GetLevelKey(levelNumber, mapNumber);
+                currLvl = Defs.GetLevelKey(levelNumber, mapNumber + 1);
+
+                bool mapUnlocked = mapNumber == 0 || (PlayerPrefs.HasKey(prevLvl) && PlayerPrefs.GetInt(prevLvl) >= minStarsForNextLevel);
+
+                if (mapUnlocked && PlayerPrefs.GetInt(currLvl) >= minStarsPerLevel)
+                {
+                    beatenMapsPrevLevel++;
+                }
+            }
+            bool levelUnlocked = levelNumber == 0 || beatenMapsPrevLevel >= neededLevelsWithMinStars;
+
+            levelButtons[levelNumber].Unlock(levelUnlocked);
+        }
     }
 
 
@@ -55,7 +90,10 @@ public class LevelSelectorButtons : MonoBehaviour
     /// </summary>
     public void StartTutorial()
     {
-        SelectMap();
+        gameManager.Level = 0;
+        gameManager.Map = 0;
+
+        gameManager.ChangeScene(Defs.TUTORIAL_SCENE_NAME);
     }
 
     /// <summary>
@@ -63,7 +101,7 @@ public class LevelSelectorButtons : MonoBehaviour
     /// </summary>
     public void SelectLevel(int level)
     {
-        selectedLevel = level;
+        gameManager.Level = level;
         // Se ocultan los elementos de seleccion de nivel y se muestran los de seleccion de mapa
         levels.SetActive(false);
         maps.SetActive(true);
@@ -75,6 +113,6 @@ public class LevelSelectorButtons : MonoBehaviour
     public void SelectMap()
     {
         // Cambia a la escena de juego
-        gameManager.ChangeScene(Defs.GetLevelKey(selectedLevel, selectedMap));
+        gameManager.ChangeScene(Defs.GetLevelKey(gameManager.Level, gameManager.Map));
     }
 }

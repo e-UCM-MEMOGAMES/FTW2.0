@@ -18,6 +18,12 @@ public static class Defs
     /// </summary>
     LEVEL_SETTINGS_SCENE_NAME = "LevelSelector",
 
+    /// <summary>
+    /// Nombre de la escena del tutorial
+    /// </summary>
+    TUTORIAL_SCENE_NAME = "Tutorial",
+
+
     /// Id de la configuracion para el volumen de la musica de fondo en las preferencias
     /// </summary>
     BGM_VOLUME_PREFS_KEY = "bgmVolume",

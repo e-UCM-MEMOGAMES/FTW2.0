@@ -19,15 +19,7 @@ MonoBehaviour:
     m_Items: []
   m_TableData:
   - m_Id: 1191103885312
-    m_Localized: Nivel 1
-    m_Metadata:
-      m_Items: []
-  - m_Id: 1220417875968
-    m_Localized: Nivel 2
-    m_Metadata:
-      m_Items: []
-  - m_Id: 1237564190720
-    m_Localized: Nivel 3
+    m_Localized: Nivel
     m_Metadata:
       m_Items: []
   - m_Id: 1421660581888

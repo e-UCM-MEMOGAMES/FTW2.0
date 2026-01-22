@@ -19,7 +19,33 @@ public class GameManager : SingletonMonoBehaviour<GameManager>
     string COMPLETABLE_ID = "game";
     CompletableTracker.CompletableType COMPLETABLE_TYPE = CompletableTracker.CompletableType.Game;
 
-    
+    /// <summary>
+    /// Numero del nivel elegido
+    /// </summary>
+    int level;
+    public int Level
+    {
+        get { return level; }
+        set
+        {
+            level = value;
+            trackerManager.TrySendStatement(AlternativeTracker.Instance.Selected("Level", value.ToString()));
+        }
+    }
+    /// <summary>
+    /// Numero del mapa del nivel elegido
+    /// </summary>
+    int map;
+    public int Map
+    {
+        get { return map; }
+        set
+        {
+            map = value;
+            trackerManager.TrySendStatement(AlternativeTracker.Instance.Selected("Map", value.ToString()));
+        }
+    }
+
     // Start is called before the first frame update
     void Start()
     {

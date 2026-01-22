@@ -60,15 +60,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 1191103885312
-    m_Key: LevelSelector/Level1
-    m_Metadata:
-      m_Items: []
-  - m_Id: 1220417875968
-    m_Key: LevelSelector/Level2
-    m_Metadata:
-      m_Items: []
-  - m_Id: 1237564190720
-    m_Key: LevelSelector/Level3
+    m_Key: LevelSelector/LevelTitle
     m_Metadata:
       m_Items: []
   - m_Id: 205471815425486848
