@@ -30,24 +30,6 @@ MonoBehaviour:
     m_Localized: Score
     m_Metadata:
       m_Items: []
-  - m_Id: 2248425009152
-    m_Localized: retry
-    m_Metadata:
-      m_Items: []
-  - m_Id: 2377315971072
-    m_Localized: 'You ran out of fuel...
-
-      Try again'
-    m_Metadata:
-      m_Items: []
-  - m_Id: 2442747113472
-    m_Localized: Next level
-    m_Metadata:
-      m_Items: []
-  - m_Id: 2472044326912
-    m_Localized: Replay
-    m_Metadata:
-      m_Items: []
   - m_Id: 2549534093312
     m_Localized: Destination reached!
     m_Metadata:
@@ -120,12 +102,8 @@ MonoBehaviour:
     m_Localized: Tap to continue
     m_Metadata:
       m_Items: []
-  - m_Id: 4089321811968
-    m_Localized: exit
-    m_Metadata:
-      m_Items: []
   - m_Id: 378826388598784
-    m_Localized: Used less than 50% of total fuel
+    m_Localized: Use less than 50% of total fuel
     m_Metadata:
       m_Items: []
   - m_Id: 378990167781376
@@ -134,114 +112,6 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 379021444706304
     m_Localized: Take the shortest route
-    m_Metadata:
-      m_Items: []
-  - m_Id: 379289351680000
-    m_Localized: Used less than 50% of total fuel
-    m_Metadata:
-      m_Items: []
-  - m_Id: 379305139040256
-    m_Localized: Used less than 50% of total fuel
-    m_Metadata:
-      m_Items: []
-  - m_Id: 379317923278848
-    m_Localized: Used less than 50% of total fuel
-    m_Metadata:
-      m_Items: []
-  - m_Id: 379335803596800
-    m_Localized: Used less than 50% of total fuel
-    m_Metadata:
-      m_Items: []
-  - m_Id: 379378975567872
-    m_Localized: Used less than 50% of total fuel
-    m_Metadata:
-      m_Items: []
-  - m_Id: 379400421044224
-    m_Localized: Used less than 50% of total fuel
-    m_Metadata:
-      m_Items: []
-  - m_Id: 379484810440704
-    m_Localized: Used less than 50% of total fuel
-    m_Metadata:
-      m_Items: []
-  - m_Id: 379501747040256
-    m_Localized: Used less than 50% of total fuel
-    m_Metadata:
-      m_Items: []
-  - m_Id: 379517593120768
-    m_Localized: Used less than 50% of total fuel
-    m_Metadata:
-      m_Items: []
-  - m_Id: 379591693889536
-    m_Localized: Not check the map
-    m_Metadata:
-      m_Items: []
-  - m_Id: 379604461350912
-    m_Localized: Not check the map
-    m_Metadata:
-      m_Items: []
-  - m_Id: 379619921555456
-    m_Localized: Not check the map
-    m_Metadata:
-      m_Items: []
-  - m_Id: 379641211842560
-    m_Localized: Not check the map
-    m_Metadata:
-      m_Items: []
-  - m_Id: 379669628252160
-    m_Localized: Not check the map
-    m_Metadata:
-      m_Items: []
-  - m_Id: 379688938827776
-    m_Localized: Not check the map
-    m_Metadata:
-      m_Items: []
-  - m_Id: 379702838751232
-    m_Localized: Not check the map
-    m_Metadata:
-      m_Items: []
-  - m_Id: 379713714581504
-    m_Localized: Not check the map
-    m_Metadata:
-      m_Items: []
-  - m_Id: 379783025455104
-    m_Localized: Take the shortest route
-    m_Metadata:
-      m_Items: []
-  - m_Id: 379795667087360
-    m_Localized: Take the shortest route
-    m_Metadata:
-      m_Items: []
-  - m_Id: 379813035700224
-    m_Localized: Take the shortest route
-    m_Metadata:
-      m_Items: []
-  - m_Id: 379832832815104
-    m_Localized: Take the shortest route
-    m_Metadata:
-      m_Items: []
-  - m_Id: 379846896316416
-    m_Localized: Take the shortest route
-    m_Metadata:
-      m_Items: []
-  - m_Id: 379859659583488
-    m_Localized: Take the shortest route
-    m_Metadata:
-      m_Items: []
-  - m_Id: 379889825017856
-    m_Localized: Take the shortest route
-    m_Metadata:
-      m_Items: []
-  - m_Id: 379902630227968
-    m_Localized: Take the shortest route
-    m_Metadata:
-      m_Items: []
-  - m_Id: 379916710506496
-    m_Localized: Take the shortest route
-    m_Metadata:
-      m_Items: []
-  - m_Id: 380346798632960
-    m_Localized: SCORE
     m_Metadata:
       m_Items: []
   - m_Id: 380360874717184
@@ -264,26 +134,12 @@ MonoBehaviour:
     m_Localized: EXIT
     m_Metadata:
       m_Items: []
-  - m_Id: 381051387179008
-    m_Localized: REPLAY
-    m_Metadata:
-      m_Items: []
   - m_Id: 381066935463936
     m_Localized: NEXT LEVEL
     m_Metadata:
       m_Items: []
-  - m_Id: 381098979946496
-    m_Localized: 'You ran out of fuel...
-
-      Try again'
-    m_Metadata:
-      m_Items: []
   - m_Id: 381155322032128
     m_Localized: EXIT
-    m_Metadata:
-      m_Items: []
-  - m_Id: 381194614272000
-    m_Localized: SCORE
     m_Metadata:
       m_Items: []
   - m_Id: 381341813370880
@@ -306,20 +162,12 @@ MonoBehaviour:
     m_Localized: EXIT
     m_Metadata:
       m_Items: []
-  - m_Id: 381594805399552
-    m_Localized: REPLAY
-    m_Metadata:
-      m_Items: []
   - m_Id: 381608130703360
     m_Localized: NEXT LEVEL
     m_Metadata:
       m_Items: []
   - m_Id: 381624622706688
     m_Localized: EXIT
-    m_Metadata:
-      m_Items: []
-  - m_Id: 381811445395456
-    m_Localized: SCORE
     m_Metadata:
       m_Items: []
   - m_Id: 381822874873856
@@ -334,12 +182,6 @@ MonoBehaviour:
     m_Localized: Home
     m_Metadata:
       m_Items: []
-  - m_Id: 382284319617024
-    m_Localized: 'You ran out of fuel...
-
-      Try again'
-    m_Metadata:
-      m_Items: []
   - m_Id: 382334328303616
     m_Localized: You arrived at your destination!
     m_Metadata:
@@ -348,20 +190,12 @@ MonoBehaviour:
     m_Localized: EXIT
     m_Metadata:
       m_Items: []
-  - m_Id: 382400648638464
-    m_Localized: REPLAY
-    m_Metadata:
-      m_Items: []
   - m_Id: 382413957165056
     m_Localized: NEXT LEVEL
     m_Metadata:
       m_Items: []
   - m_Id: 382431124451328
     m_Localized: EXIT
-    m_Metadata:
-      m_Items: []
-  - m_Id: 382484970926080
-    m_Localized: SCORE
     m_Metadata:
       m_Items: []
   - m_Id: 382499135090688
@@ -376,12 +210,6 @@ MonoBehaviour:
     m_Localized: Home
     m_Metadata:
       m_Items: []
-  - m_Id: 382701514452992
-    m_Localized: 'You ran out of fuel...
-
-      Try again'
-    m_Metadata:
-      m_Items: []
   - m_Id: 382743960809472
     m_Localized: You arrived at your destination!
     m_Metadata:
@@ -390,20 +218,12 @@ MonoBehaviour:
     m_Localized: EXIT
     m_Metadata:
       m_Items: []
-  - m_Id: 382797744369664
-    m_Localized: REPLAY
-    m_Metadata:
-      m_Items: []
   - m_Id: 382816417411072
     m_Localized: NEXT LEVEL
     m_Metadata:
       m_Items: []
   - m_Id: 382833119129600
     m_Localized: EXIT
-    m_Metadata:
-      m_Items: []
-  - m_Id: 382866379960320
-    m_Localized: SCORE
     m_Metadata:
       m_Items: []
   - m_Id: 382879755595776
@@ -432,10 +252,6 @@ MonoBehaviour:
     m_Localized: EXIT
     m_Metadata:
       m_Items: []
-  - m_Id: 391129733459968
-    m_Localized: REPLAY
-    m_Metadata:
-      m_Items: []
   - m_Id: 391151808081920
     m_Localized: NEXT LEVEL
     m_Metadata:
@@ -444,12 +260,8 @@ MonoBehaviour:
     m_Localized: EXIT
     m_Metadata:
       m_Items: []
-  - m_Id: 391240731521024
-    m_Localized: SCORE
-    m_Metadata:
-      m_Items: []
   - m_Id: 391255151538176
-    m_Localized: RETRY
+    m_Localized: Retry
     m_Metadata:
       m_Items: []
   - m_Id: 391292657004544
@@ -460,12 +272,6 @@ MonoBehaviour:
     m_Localized: Home
     m_Metadata:
       m_Items: []
-  - m_Id: 391355122774016
-    m_Localized: 'You ran out of fuel...
-
-      Try again'
-    m_Metadata:
-      m_Items: []
   - m_Id: 391420587470848
     m_Localized: You arrived at your destination!
     m_Metadata:
@@ -474,20 +280,12 @@ MonoBehaviour:
     m_Localized: EXIT
     m_Metadata:
       m_Items: []
-  - m_Id: 391485955698688
-    m_Localized: replay
-    m_Metadata:
-      m_Items: []
   - m_Id: 391504989450240
     m_Localized: NEXT LEVEL
     m_Metadata:
       m_Items: []
   - m_Id: 391522269982720
     m_Localized: EXIT
-    m_Metadata:
-      m_Items: []
-  - m_Id: 391585876602880
-    m_Localized: SCORE
     m_Metadata:
       m_Items: []
   - m_Id: 391598727950336
@@ -502,12 +300,6 @@ MonoBehaviour:
     m_Localized: Home
     m_Metadata:
       m_Items: []
-  - m_Id: 391778936221696
-    m_Localized: 'You ran out of fuel...
-
-      Try again'
-    m_Metadata:
-      m_Items: []
   - m_Id: 391819990069248
     m_Localized: You arrived at your destination!
     m_Metadata:
@@ -516,20 +308,12 @@ MonoBehaviour:
     m_Localized: EXIT
     m_Metadata:
       m_Items: []
-  - m_Id: 391890752172032
-    m_Localized: REPLAY
-    m_Metadata:
-      m_Items: []
   - m_Id: 391906514366464
     m_Localized: NEXT LEVEL
     m_Metadata:
       m_Items: []
   - m_Id: 391923773927424
     m_Localized: EXIT
-    m_Metadata:
-      m_Items: []
-  - m_Id: 391946523832320
-    m_Localized: SCORE
     m_Metadata:
       m_Items: []
   - m_Id: 391957076701184
@@ -544,12 +328,6 @@ MonoBehaviour:
     m_Localized: Home
     m_Metadata:
       m_Items: []
-  - m_Id: 392081878216704
-    m_Localized: 'You ran out of fuel...
-
-      Try again'
-    m_Metadata:
-      m_Items: []
   - m_Id: 392126040043520
     m_Localized: You arrived at your destination!
     m_Metadata:
@@ -558,20 +336,12 @@ MonoBehaviour:
     m_Localized: EXIT
     m_Metadata:
       m_Items: []
-  - m_Id: 392199679438848
-    m_Localized: REPLAY
-    m_Metadata:
-      m_Items: []
   - m_Id: 392229224116224
     m_Localized: NEXT LEVEL
     m_Metadata:
       m_Items: []
   - m_Id: 392281292206080
     m_Localized: EXIT
-    m_Metadata:
-      m_Items: []
-  - m_Id: 392315664527360
-    m_Localized: SCORE
     m_Metadata:
       m_Items: []
   - m_Id: 392326385168384
@@ -586,12 +356,6 @@ MonoBehaviour:
     m_Localized: Home
     m_Metadata:
       m_Items: []
-  - m_Id: 392435290271744
-    m_Localized: 'You ran out of fuel...
-
-      Try again'
-    m_Metadata:
-      m_Items: []
   - m_Id: 392482337779712
     m_Localized: You arrived at your destination!
     m_Metadata:
@@ -600,8 +364,8 @@ MonoBehaviour:
     m_Localized: EXIT
     m_Metadata:
       m_Items: []
-  - m_Id: 392556090421248
-    m_Localized: REPLAY
+  - m_Id: 205996726773743616
+    m_Localized: Replay
     m_Metadata:
       m_Items: []
   - m_Id: 392572456595456
@@ -926,12 +690,6 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 459102515032064
     m_Localized: Home
-    m_Metadata:
-      m_Items: []
-  - m_Id: 1954527508099072
-    m_Localized: 'You ran out of fuel...
-
-      Try again'
     m_Metadata:
       m_Items: []
   - m_Id: 2166539467026432

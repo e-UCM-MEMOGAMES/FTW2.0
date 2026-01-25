@@ -45,6 +45,9 @@ public static class Defs
     /// </summary>
     MAP_NAME_PREFS_KEY = "Map";
 
+    public enum StopType { NONE, CORNER, TSPLIT, INTERSECTION };
+
+
     /// <summary>
     /// Devuelve la Id de la configuracion para el nivel indicado en el clima indicado
     /// </summary>

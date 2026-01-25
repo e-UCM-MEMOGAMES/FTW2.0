@@ -167,4 +167,9 @@ public class AudioManager : SingletonMonoBehaviour<AudioManager>
     {
         bgmSource.Stop();
     }
+    public void StopSFX()
+    {
+        sfxSource.Stop();
+    }
+
 }
