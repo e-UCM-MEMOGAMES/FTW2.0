@@ -93,7 +93,7 @@ public class LevelSelectorButtons : MonoBehaviour
         gameManager.Level = 0;
         gameManager.Map = 0;
 
-        gameManager.ChangeScene(Defs.TUTORIAL_SCENE_NAME);
+        GetComponent<MenuButtons>().ChangeScene(Defs.TUTORIAL_SCENE_NAME);
     }
 
     /// <summary>
@@ -113,6 +113,6 @@ public class LevelSelectorButtons : MonoBehaviour
     public void SelectMap()
     {
         // Cambia a la escena de juego
-        gameManager.ChangeScene(Defs.GetLevelKey(gameManager.Level, gameManager.Map));
+        GetComponent<MenuButtons>().ChangeScene(Defs.GetLevelKey(gameManager.Level, gameManager.Map));
     }
 }

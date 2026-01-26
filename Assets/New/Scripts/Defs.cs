@@ -45,7 +45,7 @@ public static class Defs
     /// </summary>
     MAP_NAME_PREFS_KEY = "Map";
 
-    public enum StopType { NONE, CORNER, TSPLIT, INTERSECTION };
+    public enum StopType { NONE, CORNER, TSPLIT, INTERSECTION, GOAL };
 
 
     /// <summary>

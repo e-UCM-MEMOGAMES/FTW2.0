@@ -1,4 +1,5 @@
 ﻿using TMPro;
+using UnityEditor.Build.Content;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -65,19 +66,22 @@ public class MapButton : MonoBehaviour
         if (mapNumber > 1)
         {
             string prevLvl = Defs.GetLevelKey(gameManager.Level, mapNumber - 1);
-            unlocked = PlayerPrefs.HasKey(prevLvl) && PlayerPrefs.GetInt(prevLvl) >= minStarsForNextLevel;
+            unlocked = (PlayerPrefs.HasKey(prevLvl) && PlayerPrefs.GetInt(prevLvl) >= minStarsForNextLevel) || preUnlocked;
         }
 
         // Hace el boton interactuable y oculta el icono de bloqueado (o viceversa)
         button.interactable = unlocked;
 
-        int numUnlockedStars = PlayerPrefs.GetInt(currLvl);
-        for (int i = 0; i < stars.Length; i++)
+        if (unlocked)
         {
-            stars[i].color = starLockedColor;
-            if (i < numUnlockedStars)
+            int numUnlockedStars = PlayerPrefs.GetInt(currLvl);
+            for (int i = 0; i < stars.Length; i++)
             {
-               stars[i].color = starUnlockedColor;
+                stars[i].color = starLockedColor;
+                if (i < numUnlockedStars)
+                {
+                   stars[i].color = starUnlockedColor;
+                }
             }
         }
     }

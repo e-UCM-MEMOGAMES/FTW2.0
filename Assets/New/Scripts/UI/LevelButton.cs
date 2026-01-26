@@ -55,7 +55,7 @@ public class LevelButton : MonoBehaviour
     {
         // Hace el boton interactuable y oculta el icono de bloqueado (o viceversa)
         button.interactable = unlocked;
-        if (unlocked)
+        if (unlocked || preUnlocked)
         {
             bg.color = unlockedColor;
         }

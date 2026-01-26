@@ -38,6 +38,7 @@ public class CarController : MonoBehaviour
         {
             arrow.SetActive(false);
         }
+        arrows[(int)Arrows.FRONT].SetActive(true);
     }
 
     // Update is called once per frame
@@ -46,11 +47,12 @@ public class CarController : MonoBehaviour
         if (hasToStop && Vector3.Distance(transform.position, stopPos) < 0.05)
         {
             Stop();
+            levelManager.ConsumeFuel(Vector3.Distance(transform.position, stopPos));
         }
         if (vel != Vector3.zero)
         {
             transform.position += vel.normalized * speed * Time.deltaTime;
-            levelManager.ConsumeFuel((1.0f / speed) * Time.deltaTime);
+            levelManager.ConsumeFuel(speed * Time.deltaTime);
         }
 
     }
@@ -65,6 +67,11 @@ public class CarController : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
+        foreach (GameObject arrow in arrows)
+        {
+            arrow.SetActive(false);
+        }
+
         RoadStop stop = other.GetComponent<RoadStop>();
         if (stop != null)
         {
@@ -93,7 +100,12 @@ public class CarController : MonoBehaviour
         ForceStop();
         transform.position = stopPos;
 
-        if (stopType == Defs.StopType.INTERSECTION)
+        if (stopType == Defs.StopType.GOAL)
+        {
+            levelManager.Win();
+            ForceStop();
+        }
+        else if (stopType == Defs.StopType.INTERSECTION)
         {
             foreach (GameObject arrow in arrows)
             {

@@ -8240,26 +8240,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 459650161387068583, guid: c28a78cb1c557204da4cc06eeb6c521e,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3758254769633635467, guid: c28a78cb1c557204da4cc06eeb6c521e,
-        type: 3}
-      propertyPath: m_Color.b
-      value: 0.27727836
-      objectReference: {fileID: 0}
-    - target: {fileID: 3758254769633635467, guid: c28a78cb1c557204da4cc06eeb6c521e,
-        type: 3}
-      propertyPath: m_Color.g
-      value: 0.39698505
-      objectReference: {fileID: 0}
-    - target: {fileID: 3758254769633635467, guid: c28a78cb1c557204da4cc06eeb6c521e,
-        type: 3}
-      propertyPath: m_Color.r
-      value: 0.6320754
-      objectReference: {fileID: 0}
     - target: {fileID: 7286480702609068496, guid: 9aeefb69eeb60d74db2b3fd6c8d2be90,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -8315,9 +8295,30 @@ PrefabInstance:
       propertyPath: m_Name
       value: MenusScenario
       objectReference: {fileID: 0}
+    - target: {fileID: 459650161387068583, guid: c28a78cb1c557204da4cc06eeb6c521e,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3758254769633635467, guid: c28a78cb1c557204da4cc06eeb6c521e,
+        type: 3}
+      propertyPath: m_Color.b
+      value: 0.27727836
+      objectReference: {fileID: 0}
+    - target: {fileID: 3758254769633635467, guid: c28a78cb1c557204da4cc06eeb6c521e,
+        type: 3}
+      propertyPath: m_Color.g
+      value: 0.39698505
+      objectReference: {fileID: 0}
+    - target: {fileID: 3758254769633635467, guid: c28a78cb1c557204da4cc06eeb6c521e,
+        type: 3}
+      propertyPath: m_Color.r
+      value: 0.6320754
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:
     - {fileID: 7172515701652565502, guid: c28a78cb1c557204da4cc06eeb6c521e, type: 3}
+    - {fileID: 1662935910911000176, guid: 9aeefb69eeb60d74db2b3fd6c8d2be90, type: 3}
     m_AddedGameObjects:
     - targetCorrespondingSourceObject: {fileID: 7286480702609068496, guid: 9aeefb69eeb60d74db2b3fd6c8d2be90,
         type: 3}
