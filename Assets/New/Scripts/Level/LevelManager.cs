@@ -23,23 +23,22 @@ public class LevelManager : MonoBehaviour
     /// Temporizador para medir el tiempo que se tarda en completar el nivel
     /// </summary>
     Stopwatch watch = Stopwatch.StartNew();
-    CompletableTracker.CompletableType COMPLETABLE_TYPE = CompletableTracker.CompletableType.Level;
+    //CompletableTracker.CompletableType COMPLETABLE_TYPE = CompletableTracker.CompletableType.Level;
 
+    [Header("Level Solver")]
+    [SerializeField] BFS bfsSolver;
 
-    enum Directions { FORWARD, RIGHT, BACK, LEFT }
     [Header("Level Specific Configuration")]
     [SerializeField] Transform startingTile;
-    [SerializeField] Directions initialDirection;
+    [SerializeField] Defs.CarDirections initialDirection;
     [SerializeField] Transform goalTile;
     [SerializeField] float initialFuel = 100;
     [SerializeField] float fuelConsumptionPerTile = 1;
     float totalFuelInTiles = 0;
-    int shortestDistance = 0;
-    // TODO
+    int minDistance = 0;
     float traversedDistance = 0;
     [SerializeField] Transform buildingsParentObj;
     [SerializeField] LocalizedString localizedObjectiveText;
-    [SerializeField] TextMeshProUGUI objectiveText;
 
 
     [Header("Elements Depending on Player Movement")]
@@ -57,6 +56,7 @@ public class LevelManager : MonoBehaviour
     [SerializeField] RectTransform fuelBar;
     float initialFuelBarWidth;
     Vector2 fuelBarSize;
+    [SerializeField] TextMeshProUGUI objectiveText;
     [SerializeField] GameObject buildingInfoPanel;
     [SerializeField] TextMeshProUGUI buildingInfoText;
     [SerializeField] GameObject winPanel;
@@ -87,7 +87,8 @@ public class LevelManager : MonoBehaviour
         audioManager = AudioManager.Instance;
         trackerManager = TrackerManager.Instance;
 
-        audioManager.StopBGM();
+
+        audioManager.Play(GameSound.LevelBGM);
         watch.Start();
 
         InitialSetup();
@@ -96,6 +97,9 @@ public class LevelManager : MonoBehaviour
         fuelBarSize = fuelBar.sizeDelta;
         initialFuelBarWidth = fuelBar.sizeDelta.x;
 
+        bfsSolver.InitialSetup(playerTr, goalTile);
+        minDistance = bfsSolver.GetShortestPath();
+
         objectiveText.text = localizedObjectiveText.GetLocalizedString();
 
         playPanel.SetActive(true);
@@ -103,10 +107,9 @@ public class LevelManager : MonoBehaviour
         winPanel.SetActive(false);
         losePanel.SetActive(false);
 
-        for (int i = 0; i < buildingsParentObj.childCount; i++)
+        foreach (Transform tr in buildingsParentObj)
         {
-            Building building = buildingsParentObj.GetChild(i).gameObject.GetComponent<Building>();
-
+            Building building = tr.GetComponent<Building>();
             if (building != null)
             {
                 building.InitialSetup(this);
@@ -144,12 +147,12 @@ public class LevelManager : MonoBehaviour
         playerTr.eulerAngles = initRot;
 
 
-        BoxCollider goalCollider = goalTile.gameObject.GetComponent<BoxCollider>();
+        BoxCollider goalCollider = goalTile.GetComponent<BoxCollider>();
         if (goalCollider != null)
         {
             goalCollider.enabled = true;
         }
-        RoadStop goal = goalTile.gameObject.GetComponent<RoadStop>();
+        RoadStop goal = goalTile.GetComponent<RoadStop>();
         if (goal == null)
         {
             goal = goalTile.gameObject.AddComponent<RoadStop>();
@@ -182,7 +185,7 @@ public class LevelManager : MonoBehaviour
         {
             unlockedStars[1].SetActive(true);
         }
-        if ((int)traversedDistance <= shortestDistance)
+        if ((int)traversedDistance <= minDistance)
         {
             unlockedStars[2].SetActive(true);
         }
@@ -198,6 +201,7 @@ public class LevelManager : MonoBehaviour
 
     public void ConsumeFuel(float tilesTraversed)
     {
+        traversedDistance += tilesTraversed;
         totalFuelInTiles -= tilesTraversed * fuelConsumptionPerTile;
 
         fuelBarSize.x = initialFuelBarWidth * (totalFuelInTiles / initialFuel);

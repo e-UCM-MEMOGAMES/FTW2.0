@@ -1,3 +1,6 @@
+using System.Collections.Generic;
+using UnityEngine;
+
 public static class Defs
 {
     /// <summary>
@@ -44,6 +47,11 @@ public static class Defs
     /// Id de la configuracion para la informacion de cada mapa de cada nivel 
     /// </summary>
     MAP_NAME_PREFS_KEY = "Map";
+
+    /// <summary>
+    /// Direcciones posibles del coche (teniendo en cuenta que FORWARD es mirando hacia z positivo)
+    /// </summary>
+    public enum CarDirections { FORWARD, RIGHT, BACK, LEFT }
 
     public enum StopType { NONE, CORNER, TSPLIT, INTERSECTION, GOAL };
 
