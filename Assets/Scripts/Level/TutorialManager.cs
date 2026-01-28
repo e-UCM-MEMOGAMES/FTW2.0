@@ -22,6 +22,7 @@ public class TutorialManager : LevelManager
     [SerializeField] GameObject[] statePanels;
 
     [SerializeField] GameObject toTopButton;
+    [SerializeField] GameObject mapButton;
     [SerializeField] GameObject mapCameras;
 
     /// <summary>
@@ -40,6 +41,8 @@ public class TutorialManager : LevelManager
         {
             panel.SetActive(false);
         }
+        toTopButton.SetActive(false);
+        mapButton.SetActive(false);
         UpdateState(0);
     }
 
@@ -52,10 +55,20 @@ public class TutorialManager : LevelManager
             if (currState <= States.PANEL4 || (currState > States.PANEL6))
             {
                 UpdateState();
+
+                if (currState == States.PANEL5)
+                {
+                    toTopButton.SetActive(true);
+                }
             }
             else if (currState == States.PANEL5 && !toTopButton.activeSelf)
             {
                 UpdateState();
+
+                if (currState == States.PANEL6)
+                {
+                    mapButton.SetActive(true);
+                }
             }
             else if (currState == States.PANEL6 && mapCameras.activeSelf)
             {

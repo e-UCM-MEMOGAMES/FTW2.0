@@ -40,10 +40,10 @@ public class CarController : MonoBehaviour
         arrows[(int)Arrows.FRONT].SetActive(true);
     }
 
-    // Update is called once per frame
+    //Update is called once per frame
     void Update()
     {
-        if (hasToStop && Vector3.Distance(transform.position, stopPos) < 0.05)
+        if (hasToStop && (Vector3.Distance(transform.position, stopPos) < 0.05 || Vector3.Dot(transform.position - stopPos, vel) > 0))
         {
             Stop();
             levelManager.ConsumeFuel(Vector3.Distance(transform.position, stopPos));
@@ -53,7 +53,6 @@ public class CarController : MonoBehaviour
             transform.position += vel.normalized * speed * Time.deltaTime;
             levelManager.ConsumeFuel(speed * Time.deltaTime);
         }
-
     }
 
     private void OnTriggerStay(Collider other)

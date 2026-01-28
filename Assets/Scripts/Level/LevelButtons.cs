@@ -105,5 +105,6 @@ public class LevelButtons : MonoBehaviour
     {
         GetComponent<MenuButtons>().ChangeScene(Defs.LEVEL_SETTINGS_SCENE_NAME);
         audioManager.StopSFX();
+        audioManager.Play(GameSound.MenuBGM);
     }
 }

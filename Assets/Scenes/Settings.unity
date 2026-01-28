@@ -96,8 +96,10 @@ LightmapSettings:
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
-  m_LightingDataAsset: {fileID: 0}
-  m_LightingSettings: {fileID: 0}
+  m_LightingDataAsset: {fileID: 112000000, guid: a98584ddfb5aaee489a0e830f8c5bd68,
+    type: 2}
+  m_LightingSettings: {fileID: 4890085278179872738, guid: f4a3de0eb3c0f8a4c8ed581b063995ef,
+    type: 2}
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -1254,7 +1256,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 985599426}
   m_Direction: 2
   m_Value: 1
-  m_Size: 1
+  m_Size: 0.71092576
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -5157,6 +5159,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 192154819212013086, guid: 9aeefb69eeb60d74db2b3fd6c8d2be90,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7286480702609068496, guid: 9aeefb69eeb60d74db2b3fd6c8d2be90,
         type: 3}
       propertyPath: m_LocalPosition.x
