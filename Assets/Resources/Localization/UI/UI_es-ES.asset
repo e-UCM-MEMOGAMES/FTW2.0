@@ -35,48 +35,45 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 2585038876672
-    m_Localized: Haz click para continuar
+    m_Localized: Pulsa para continuar
     m_Metadata:
       m_Items: []
   - m_Id: 2667964461056
-    m_Localized: "Esta barra indica la energ\xEDa restante del coche. Disminuir\xE1
+    m_Localized: "Esta barra indica el combustible restante del coche. \nDisminuira
       cada vez que se mueva"
     m_Metadata:
       m_Items: []
-  - m_Id: 2936525746176
-    m_Localized: "Aqu\xED puedes ver tu consumo.\nIntenta llegar a la meta antes
-      de agotarlo."
-    m_Metadata:
-      m_Items: []
   - m_Id: 3099042443264
-    m_Localized: "Haz clic en las flechas rojas para elegir la direcci\xF3n del coche."
+    m_Localized: Pulsa las flechas rojas para elegir la direccion del coche
     m_Metadata:
       m_Items: []
   - m_Id: 3190365024256
-    m_Localized: tambien puedes cambiar la perspectiva pulsando este boton
+    m_Localized: Puedes cambiar la perspectiva de la camara pulsando este boton
     m_Metadata:
       m_Items: []
   - m_Id: 3293125472256
-    m_Localized: "Haz clic en el mapa para cerrarlo.\nEl n\xFAmero indica las veces
-      que puedes consultarlo"
+    m_Localized: 'Pulsa sobre el mapa para abrirlo y cerrarlo.
+
+      El numero indica
+      las veces que puedes consultarlo'
     m_Metadata:
       m_Items: []
   - m_Id: 3439280189440
-    m_Localized: "Coloca el rat\xF3n sobre los edificios para saber qu\xE9 son."
+    m_Localized: Desliza por encima de los edificios para ver que son
     m_Metadata:
       m_Items: []
   - m_Id: 3508679143424
-    m_Localized: "Aqu\xED puedes ver en amarillo el mejor camino hasta el objetivo."
+    m_Localized: El camino amarillo indica la ruta mas rapida hasta tu destino
     m_Metadata:
       m_Items: []
   - m_Id: 3632025235456
-    m_Localized: "La flecha az\xFAl se\xF1ala tu posici\xF3n. La flecha rosa indica
-      d\xF3nde debes llegar."
+    m_Localized: La flecha azul indica tu posicion. La flecha rosa indica donde debes
+      llegar
     m_Metadata:
       m_Items: []
   - m_Id: 3787541639168
-    m_Localized: "Este es el mapa de la ciudad. Tendr\xE1s que memorizar la ruta
-      hasta tu destino para ganar."
+    m_Localized: Este es el mapa de la ciudad. Tendras que memorizar la ruta hasta
+      tu destino para ganar
     m_Metadata:
       m_Items: []
   - m_Id: 378826388598784
@@ -92,7 +89,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 380423084634112
-    m_Localized: Tienes que ir al hotel a recoger a tu amigo.
+    m_Localized: Tienes que ir al hotel a recoger a tu amigo
     m_Metadata:
       m_Items: []
   - m_Id: 381341813370880
@@ -100,7 +97,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 381468602986496
-    m_Localized: Necesitas ir al taller.
+    m_Localized: Necesitas ir al taller
     m_Metadata:
       m_Items: []
   - m_Id: 381894484226048
@@ -108,7 +105,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 382525433376768
-    m_Localized: Necesitar ir a las oficinas a por unos papeles.
+    m_Localized: Necesitar ir a las oficinas a por unos papeles
     m_Metadata:
       m_Items: []
   - m_Id: 382943827783680
@@ -126,19 +123,19 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 391292657004544
-    m_Localized: Ve a ver a los bomberos.
+    m_Localized: Ve a ver a los bomberos
     m_Metadata:
       m_Items: []
   - m_Id: 391688980983808
-    m_Localized: Tienes reserva en el restaurante chino.
+    m_Localized: Tienes reserva en el restaurante chino
     m_Metadata:
       m_Items: []
   - m_Id: 391993319682048
-    m_Localized: Tienes que ir al museo de nuevo.
+    m_Localized: Tienes que ir al museo de nuevo
     m_Metadata:
       m_Items: []
   - m_Id: 392364813381632
-    m_Localized: Ve al taller.
+    m_Localized: Ve al taller
     m_Metadata:
       m_Items: []
   - m_Id: 205996726773743616
@@ -191,6 +188,10 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 391063983550464
     m_Localized: Reintentar
+    m_Metadata:
+      m_Items: []
+  - m_Id: 207756331517464576
+    m_Localized: Intenta llegar a la meta antes de agotar el combustible
     m_Metadata:
       m_Items: []
   references:

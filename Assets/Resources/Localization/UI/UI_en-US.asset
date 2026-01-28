@@ -39,30 +39,23 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 2667964461056
-    m_Localized: This bar represents your remaining fuel. It will decrease each time
-      you move.
-    m_Metadata:
-      m_Items: []
-  - m_Id: 2936525746176
-    m_Localized: 'This indicates your consumption.
-
-      Try to reach your destination
-      before it gets depleted.'
+    m_Localized: "This bar represents your remaining fuel. \nIt will decrease each
+      time you move"
     m_Metadata:
       m_Items: []
   - m_Id: 3099042443264
-    m_Localized: Tap on the red arrow to move in the selected direction.
+    m_Localized: Tap on the red arrow to move in the selected direction
     m_Metadata:
       m_Items: []
   - m_Id: 3190365024256
-    m_Localized: You may also change the camera's perspective tapping this button
+    m_Localized: You may change the camera's perspective tapping this button
     m_Metadata:
       m_Items: []
   - m_Id: 3293125472256
-    m_Localized: 'Tap on the map to close it.
+    m_Localized: 'Tap on the map to open and close it.
 
-      The number represents the amount
-      of time you may check it'
+      The number represents
+      the amount of time you may check it'
     m_Metadata:
       m_Items: []
   - m_Id: 3439280189440
@@ -79,7 +72,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 3787541639168
-    m_Localized: This is the city's map. You'll need to memorize the route to win!
+    m_Localized: This is the city's map. You'll need to memorize the route to win
     m_Metadata:
       m_Items: []
   - m_Id: 378826388598784
@@ -194,6 +187,10 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 391063983550464
     m_Localized: Retry
+    m_Metadata:
+      m_Items: []
+  - m_Id: 207756331517464576
+    m_Localized: Try to reach your destination before depleting all the fuel
     m_Metadata:
       m_Items: []
   references:

@@ -75,44 +75,16 @@ MonoBehaviour:
     m_Key: Level/Complete
     m_Metadata:
       m_Items: []
-  - m_Id: 2585038876672
-    m_Key: Tutorial/TapToContinue
+  - m_Id: 382943827783680
+    m_Key: Level/GameOver
     m_Metadata:
       m_Items: []
-  - m_Id: 2667964461056
-    m_Key: Tutorial/Canvas/Tutorial5 (1)/Text
+  - m_Id: 391063983550464
+    m_Key: Level/Retry
     m_Metadata:
       m_Items: []
-  - m_Id: 2936525746176
-    m_Key: Tutorial/Canvas/Tutorial5/Text
-    m_Metadata:
-      m_Items: []
-  - m_Id: 3099042443264
-    m_Key: Tutorial/Canvas/Tutorial4/Text
-    m_Metadata:
-      m_Items: []
-  - m_Id: 3190365024256
-    m_Key: Tutorial/Canvas/Tutorial3 (1)/Text
-    m_Metadata:
-      m_Items: []
-  - m_Id: 3293125472256
-    m_Key: Tutorial/Canvas/Tutorial3/Text
-    m_Metadata:
-      m_Items: []
-  - m_Id: 3439280189440
-    m_Key: Tutorial/Canvas/Tutorial2 (1)/Text
-    m_Metadata:
-      m_Items: []
-  - m_Id: 3508679143424
-    m_Key: Tutorial/Canvas/Tutorial2/Text
-    m_Metadata:
-      m_Items: []
-  - m_Id: 3632025235456
-    m_Key: Tutorial/Canvas/Tutorial1 (1)/Text
-    m_Metadata:
-      m_Items: []
-  - m_Id: 3787541639168
-    m_Key: Tutorial/Canvas/Tutorial1/Text
+  - m_Id: 205996726773743616
+    m_Key: Level/Replay
     m_Metadata:
       m_Items: []
   - m_Id: 378826388598784
@@ -143,14 +115,6 @@ MonoBehaviour:
     m_Key: Level2/Map1/Objective
     m_Metadata:
       m_Items: []
-  - m_Id: 382943827783680
-    m_Key: Level/GameOver
-    m_Metadata:
-      m_Items: []
-  - m_Id: 391063983550464
-    m_Key: Level/Retry
-    m_Metadata:
-      m_Items: []
   - m_Id: 391292657004544
     m_Key: Level2/Map3/Objective
     m_Metadata:
@@ -167,8 +131,44 @@ MonoBehaviour:
     m_Key: Level3/Map3/Objective
     m_Metadata:
       m_Items: []
-  - m_Id: 205996726773743616
-    m_Key: Level/Replay
+  - m_Id: 2585038876672
+    m_Key: Tutorial/TapToContinue
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3787541639168
+    m_Key: Tutorial/Panel1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3632025235456
+    m_Key: Tutorial/Panel2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3508679143424
+    m_Key: Tutorial/Panel3
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3439280189440
+    m_Key: Tutorial/Panel4
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3190365024256
+    m_Key: Tutorial/Panel5
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3293125472256
+    m_Key: Tutorial/Panel6
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3099042443264
+    m_Key: Tutorial/Panel7
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2667964461056
+    m_Key: Tutorial/Panel8
+    m_Metadata:
+      m_Items: []
+  - m_Id: 207756331517464576
+    m_Key: Tutorial/Panel9
     m_Metadata:
       m_Items: []
   m_Metadata:
