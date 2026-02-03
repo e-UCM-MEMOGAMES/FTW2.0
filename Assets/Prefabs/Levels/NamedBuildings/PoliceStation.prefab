@@ -11,7 +11,7 @@ PrefabInstance:
     - target: {fileID: 2721395843021198522, guid: f9e87b95d1ca2654ba43168abe963006,
         type: 3}
       propertyPath: m_Name
-      value: Police_Station Variant Variant
+      value: PoliceStation
       objectReference: {fileID: 0}
     - target: {fileID: 3355049460453379584, guid: f9e87b95d1ca2654ba43168abe963006,
         type: 3}
@@ -124,6 +124,9 @@ MonoBehaviour:
     m_FallbackState: 0
     m_WaitForCompletion: 0
     m_LocalVariables: []
+  targetLayers:
+    serializedVersion: 2
+    m_Bits: 4352
   references:
     version: 2
     RefIds: []

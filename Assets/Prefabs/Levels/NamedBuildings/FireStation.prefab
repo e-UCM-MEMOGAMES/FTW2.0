@@ -76,7 +76,7 @@ PrefabInstance:
     - target: {fileID: 9043897055939879932, guid: 2c88972aaa188004781cfbc486f8d378,
         type: 3}
       propertyPath: m_Name
-      value: FireStation Variant
+      value: FireStation
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -139,6 +139,9 @@ MonoBehaviour:
     m_FallbackState: 0
     m_WaitForCompletion: 0
     m_LocalVariables: []
+  targetLayers:
+    serializedVersion: 2
+    m_Bits: 4352
   references:
     version: 2
     RefIds: []

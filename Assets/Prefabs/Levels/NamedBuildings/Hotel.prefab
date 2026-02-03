@@ -11,7 +11,7 @@ PrefabInstance:
     - target: {fileID: 3494695801358869591, guid: 850fa90975ddbc24ea4d36fc40392f89,
         type: 3}
       propertyPath: m_Name
-      value: Hotel Variant
+      value: Hotel
       objectReference: {fileID: 0}
     - target: {fileID: 4266166672663723757, guid: 850fa90975ddbc24ea4d36fc40392f89,
         type: 3}
@@ -139,6 +139,9 @@ MonoBehaviour:
     m_FallbackState: 0
     m_WaitForCompletion: 0
     m_LocalVariables: []
+  targetLayers:
+    serializedVersion: 2
+    m_Bits: 4352
   references:
     version: 2
     RefIds: []

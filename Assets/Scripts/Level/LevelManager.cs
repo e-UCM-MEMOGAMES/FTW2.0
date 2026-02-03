@@ -2,7 +2,6 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using TMPro;
 using UnityEngine;
-using UnityEngine.Localization;
 using Xasu.HighLevel;
 
 public class LevelManager : MonoBehaviour
@@ -44,6 +43,12 @@ public class LevelManager : MonoBehaviour
     int minDistance = 0;
     float traversedDistance = 0;
     [SerializeField] Transform buildingsParentObj;
+
+    public Vector3 InitPos
+    {
+        get { return startingTile.position; }
+        private set {}
+    }
 
     [Header("Elements Depending on Player Movement")]
     [SerializeField] CarController player;
@@ -206,7 +211,7 @@ public class LevelManager : MonoBehaviour
             unlockedStars[1].SetActive(true);
             totalStars++;
         }
-        if (Mathf.Floor(traversedDistance) <= minDistance)
+        if (traversedDistance <= minDistance)
         {
             unlockedStars[2].SetActive(true);
             totalStars++;

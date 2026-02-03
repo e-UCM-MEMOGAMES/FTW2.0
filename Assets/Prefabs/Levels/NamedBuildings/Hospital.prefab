@@ -11,7 +11,7 @@ PrefabInstance:
     - target: {fileID: 4671672135775396317, guid: 49616b91c70ce474db9c00606f9dd984,
         type: 3}
       propertyPath: m_Name
-      value: Hospital Variant
+      value: Hospital
       objectReference: {fileID: 0}
     - target: {fileID: 5449018698411801447, guid: 49616b91c70ce474db9c00606f9dd984,
         type: 3}
@@ -139,6 +139,9 @@ MonoBehaviour:
     m_FallbackState: 0
     m_WaitForCompletion: 0
     m_LocalVariables: []
+  targetLayers:
+    serializedVersion: 2
+    m_Bits: 4352
   references:
     version: 2
     RefIds: []

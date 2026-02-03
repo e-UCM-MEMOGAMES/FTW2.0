@@ -137,6 +137,9 @@ MonoBehaviour:
     m_FallbackState: 0
     m_WaitForCompletion: 0
     m_LocalVariables: []
+  targetLayers:
+    serializedVersion: 2
+    m_Bits: 4352
   references:
     version: 2
     RefIds: []

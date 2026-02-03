@@ -1,8 +1,4 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using Xasu.HighLevel;
-using static Xasu.HighLevel.CompletableTracker;
 
 public class TutorialManager : LevelManager
 {

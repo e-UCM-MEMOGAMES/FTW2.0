@@ -81,7 +81,7 @@ PrefabInstance:
     - target: {fileID: 6542539923494632178, guid: 3348a7a106893b24cb5302cb8cd9eec9,
         type: 3}
       propertyPath: m_Name
-      value: Workshop Variant
+      value: Workshop
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -144,6 +144,9 @@ MonoBehaviour:
     m_FallbackState: 0
     m_WaitForCompletion: 0
     m_LocalVariables: []
+  targetLayers:
+    serializedVersion: 2
+    m_Bits: 4352
   references:
     version: 2
     RefIds: []

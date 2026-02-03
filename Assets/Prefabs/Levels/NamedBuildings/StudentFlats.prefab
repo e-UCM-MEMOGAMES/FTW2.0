@@ -11,7 +11,7 @@ PrefabInstance:
     - target: {fileID: 751944692515490792, guid: 6442d36bad1251f4b9fc28232b98e076,
         type: 3}
       propertyPath: m_Name
-      value: StudentFlats Variant
+      value: StudentFlats
       objectReference: {fileID: 0}
     - target: {fileID: 751944692515985352, guid: 6442d36bad1251f4b9fc28232b98e076,
         type: 3}
@@ -124,6 +124,9 @@ MonoBehaviour:
     m_FallbackState: 0
     m_WaitForCompletion: 0
     m_LocalVariables: []
+  targetLayers:
+    serializedVersion: 2
+    m_Bits: 4352
   references:
     version: 2
     RefIds: []

@@ -30,8 +30,9 @@ public class CarController : MonoBehaviour
     {
         audioManager = AudioManager.Instance;
 
-        position = transform.position;
-        initY = position.y;
+        position = levelManager.InitPos;
+        initY = transform.position.y;
+        position.y = initY;
 
         foreach (GameObject arrow in arrows)
         {
@@ -43,16 +44,25 @@ public class CarController : MonoBehaviour
     //Update is called once per frame
     void Update()
     {
-        if (hasToStop && (Vector3.Distance(transform.position, stopPos) < 0.05 || Vector3.Dot(transform.position - stopPos, vel) > 0))
-        {
-            Stop();
-            levelManager.ConsumeFuel(Vector3.Distance(transform.position, stopPos));
-        }
+        float consumption = 0;
+
         if (vel != Vector3.zero)
         {
             transform.position += vel.normalized * speed * Time.deltaTime;
-            levelManager.ConsumeFuel(speed * Time.deltaTime);
         }
+        if (hasToStop)
+        {
+            float distToTarget = Vector3.Distance(transform.position, stopPos);
+
+            if (distToTarget < 0.05f || Vector3.Dot(transform.position - stopPos, vel) > 0)
+            {
+                Stop();
+            }
+        }
+        consumption = Vector3.Distance(position, transform.position);
+        levelManager.ConsumeFuel(consumption);
+
+        position = transform.position;
     }
 
     private void OnTriggerStay(Collider other)
@@ -65,19 +75,22 @@ public class CarController : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        foreach (GameObject arrow in arrows)
+        if (!hasToStop)
         {
-            arrow.SetActive(false);
-        }
+            foreach (GameObject arrow in arrows)
+            {
+                arrow.SetActive(false);
+            }
 
-        RoadStop stop = other.GetComponent<RoadStop>();
-        if (stop != null)
-        {
-            stopTr = other.transform;
-            stopPos = stopTr.position;
-            stopPos.y = initY;
-            hasToStop = true;
-            stopType = stop.Type;
+            RoadStop stop = other.GetComponent<RoadStop>();
+            if (stop != null)
+            {
+                stopTr = other.transform;
+                stopPos = stopTr.position;
+                stopPos.y = initY;
+                hasToStop = true;
+                stopType = stop.Type;
+            }
         }
     }
 

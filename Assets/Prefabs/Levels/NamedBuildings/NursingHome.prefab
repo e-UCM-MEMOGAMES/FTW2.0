@@ -61,7 +61,7 @@ PrefabInstance:
     - target: {fileID: 1832177685402756591, guid: a6c206845ce8c7142bf367dc853eecdb,
         type: 3}
       propertyPath: m_Name
-      value: Building_big_3 Variant Variant
+      value: NursingHome
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -124,6 +124,9 @@ MonoBehaviour:
     m_FallbackState: 0
     m_WaitForCompletion: 0
     m_LocalVariables: []
+  targetLayers:
+    serializedVersion: 2
+    m_Bits: 4352
   references:
     version: 2
     RefIds: []
