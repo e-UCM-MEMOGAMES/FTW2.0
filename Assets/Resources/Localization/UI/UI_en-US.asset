@@ -126,15 +126,15 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 391688980983808
-    m_Localized: You booked a table at the chinese restaurant
+    m_Localized: You have a reservation at the restaurant
     m_Metadata:
       m_Items: []
   - m_Id: 391993319682048
-    m_Localized: You feel like observing some works of art
+    m_Localized: You need to do the grocery
     m_Metadata:
       m_Items: []
   - m_Id: 392364813381632
-    m_Localized: Go to the workshop for some parts
+    m_Localized: You have an appointment at the hospital
     m_Metadata:
       m_Items: []
   - m_Id: 205996726773743616
@@ -191,6 +191,10 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 207756331517464576
     m_Localized: Try to reach your destination before depleting all the fuel
+    m_Metadata:
+      m_Items: []
+  - m_Id: 209746912823832576
+    m_Localized: You have to go to  the police station
     m_Metadata:
       m_Items: []
   references:

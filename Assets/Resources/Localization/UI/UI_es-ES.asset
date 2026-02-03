@@ -123,19 +123,19 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 391292657004544
-    m_Localized: Ve a ver a los bomberos
+    m_Localized: Haz una visita a los bomberos
     m_Metadata:
       m_Items: []
   - m_Id: 391688980983808
-    m_Localized: Tienes reserva en el restaurante chino
+    m_Localized: Tienes reserva en el restaurante
     m_Metadata:
       m_Items: []
   - m_Id: 391993319682048
-    m_Localized: Tienes que ir al museo de nuevo
+    m_Localized: Tienes que hacer la compra
     m_Metadata:
       m_Items: []
   - m_Id: 392364813381632
-    m_Localized: Ve al taller
+    m_Localized: Tienes cita en el hospital
     m_Metadata:
       m_Items: []
   - m_Id: 205996726773743616
@@ -192,6 +192,10 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 207756331517464576
     m_Localized: Intenta llegar a la meta antes de agotar el combustible
+    m_Metadata:
+      m_Items: []
+  - m_Id: 209746912823832576
+    m_Localized: Tienes que ir a la estacion de policia
     m_Metadata:
       m_Items: []
   references:

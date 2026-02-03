@@ -58,6 +58,14 @@ MonoBehaviour:
     m_Localized: Estacion de Bomberos
     m_Metadata:
       m_Items: []
+  - m_Id: 6126913321529344
+    m_Localized: Supermercado
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6127828799680512
+    m_Localized: Hospital
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

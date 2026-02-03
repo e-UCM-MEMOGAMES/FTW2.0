@@ -18,7 +18,7 @@ EditorBuildSettings:
     path: Assets/Scenes/LevelSelector.unity
     guid: c9517de424634744ab63b686cfdc104c
   - enabled: 1
-    path: Assets/Scenes/Levels/Tutorial.unity
+    path: Assets/Scenes/Tutorial.unity
     guid: 18bea0ddf16dcfe4b87cfbaf56c17f13
   - enabled: 1
     path: Assets/Scenes/Levels/Level_1_Map_1.unity
@@ -29,6 +29,24 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Levels/Level_1_Map_3.unity
     guid: f8d6c22ca7652ed448ca611ce3668e0b
+  - enabled: 1
+    path: Assets/Scenes/Levels/Level_2_Map_1.unity
+    guid: 5b3138c1220d96d459be6b577f2feed4
+  - enabled: 1
+    path: Assets/Scenes/Levels/Level_2_Map_2.unity
+    guid: 2703f3c661e16ba4cb167d90083f0435
+  - enabled: 1
+    path: Assets/Scenes/Levels/Level_2_Map_3.unity
+    guid: ead7c61598074bf42a7457993d26e72f
+  - enabled: 1
+    path: Assets/Scenes/Levels/Level_3_Map_1.unity
+    guid: 9aaf70fd7c7fbd44fbff4cbffd05a93b
+  - enabled: 1
+    path: Assets/Scenes/Levels/Level_3_Map_2.unity
+    guid: 1a41ab9991628e74da4360499295ae73
+  - enabled: 1
+    path: Assets/Scenes/Levels/Level_3_Map_3.unity
+    guid: 2f326cd53a9e841489c07b440b8f7474
   m_configObjects:
     com.unity.addressableassets: {fileID: 11400000, guid: 0472336ce2bde76459d6fc6ff0e4a4f7,
       type: 2}

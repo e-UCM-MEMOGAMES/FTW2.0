@@ -115,6 +115,10 @@ MonoBehaviour:
     m_Key: Level2/Map1/Objective
     m_Metadata:
       m_Items: []
+  - m_Id: 209746912823832576
+    m_Key: Level2/Map2/Objective
+    m_Metadata:
+      m_Items: []
   - m_Id: 391292657004544
     m_Key: Level2/Map3/Objective
     m_Metadata:

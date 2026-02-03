@@ -33,14 +33,17 @@ public class LevelManager : MonoBehaviour
     [SerializeField] Transform startingTile;
     [SerializeField] Defs.CarDirections initialDirection;
     [SerializeField] Transform goalTile;
-    [SerializeField] float initialFuel = 100;
     [SerializeField] float fuelConsumptionPerTile = 1;
+    /// <summary>
+    /// El combustible inicial sera la minima distancia necesaria 
+    /// para llegar al objetivo multiplicado por este numero
+    /// </summary>
+    [SerializeField] float initialFuelMultiplier = 2.5f;
+    float initialFuel;
     float totalFuelInTiles = 0;
     int minDistance = 0;
     float traversedDistance = 0;
     [SerializeField] Transform buildingsParentObj;
-    [SerializeField] LocalizedString localizedObjectiveText;
-
 
     [Header("Elements Depending on Player Movement")]
     [SerializeField] CarController player;
@@ -57,7 +60,6 @@ public class LevelManager : MonoBehaviour
     [SerializeField] RectTransform fuelBar;
     float initialFuelBarWidth;
     Vector2 fuelBarSize;
-    [SerializeField] TextMeshProUGUI objectiveText;
     [SerializeField] GameObject buildingInfoPanel;
     [SerializeField] TextMeshProUGUI buildingInfoText;
     [SerializeField] GameObject winPanel;
@@ -95,14 +97,14 @@ public class LevelManager : MonoBehaviour
 
         InitialSetup();
 
+        bfsSolver.InitialSetup(playerTr, goalTile);
+        minDistance = bfsSolver.GetShortestPath();
+
+        initialFuel = minDistance * initialFuelMultiplier;
         totalFuelInTiles = initialFuel;
         fuelBarSize = fuelBar.sizeDelta;
         initialFuelBarWidth = fuelBar.sizeDelta.x;
 
-        bfsSolver.InitialSetup(playerTr, goalTile);
-        minDistance = bfsSolver.GetShortestPath();
-
-        objectiveText.text = localizedObjectiveText.GetLocalizedString();
 
         playPanel.SetActive(true);
         HideBuildingInfo();

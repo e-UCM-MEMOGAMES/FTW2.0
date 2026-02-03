@@ -58,6 +58,14 @@ MonoBehaviour:
     m_Localized: Fire station
     m_Metadata:
       m_Items: []
+  - m_Id: 6126913321529344
+    m_Localized: Supermarket
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6127828799680512
+    m_Localized: Hospital
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

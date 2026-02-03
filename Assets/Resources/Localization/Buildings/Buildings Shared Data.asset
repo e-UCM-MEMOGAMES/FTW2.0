@@ -55,6 +55,14 @@ MonoBehaviour:
     m_Key: Buildings/FireStation
     m_Metadata:
       m_Items: []
+  - m_Id: 6126913321529344
+    m_Key: Buildings/Supermarket
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6127828799680512
+    m_Key: Buildings/Hospital
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:
