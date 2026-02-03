@@ -206,7 +206,7 @@ public class LevelManager : MonoBehaviour
             unlockedStars[1].SetActive(true);
             totalStars++;
         }
-        if ((int)traversedDistance <= minDistance)
+        if (Mathf.Floor(traversedDistance) <= minDistance)
         {
             unlockedStars[2].SetActive(true);
             totalStars++;

@@ -2879,8 +2879,8 @@ MonoBehaviour:
   startingTile: {fileID: 1372507546}
   initialDirection: 1
   goalTile: {fileID: 329751264}
-  initialFuel: 100
   fuelConsumptionPerTile: 1
+  initialFuelMultiplier: 2.5
   buildingsParentObj: {fileID: 7771687420229859434}
   player: {fileID: 608217933}
   playerTr: {fileID: 608217932}
@@ -31018,6 +31018,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
       value: 21.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8849015484308250641, guid: a433a06f2d2bc2342944eb46420e24fc,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8942202337577039697, guid: a433a06f2d2bc2342944eb46420e24fc,
         type: 3}
