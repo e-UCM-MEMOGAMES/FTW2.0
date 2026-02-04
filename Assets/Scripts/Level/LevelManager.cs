@@ -125,13 +125,16 @@ public class LevelManager : MonoBehaviour
             }
         }
     }
-
+    [SerializeField]
+    TextMeshProUGUI consumption;
     // Update is called once per frame
     protected virtual void Update()
     {
         playerPos = playerTr.position;
         playerPos.y = 0;
         playerCameras.position = Vector3.Lerp(playerCameras.position, playerPos, cameraFollowSmoothness * Time.deltaTime);
+
+        //consumption.text = $"{traversedDistance}/{minDistance} ||| {totalFuelInTiles}/{minDistance}";
     }
 
     
@@ -211,7 +214,7 @@ public class LevelManager : MonoBehaviour
             unlockedStars[1].SetActive(true);
             totalStars++;
         }
-        if (traversedDistance <= minDistance)
+        if (Mathf.Floor(traversedDistance) <= minDistance)
         {
             unlockedStars[2].SetActive(true);
             totalStars++;
