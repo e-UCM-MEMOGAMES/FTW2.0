@@ -247,10 +247,14 @@ public class LevelManager : MonoBehaviour
         watch.Stop();
         long completionTime = watch.ElapsedMilliseconds;
 
-        trackerManager.TrySendStatement(
-            CompletableTracker.Instance.Completed(Defs.GetLevelKey(gameManager.Level, gameManager.Map), COMPLETABLE_TYPE, completionTime)
-            .WithSuccess(win)
-            .WithResultExtensions(extensions)
-        );
+        try
+        {
+            trackerManager.TrySendStatement(
+                CompletableTracker.Instance.Completed(Defs.GetLevelKey(gameManager.Level, gameManager.Map), COMPLETABLE_TYPE, completionTime)
+                .WithSuccess(win)
+                .WithResultExtensions(extensions)
+            );
+        }
+        catch { }
     }
 }

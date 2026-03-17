@@ -29,7 +29,12 @@ public class GameManager : SingletonMonoBehaviour<GameManager>
         set
         {
             level = value;
-            trackerManager.TrySendStatement(AlternativeTracker.Instance.Selected("Level", value.ToString()));
+
+            try
+            {
+                trackerManager.TrySendStatement(AlternativeTracker.Instance.Selected("Level", value.ToString()));
+            }
+            catch { }
         }
     }
     /// <summary>
@@ -42,22 +47,33 @@ public class GameManager : SingletonMonoBehaviour<GameManager>
         set
         {
             map = value;
-            trackerManager.TrySendStatement(AlternativeTracker.Instance.Selected("Map", value.ToString()));
+
+            try
+            {
+                trackerManager.TrySendStatement(AlternativeTracker.Instance.Selected("Map", value.ToString()));
+            }
+            catch { }
         }
     }
 
     // Start is called before the first frame update
-    void Start()
+    async void Start()
     {
         trackerManager = TrackerManager.Instance;
-        trackerManager.TrySendStatement(CompletableTracker.Instance.Initialized(COMPLETABLE_ID, COMPLETABLE_TYPE));
-        trackerManager.TrySendStatement(AccessibleTracker.Instance.Accessed(Defs.MENU_SCENE_NAME));
+        await trackerManager.InitTask;
+
+        try
+        {
+            trackerManager.TrySendStatement(CompletableTracker.Instance.Initialized(COMPLETABLE_ID, COMPLETABLE_TYPE));
+            trackerManager.TrySendStatement(AccessibleTracker.Instance.Accessed(Defs.MENU_SCENE_NAME));
+        }
+        catch { }
 
         watch.Start();
 
-        if (PlayerPrefs.HasKey("language"))
+        if (PlayerPrefs.HasKey(Defs.LANGUAGE_PREFS_KEY))
         {
-            LocalizationSettings.SelectedLocale = LocalizationSettings.AvailableLocales.Locales[PlayerPrefs.GetInt("language")];
+            LocalizationSettings.SelectedLocale = LocalizationSettings.AvailableLocales.Locales[PlayerPrefs.GetInt(Defs.LANGUAGE_PREFS_KEY)];
         }
     }
 
@@ -70,7 +86,12 @@ public class GameManager : SingletonMonoBehaviour<GameManager>
         UnityEngine.Debug.Log("Quitting GameManager");
         watch.Stop();
 
-        trackerManager.TrySendStatement(CompletableTracker.Instance.Completed(COMPLETABLE_ID, COMPLETABLE_TYPE, watch.ElapsedMilliseconds));
+        try
+        {
+            trackerManager.TrySendStatement(CompletableTracker.Instance.Completed(COMPLETABLE_ID, COMPLETABLE_TYPE, watch.ElapsedMilliseconds));
+        }
+        catch { }
+
         await trackerManager.Quit();
     }
 
@@ -92,7 +113,11 @@ public class GameManager : SingletonMonoBehaviour<GameManager>
     /// </summary>
     public void ChangeScene(string sceneName)
     {
-        trackerManager.TrySendStatement(AccessibleTracker.Instance.Accessed(sceneName));
+        try
+        {
+            trackerManager.TrySendStatement(AccessibleTracker.Instance.Accessed(sceneName));
+        }
+        catch { }
         SceneManager.LoadScene(sceneName);
     }
 }
