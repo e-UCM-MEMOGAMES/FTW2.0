@@ -1,0 +1,71 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: Buildings_es-ES
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: es-ES
+  m_SharedData: {fileID: 11400000, guid: d3a6243fb5fabb143b77970aaa435733, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 2619348283392
+    m_Localized: Casa
+    m_Metadata:
+      m_Items: []
+  - m_Id: 392702018646016
+    m_Localized: Oficinas
+    m_Metadata:
+      m_Items: []
+  - m_Id: 392979111145472
+    m_Localized: Residencia de ancianos
+    m_Metadata:
+      m_Items: []
+  - m_Id: 393016973127680
+    m_Localized: Cafeteria
+    m_Metadata:
+      m_Items: []
+  - m_Id: 393193935007744
+    m_Localized: Restaurante
+    m_Metadata:
+      m_Items: []
+  - m_Id: 393273387708416
+    m_Localized: Pisos de estudiantes
+    m_Metadata:
+      m_Items: []
+  - m_Id: 393384356409344
+    m_Localized: Taller
+    m_Metadata:
+      m_Items: []
+  - m_Id: 407516317151232
+    m_Localized: Hotel
+    m_Metadata:
+      m_Items: []
+  - m_Id: 407577054867456
+    m_Localized: Estacion de policia
+    m_Metadata:
+      m_Items: []
+  - m_Id: 442955065389056
+    m_Localized: Estacion de Bomberos
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6126913321529344
+    m_Localized: Supermercado
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6127828799680512
+    m_Localized: Hospital
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds: []

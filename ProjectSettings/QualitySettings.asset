@@ -4,7 +4,7 @@
 QualitySettings:
   m_ObjectHideFlags: 0
   serializedVersion: 5
-  m_CurrentQuality: 5
+  m_CurrentQuality: 6
   m_QualitySettings:
   - serializedVersion: 3
     name: Very Low
@@ -44,7 +44,8 @@ QualitySettings:
     asyncUploadBufferSize: 4
     asyncUploadPersistentBuffer: 1
     resolutionScalingFixedDPIFactor: 1
-    customRenderPipeline: {fileID: 0}
+    customRenderPipeline: {fileID: 11400000, guid: 6171a347abf00104396a1fa641bcd7fe,
+      type: 2}
     terrainQualityOverrides: 0
     terrainPixelError: 1
     terrainDetailDensityScale: 1
@@ -54,7 +55,10 @@ QualitySettings:
     terrainBillboardStart: 50
     terrainFadeLength: 5
     terrainMaxTrees: 50
-    excludedTargetPlatforms: []
+    excludedTargetPlatforms:
+    - Android
+    - Server
+    - Standalone
   - serializedVersion: 3
     name: Low
     pixelLightCount: 0
@@ -93,7 +97,8 @@ QualitySettings:
     asyncUploadBufferSize: 4
     asyncUploadPersistentBuffer: 1
     resolutionScalingFixedDPIFactor: 1
-    customRenderPipeline: {fileID: 0}
+    customRenderPipeline: {fileID: 11400000, guid: c7a6107bb0829784aa76cb52b9e47f90,
+      type: 2}
     terrainQualityOverrides: 0
     terrainPixelError: 1
     terrainDetailDensityScale: 1
@@ -103,7 +108,10 @@ QualitySettings:
     terrainBillboardStart: 50
     terrainFadeLength: 5
     terrainMaxTrees: 50
-    excludedTargetPlatforms: []
+    excludedTargetPlatforms:
+    - Standalone
+    - Server
+    - Android
   - serializedVersion: 3
     name: Medium
     pixelLightCount: 1
@@ -142,7 +150,8 @@ QualitySettings:
     asyncUploadBufferSize: 4
     asyncUploadPersistentBuffer: 1
     resolutionScalingFixedDPIFactor: 1
-    customRenderPipeline: {fileID: 0}
+    customRenderPipeline: {fileID: 11400000, guid: 24901126524f956429adb96eae2e7846,
+      type: 2}
     terrainQualityOverrides: 0
     terrainPixelError: 1
     terrainDetailDensityScale: 1
@@ -152,7 +161,10 @@ QualitySettings:
     terrainBillboardStart: 50
     terrainFadeLength: 5
     terrainMaxTrees: 50
-    excludedTargetPlatforms: []
+    excludedTargetPlatforms:
+    - Android
+    - Server
+    - Standalone
   - serializedVersion: 3
     name: High
     pixelLightCount: 2
@@ -191,7 +203,8 @@ QualitySettings:
     asyncUploadBufferSize: 4
     asyncUploadPersistentBuffer: 1
     resolutionScalingFixedDPIFactor: 1
-    customRenderPipeline: {fileID: 0}
+    customRenderPipeline: {fileID: 11400000, guid: dd7691d4438f8e94a8ad0d5b6c4bb4ec,
+      type: 2}
     terrainQualityOverrides: 0
     terrainPixelError: 1
     terrainDetailDensityScale: 1
@@ -201,7 +214,10 @@ QualitySettings:
     terrainBillboardStart: 50
     terrainFadeLength: 5
     terrainMaxTrees: 50
-    excludedTargetPlatforms: []
+    excludedTargetPlatforms:
+    - Standalone
+    - Server
+    - Android
   - serializedVersion: 3
     name: Very High
     pixelLightCount: 3
@@ -240,7 +256,8 @@ QualitySettings:
     asyncUploadBufferSize: 4
     asyncUploadPersistentBuffer: 1
     resolutionScalingFixedDPIFactor: 1
-    customRenderPipeline: {fileID: 0}
+    customRenderPipeline: {fileID: 11400000, guid: fe350ebfd49743e4091e939a2f3fd062,
+      type: 2}
     terrainQualityOverrides: 0
     terrainPixelError: 1
     terrainDetailDensityScale: 1
@@ -250,7 +267,10 @@ QualitySettings:
     terrainBillboardStart: 50
     terrainFadeLength: 5
     terrainMaxTrees: 50
-    excludedTargetPlatforms: []
+    excludedTargetPlatforms:
+    - Android
+    - Standalone
+    - Server
   - serializedVersion: 3
     name: Ultra
     pixelLightCount: 4
@@ -267,7 +287,7 @@ QualitySettings:
     globalTextureMipmapLimit: 0
     textureMipmapLimitSettings: []
     anisotropicTextures: 2
-    antiAliasing: 2
+    antiAliasing: 0
     softParticles: 1
     softVegetation: 1
     realtimeReflectionProbes: 1
@@ -289,7 +309,61 @@ QualitySettings:
     asyncUploadBufferSize: 4
     asyncUploadPersistentBuffer: 1
     resolutionScalingFixedDPIFactor: 1
-    customRenderPipeline: {fileID: 0}
+    customRenderPipeline: {fileID: 11400000, guid: c65dc8854a868c04a85ef1d95ba46cc5,
+      type: 2}
+    terrainQualityOverrides: 0
+    terrainPixelError: 1
+    terrainDetailDensityScale: 1
+    terrainBasemapDistance: 1000
+    terrainDetailDistance: 80
+    terrainTreeDistance: 5000
+    terrainBillboardStart: 50
+    terrainFadeLength: 5
+    terrainMaxTrees: 50
+    excludedTargetPlatforms:
+    - Standalone
+    - Server
+    - Android
+  - serializedVersion: 3
+    name: Custom
+    pixelLightCount: 4
+    shadows: 2
+    shadowResolution: 2
+    shadowProjection: 0
+    shadowCascades: 4
+    shadowDistance: 18.75
+    shadowNearPlaneOffset: 118.7
+    shadowCascade2Split: 0.33333334
+    shadowCascade4Split: {x: 0.06666667, y: 0.2, z: 0.46666667}
+    shadowmaskMode: 0
+    skinWeights: 2
+    globalTextureMipmapLimit: 0
+    textureMipmapLimitSettings: []
+    anisotropicTextures: 1
+    antiAliasing: 2
+    softParticles: 1
+    softVegetation: 1
+    realtimeReflectionProbes: 0
+    billboardsFaceCameraPosition: 1
+    useLegacyDetailDistribution: 1
+    vSyncCount: 1
+    realtimeGICPUUsage: 50
+    lodBias: 0.7
+    maximumLODLevel: 0
+    enableLODCrossFade: 1
+    streamingMipmapsActive: 0
+    streamingMipmapsAddAllCameras: 1
+    streamingMipmapsMemoryBudget: 512
+    streamingMipmapsRenderersPerFrame: 512
+    streamingMipmapsMaxLevelReduction: 2
+    streamingMipmapsMaxFileIORequests: 1024
+    particleRaycastBudget: 64
+    asyncUploadTimeSlice: 2
+    asyncUploadBufferSize: 4
+    asyncUploadPersistentBuffer: 1
+    resolutionScalingFixedDPIFactor: 1
+    customRenderPipeline: {fileID: 11400000, guid: 30ef2a977febe3445a157f7bd7899c04,
+      type: 2}
     terrainQualityOverrides: 0
     terrainPixelError: 1
     terrainDetailDensityScale: 1
@@ -302,6 +376,6 @@ QualitySettings:
     excludedTargetPlatforms: []
   m_TextureMipmapLimitGroupNames: []
   m_PerPlatformDefaultQuality:
-    Android: 0
-    Server: 0
-    Standalone: 0
+    Android: 6
+    Server: 6
+    Standalone: 6

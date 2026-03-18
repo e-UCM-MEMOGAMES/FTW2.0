@@ -3,7 +3,10 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - WinPanel
+  - GameOverPanel
+  - PauseCamera
   layers:
   - Default
   - TransparentFX
@@ -11,14 +14,14 @@ TagManager:
   - 
   - Water
   - UI
+  - Player
+  - Road
+  - Building
+  - Decoration
+  - Arrow
+  - Path
+  - TargetBuilding
   - 
-  - 
-  - Suelo
-  - Flecha
-  - Interseccion
-  - Coche
-  - Carretera
-  - Meta
   - 
   - 
   - 
