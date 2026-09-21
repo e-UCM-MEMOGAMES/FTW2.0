@@ -197,6 +197,13 @@ MonoBehaviour:
     m_Localized: You have to go to  the police station
     m_Metadata:
       m_Items: []
+  - m_Id: 291544855996153856
+    m_Localized: 'WAITING FOR LOG IN...
+
+
+      CHECK YOUR BROWSER'
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

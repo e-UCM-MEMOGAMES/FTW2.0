@@ -398,7 +398,7 @@ GameObject:
   - component: {fileID: 1329234913438600352}
   - component: {fileID: 2777091050803855920}
   - component: {fileID: 1664974332139097464}
-  - component: {fileID: 7173744846852105605}
+  - component: {fileID: 6647001037486965832}
   - component: {fileID: 2025093144858826701}
   m_Layer: 0
   m_Name: Managers
@@ -472,7 +472,7 @@ MonoBehaviour:
     audioClip: {fileID: 8300000, guid: e6edd007c765edb449d0b3e099feddaf, type: 3}
   bgmSource: {fileID: 2413921747549152415}
   sfxSource: {fileID: 3005395233402566959}
---- !u!114 &7173744846852105605
+--- !u!114 &6647001037486965832
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -481,7 +481,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 7654452115623405852}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ce9251e9e3ed36f4eb38a5089a747a25, type: 3}
+  m_Script: {fileID: 11500000, guid: 9682c77f1df810040ba255c7f58ba4ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   AutoStart: 0
@@ -500,3 +500,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 88088d7bca16b7e43957204a14d76415, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  loginMsg: {fileID: 0}
